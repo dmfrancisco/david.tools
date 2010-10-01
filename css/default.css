@@ -1,0 +1,92 @@
+body {
+	font-family: Helvetiker, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+	font-size: 20px;
+	color: #cceaea;
+	background-color: #151515;
+	width: 550px;
+	margin: 70px 0px 0px 70px;
+}
+
+a {
+	color: #6fe6ff;
+	text-decoration: none;
+}
+
+.link h3 {
+	color: #6fe6ff;
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #cceaea;
+	font-weight: normal;
+}
+
+h1 {
+	width: 600px;
+	height: 45px;
+	vertical-align: bottom;
+	font-size: 40px;
+}
+
+h3 {
+	margin-bottom: 5px;
+	font-size: 23px;
+}
+
+p {
+	clear: left;
+	font-size: 20px;
+}
+
+p.contact {
+	margin-bottom: 3px;
+	margin-top: 0px;
+	font-size: 14px;
+}
+
+div.spacer {
+	height: 20px;
+}
+
+ul.projects, ul.profiles, ul.more-profiles {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+ul.profiles li, ul.more-profiles li {
+	padding-left: 27px;
+	width: 150px;
+}
+
+#show-projects, #show-profiles, #show-more {
+	cursor: pointer;
+	display: none;
+}
+
+#show-more {
+	background: url('../icons/more.png') 0px 2px no-repeat;
+}
+
+.linkedin  { background: url('../icons/linkedin.png') 0px 3px no-repeat; }
+.twitter   { background: url('../icons/twitter.png')  0px 3px no-repeat; }
+.github    { background: url('../icons/github.png')   0px 3px no-repeat; }
+.somenotes { background: url('../icons/tumblr.png')   0px 3px no-repeat; }
+.gango     { background: url('../icons/tumblr.png')   0px 3px no-repeat; }
+.google    { background: url('../icons/google.png')   0px 3px no-repeat; }
+.facebook  { background: url('../icons/facebook.png') 0px 3px no-repeat; }
+.lastfm    { background: url('../icons/lastfm.png')   0px 3px no-repeat; }
+
+.linkedin:hover  { background: url('../icons-color/linkedin.png') 0px 3px no-repeat; }
+.twitter:hover   { background: url('../icons-color/twitter.png')  0px 3px no-repeat; }
+.github:hover    { background: url('../icons-color/github.png')   0px 3px no-repeat; }
+.somenotes:hover { background: url('../icons-color/tumblr.png')   0px 3px no-repeat; }
+.gango:hover     { background: url('../icons-color/tumblr.png')   0px 3px no-repeat; }
+.google:hover    { background: url('../icons-color/google.png')   0px 3px no-repeat; }
+.facebook:hover  { background: url('../icons-color/facebook.png') 0px 3px no-repeat; }
+.lastfm:hover    { background: url('../icons-color/lastfm.png')   0px 3px no-repeat; }
+
+div.clearfix {
+	clear: both;
+}
