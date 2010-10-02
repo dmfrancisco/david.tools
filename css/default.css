@@ -93,7 +93,7 @@ div.clearfix {
 	clear: both;
 }
 
-.hidden {
+.hidden, .hidden a {
   height:1px;
   color: #151515;
   overflow: hidden;
