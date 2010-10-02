@@ -2,30 +2,30 @@
 <html>
 
 <head>
-	<title>David Francisco</title>
-	<link rel="shortcut icon" href="http://25.media.tumblr.com/avatar_7db96f24fe84_16.png">
+  <title>David Francisco</title>
+  <link rel="shortcut icon" href="http://25.media.tumblr.com/avatar_7db96f24fe84_16.png">
 
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<meta name="author" content="David Francisco">
-	<meta name="reply-to" content="dmfrancisc/AT/gmail/DOT/com">
-	<meta name="description" content="David Francisco's Personal Webpage">
-	<meta http-equiv="content-language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="author" content="David Francisco">
+  <meta name="reply-to" content="dmfrancisc/AT/gmail/DOT/com">
+  <meta name="description" content="David Francisco's Personal Webpage">
+  <meta http-equiv="content-language" content="en">
 
-	<link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
 
-	<!-- script src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js" -->
-	<script type="text/javascript" charset="utf-8" src="js/typeface.js"></script>
-	<script type="text/javascript" charset="utf-8" src="js/helvetiker_regular.typeface.js"></script>
-	<script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
+  <!-- script src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js" -->
+  <script type="text/javascript" charset="utf-8" src="js/typeface.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/helvetiker_regular.typeface.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
 
-	<style type="text/css"> body { background-color: #151515; } </style>
+  <style type="text/css"> body { background-color: #151515; } </style>
 
   <script TYPE="text/javascript">
     $(document).ready(function()
     {
        // Hide elements
-       $('#projects-title, ul.projects').hide();
-       $('#profiles-title, ul.profiles, ul.more-profiles').hide();
+       $('#projects-title, #projects').hide();
+       $('#profiles-title, #profiles, #more-profiles').hide();
 
        // Javascript disabled
        $('#show-projects').show();
@@ -36,19 +36,19 @@
        $('#show-projects').mouseover(function() {
          $('#show-projects').hide();
          $('#projects-title').show();
-         $('ul.projects').fadeIn('slow');
+         $('#projects').fadeIn('slow');
          $('html, body').animate({scrollTop: $('#page').height()}, 800);
        });
        $('#show-profiles').mouseover(function() {
          $('#show-profiles').hide();
          $('#profiles-title').show();
-         $('ul.profiles').fadeIn('slow');
-          $('html, body').animate({scrollTop: $('#page').height()}, 800);
+         $('#profiles').fadeIn('slow');
+         $('html, body').animate({scrollTop: $('#page').height()}, 800);
        });
 
        // Show more profiles
        $('#show-more').click( function(e) {
-          $('ul.more-profiles').fadeIn('slow');
+          $('#more-profiles').fadeIn('slow');
           $('#show-more').hide();
           $('html, body').animate({scrollTop: $('#page').height()}, 800);
        });
@@ -59,60 +59,66 @@
 <body>
 
 <div id="page" class="typeface-js">
-	<h1>Hello. I'm David Francisco.</h1>
+  <h1>Hello. I'm David Francisco.</h1>
 
-	<p>I'm currently taking a degree in Informatics Engineering at the University of Coimbra. I aspire to work as a web developer.</p>
+  <p>I'm currently taking a degree in Informatics Engineering at the University of Coimbra. I aspire to work as a web developer.</p>
 
   <p class="contact">Follow me on <a href="http://twitter.com/dmfrancisco">twitter</a> or email me at
-		<script TYPE="text/javascript">
-		<!--
-			email = ('dmf' + 'ranc' + '@' + 'studen' + 't.dei.uc' + '.pt')
-			document.write(' <a href="mailto:'+ email +'">'+ email +'</a>')
-		//-->
-		</script>.</p><p class="contact">
-	You can also contact me via <a onClick="return skypeCheck();" href="skype:dmfrancisc?call">skype</a>.</p>
+    <script TYPE="text/javascript">
+    <!--
+      email = ('dmf' + 'ranc' + '@' + 'studen' + 't.dei.uc' + '.pt')
+      document.write(' <a href="mailto:'+ email +'">'+ email +'</a>')
+    //-->
+    </script>.</p><p class="contact">
+  You can also contact me via <a onClick="return skypeCheck();" href="skype:dmfrancisc?call">skype</a>.</p>
 
-	<div class="spacer"></div>
+  <div class="spacer"></div>
 
-	<div id="show-projects" class="link">
-	   <h3>Check the projects I've worked on</h3>
+  <div id="show-projects" class="link">
+     <h3>Check the projects I've worked on</h3>
   </div>
-	<div id="projects-title">
-	   <h3>Some projects I've worked on</h3>
-  </div>
-
-	<ul class="projects">
-		 <li><a href="http://innovation.dei.uc.pt" title="deinnovation - Video sharing platform about research projects mostly developed at DEI-UC">deinnovation</a> / a video sharing platform.</li>
-		 <li><a href="http://mytweetsd.tumblr.com/" title="mytweet - A command line client application that integrates with Twitter using a REST API">mytweet</a> / client application that integrates with Twitter.</li>
-		 <li><a href="http://www.ict-ginseng.eu/" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks">wsnp</a> / gui application for programming WSNs.</li>
-		 <li><a href="http://github.com/dmfrancisco/scurry/" title="scurry - A simple compiler using Python, PLY and LLVM">scurry</a> / toy programming language written in Python.</li>
-		 <li><a href="#" title="rpr - Information System using Ruby on Rails">rpr</a> / an information system written in Rails.</li>
-		 <li><a href="http://dmfrancisco.github.com/activo/" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins">activo</a> / a theme for web applications.</li>
-	   <div class="spacer"></div>
-  </ul>
-
-	<div id="show-profiles" class="link">
-	   <h3>Places where you can find me</h3>
-  </div>
-	<div id="profiles-title">
-	   <h3>Places where you can find me</h3>
+  <div id="projects-title">
+     <h3>Some projects I've worked on</h3>
   </div>
 
-	<ul class="profiles">
-		 <li class="linkedin"><a href="http://linkedin.com/in/dmfrancisco/en" >Linkedin</a></li>
-		 <li class="twitter" ><a href="http://twitter.com/dmfrancisco"        >Twitter</a></li>
-		 <li class="github"  ><a href="http://github.com/dmfrancisco"         >Github</a></li>
-		 <li id="show-more">Show more</li>
-  </ul>
+  <div id="projects">
+    <ul class="projects">
+        <li><a href="http://innovation.dei.uc.pt" title="deinnovation - Video sharing platform about research projects mostly developed at DEI-UC">deinnovation</a> / a video sharing platform.</li>
+        <li><a href="http://mytweetsd.tumblr.com/" title="mytweet - A command line client application that integrates with Twitter using a REST API">mytweet</a> / client application that integrates with Twitter.</li>
+        <li><a href="http://www.ict-ginseng.eu/" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks">wsnp</a> / gui application for programming WSNs.</li>
+        <li><a href="http://github.com/dmfrancisco/scurry/" title="scurry - A simple compiler using Python, PLY and LLVM">scurry</a> / toy programming language written in Python.</li>
+        <li><a href="#" title="rpr - Information System using Ruby on Rails">rpr</a> / an information system written in Rails.</li>
+        <li><a href="http://dmfrancisco.github.com/activo/" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins">activo</a> / a theme for web applications.</li>
+     </ul>
+    <div class="spacer"></div>
+  </div>
 
-  <ul class="more-profiles">
-		 <li class="somenotes"><a href="http://davidfrancisco.tumblr.com"     >Some notes</a></li>
-		 <li class="google"   ><a href="http://google.com/profiles/dmfrancisc">Google profile</a></li>
-		 <li class="facebook" ><a href="http://fb.me/dmfranc"                 >Facebook</a></li>
-		 <li class="lastfm"   ><a href="http://www.last.fm/user/ElGangoFeo"   >Lastfm</a></li>
-	</ul>
+  <div id="show-profiles" class="link">
+    <h3>Places where you can find me</h3>
+  </div>
+  <div id="profiles-title">
+    <h3>Places where you can find me</h3>
+  </div>
 
-	<div style="height:60px;"></div>
+  <div id="profiles">
+    <ul class="profiles">
+      <li class="linkedin"><a href="http://linkedin.com/in/dmfrancisco/en"  rel="me">Linkedin</a></li>
+      <li class="twitter" ><a href="http://twitter.com/dmfrancisco"         rel="me">Twitter</a></li>
+      <li class="github"  ><a href="http://github.com/dmfrancisco"          rel="me">Github</a></li>
+      <li id="show-more">Show more</li>
+    </ul>
+  </div>
+
+  <div id="more-profiles">
+    <ul class="more-profiles">
+      <li class="somenotes"><a href="http://davidfrancisco.tumblr.com"      rel="me">Some notes</a></li>
+      <li class="google"   ><a href="http://google.com/profiles/dmfrancisc" rel="me">Google profile</a></li>
+      <li class="facebook" ><a href="http://fb.me/dmfranc"                  rel="me">Facebook</a></li>
+      <li class="lastfm"   ><a href="http://www.last.fm/user/ElGangoFeo"    rel="me">Lastfm</a></li>
+    </ul>
+  </div>
+
+  <div style="height:60px;"></div>
 
 </div>
 
