@@ -90,3 +90,9 @@ ul.profiles li, ul.more-profiles li {
 div.clearfix {
 	clear: both;
 }
+
+.hidden {
+  height:1px;
+  color: #151515;
+  overflow: hidden;
+}
