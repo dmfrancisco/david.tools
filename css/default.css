@@ -95,6 +95,7 @@ div.clearfix {
 
 .hidden, .hidden a {
   height:1px;
+  position: absolute;
   color: #151515;
   overflow: hidden;
 }
