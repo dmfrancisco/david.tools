@@ -2,7 +2,6 @@ body {
 	font-family: Helvetiker, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 	font-size: 20px;
 	color: #cceaea;
-	background-color: #151515;
 	width: 550px;
 	margin: 70px 0px 0px 70px;
 }
@@ -37,12 +36,14 @@ h3 {
 p {
 	clear: left;
 	font-size: 20px;
+	line-height: 28px;
 }
 
 p.contact {
 	margin-bottom: 3px;
 	margin-top: 0px;
 	font-size: 14px;
+	line-height: normal;
 }
 
 div.spacer {
@@ -53,6 +54,7 @@ ul.projects, ul.profiles, ul.more-profiles {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+	line-height: 24px;
 }
 
 ul.profiles li, ul.more-profiles li {
