@@ -1,63 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <!-- Hello! -->
+  <meta charset="utf-8" />
+
   <title>David Francisco</title>
-  <link rel="shortcut icon" href="http://www.gravatar.com/avatar/790ae9aaf8a42f00845a0140492ca79e?s=16" type="image/png" />
+  <link rel="shortcut icon" href="/favicon.ico">
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="author" content="David Francisco" />
-  <meta name="reply-to" content="dmfrancisc/at/gmail/dot/com" />
-  <meta name="description" content="David Francisco's Personal Webpage" />
+  <meta name="author" content="David Marquês Francisco">
+  <meta name="description" content="David Francisco's Personal Webpage">
+  <meta name="reply-to" content="hello/at/dmfranc/dot/com">
 
-  <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Nobile'>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/default.css">
 
-  <script type="text/javascript" charset="utf-8" src="js/typeface.js"></script>
-  <script type="text/javascript" charset="utf-8" src="js/helvetiker_regular.typeface.js"></script>
-  <script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
-
-  <style type="text/css"> body { background-color: #151515; } </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script src="js/jquery-ui-1.7.2.custom.js"></script>
+  <script src="js/jquery.jcoverflip.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function()
     {
        // Hide elements
-       $('#projects-title, #projects').hide();
-       $('#profiles-title, #profiles, #more-profiles').hide();
+       $('#projects-title, .projects, .more-projects').hide();
+       $('#profiles-title, .profiles, .more-profiles').hide();
 
-       // Javascript disabled
+       // Show elements
        $('#show-projects').show();
        $('#show-profiles').show();
-       $('#show-more').show();
+       $('#show-more-profiles').show();
+       $('#show-more-projects').show();
 
-       // Show elements after mouseover the page
+       // Show elements after mouseover
        $('#show-projects').mouseover(function() {
          $('#show-projects').hide();
          $('#projects-title').show();
-         $('#projects').fadeIn('slow');
-         $('html, body').animate({scrollTop: $('#page').height()}, 800);
+         $('.projects').fadeIn('slow');
+         $('html, body').animate({scrollTop: $('body').height()}, 800);
        });
        $('#show-profiles').mouseover(function() {
          $('#show-profiles').hide();
          $('#profiles-title').show();
-         $('#profiles').fadeIn('slow');
-         $('html, body').animate({scrollTop: $('#page').height()}, 800);
+         $('.profiles').fadeIn('slow');
+         $('html, body').animate({scrollTop: $('body').height()}, 800);
        });
 
        // Show more profiles
-       $('#show-more').click( function(e) {
-          $('#more-profiles').fadeIn('slow');
-          $('#show-more').hide();
-          $('html, body').animate({scrollTop: $('#page').height()}, 800);
+       $('#show-more-profiles').click( function(e) {
+          $('.more-profiles').fadeIn('slow');
+          $('#show-more-profiles').hide();
+          $('html, body').animate({scrollTop: $('body').height()}, 800);
        });
+
+       // Show more projects
+       $('#show-more-projects').click( function(e) {
+          $('.more-projects').fadeIn('slow');
+          $('.projects').hide();
+          $('#show-more-projects').hide();
+          $('html, body').animate({scrollTop: $('body').height()}, 800);
+       });
+    });
+  </script>
+
+  <!-- jQuery CoverFlip -->
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+      jQuery('#flip').jcoverflip({
+        current: 0,
+        beforeCss: function(el, container, offset) {
+          var offsetMod = offset;
+          return [
+            $.jcoverflip.animationElement(el, { left: (505 - 20*offset)+'px', bottom: '130px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
+            $.jcoverflip.animationElement(el.find('img'), { width: '160px' }, {})
+          ];
+        },
+        afterCss: function(el, container, offset) {
+          var offsetMod = (10 - offset);
+          return [
+            $.jcoverflip.animationElement(el, { left: (330 + 20*offset)+'px', bottom: '130px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
+            $.jcoverflip.animationElement(el.find('img'), { width: '160px' }, {})
+          ];
+        },
+        currentCss: function(el, container) {
+          return [
+            $.jcoverflip.animationElement(el, { left: '-5px', bottom: '240px' }, { 0: {'z-index': '11', cursor: 'default' } }),
+            $.jcoverflip.animationElement(el.find('img'), { width: '320px' }, { })
+          ];
+        }
+      });
     });
   </script>
 </head>
 
 <body>
 
-<div id="page" class="typeface-js">
+  <!-- Blog Ribbon -->
+  <a href="http://blog.dmfranc.com/"><img class="ribbon" src="http://dmfranc.com/blog/ribbon.png" alt=":has_many notes"></a>
 
   <div class="vcard">
 
@@ -82,72 +122,115 @@
 
 
     <!-- Short bio -->
-    <h1>Hello. I'm David Francisco.</h1>
-    <p>I'm currently taking a degree in Informatics Engineering at the University of Coimbra. I aspire to work as a web developer.</p>
+    <section id="about">
+      <h1>Hello!</h1>
+      <p>I'm David Francisco. I'm currently taking a degree in Informatics Engineering at the University of Coimbra. <br/>I aspire to work as a web developer.</p>
+    </section>
 
 
     <!-- Contact information -->
-    <p class="contact">Download my <a type="text/directory" href="http://h2vx.com/vcf/student.dei.uc.pt/~dmfranc/">vcard</a> or email me at <a class="email" href="mailto:dmfrancisc@gmail.com">dmfrancisc@gmail.com</a>.
-    </p>
-    <p class="contact">You can also contact me via <a class="url" href="xmpp:dmfrancisc@gmail.com">gtalk</a> or <a class="url" href="skype:dmfrancisc?call">skype</a>.
-    </p>
+    <section id="contact">
+      <p>Download my <a type="text/directory" href="http://h2vx.com/vcf/student.dei.uc.pt/~dmfranc/">vcard</a> or email me at <a class="email" href="mailto:hello@dmfranc.com">hello@dmfranc.com</a>.</p>
+      <p>You can also contact me via <a class="url" href="xmpp:dmfrancisc@gmail.com">gtalk</a> or <a class="url" href="skype:dmfrancisc?call">skype</a>.</p>
+    </section>
+
+
+    <div class="spacer"></div>
+
+
+    <!-- Web presence -->
+    <section id="profiles">
+      <div id="show-profiles" class="link">
+        <h2>Places where you can find me</h2>
+      </div>
+      <div id="profiles-title">
+        <h2>Places where you can find me</h2>
+      </div>
+
+      <ul class="profiles">
+        <li class="somenotes"><a href="http://blog.dmfranc.com"              rel="me" class="url">Blog</a></li>
+        <li class="linkedin"><a href="http://linkedin.com/in/dmfrancisco/en" rel="me" class="url">Linkedin</a></li>
+        <li class="github"  ><a href="http://github.com/dmfrancisco"         rel="me" class="url">Github</a></li>
+        <li id="show-more-profiles">Show more</li>
+      </ul>
+
+      <ul class="more-profiles">
+        <li class="twitter" ><a href="http://twitter.com/dmfrancisco"        rel="me">Twitter</a></li>
+        <li class="google"  ><a href="http://google.com/profiles/dmfrancisc" rel="me">Google profile</a></li>
+        <li class="facebook"><a href="http://fb.me/dmfranc"                  rel="me">Facebook</a></li>
+        <li class="lastfm"  ><a href="http://last.fm/user/elgangofeo"        rel="me">Lastfm</a></li>
+      </ul>
+    </section>
 
 
     <div class="spacer"></div>
 
 
     <!-- Projects -->
-    <div id="show-projects" class="link">
-       <h3>Check the projects I've worked on</h3>
-    </div>
-    <div id="projects-title">
-       <h3>Some projects I've worked on</h3>
-    </div>
+    <section id="projects">
+      <div id="show-projects" class="link">
+         <h2>Check the projects I've worked on</h2>
+      </div>
+      <div id="projects-title">
+         <h2>Some projects I've worked on</h2>
+      </div>
 
-    <div id="projects">
       <ul class="projects">
-          <li><a href="http://innovation.dei.uc.pt" title="deinnovation - Video sharing platform about research projects mostly developed at DEI-UC">deinnovation</a> / a video sharing platform.</li>
+          <li><a href="http://innovation.dei.uc.pt/" title="deinnovation - Video sharing platform about research projects mostly developed at DEI-UC">deinnovation</a> / a video sharing platform.</li>
           <li><a href="http://mytweetsd.tumblr.com/" title="mytweet - A command line client application that integrates with Twitter using a REST API">mytweet</a> / client application that integrates with Twitter.</li>
-          <li><a href="http://www.ict-ginseng.eu/" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks">wsnp</a> / gui application for programming WSNs.</li>
+          <li><a href="http://wsnp.dmfranc.com/" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks">wsnp</a> / gui application for programming WSNs.</li>
           <li><a href="http://github.com/dmfrancisco/scurry/" title="scurry - A simple compiler using Python, PLY and LLVM">scurry</a> / toy programming language written in Python.</li>
           <li><a href="#" title="rpr - Information System using Ruby on Rails">rpr</a> / an information system written in Rails.</li>
-          <li><a href="http://dmfrancisco.github.com/activo/" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins">activo</a> / a theme for web applications.</li>
+          <li><a href="http://activo.dmfranc.com/" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins">activo</a> / a theme for web applications.</li>
+          <li id="show-more-projects">Show more</li>
        </ul>
-      <div class="spacer"></div>
-    </div>
 
-
-    <!-- Web presence -->
-    <div id="show-profiles" class="link">
-      <h3>Places where you can find me</h3>
-    </div>
-    <div id="profiles-title">
-      <h3>Places where you can find me</h3>
-    </div>
-
-    <div id="profiles">
-      <ul class="profiles">
-        <li class="linkedin"><a href="http://linkedin.com/in/dmfrancisco/en"  rel="me" class="url">Linkedin</a></li>
-        <li class="twitter" ><a href="http://twitter.com/dmfrancisco"         rel="me" class="url">Twitter</a></li>
-        <li class="github"  ><a href="http://github.com/dmfrancisco"          rel="me" class="url">Github</a></li>
-        <li id="show-more">Show more</li>
-      </ul>
-    </div>
-
-    <div id="more-profiles">
-      <ul class="more-profiles">
-        <li class="somenotes"><a href="http://davidfrancisco.tumblr.com"      rel="me">Some notes</a></li>
-        <li class="google"   ><a href="http://google.com/profiles/dmfrancisc" rel="me">Google profile</a></li>
-        <li class="facebook" ><a href="http://fb.me/dmfranc"                  rel="me">Facebook</a></li>
-        <li class="lastfm"   ><a href="http://www.last.fm/user/elgangofeo"    rel="me">Lastfm</a></li>
-      </ul>
-    </div>
+       <ul class="more-projects" id="flip">
+          <li>
+            <img src="projects/activo-2.png" title="activo 2.0 - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins" />
+            <span class="title"><a href="projects/activo/index.html">activo 2.0</a> / a theme for web applications.</span>
+          </li>
+          <li>
+            <img src="projects/jambaz.png" title="jambaz - Set of audioblogs that aims to share unusual admirable songs" />
+            <span class="title"><a href="projects/jambaz/index.html">jambaz!</a> / an audioblog.</span>
+          </li>
+          <li>
+            <img src="projects/pacwars.png" alt="pacwars - Webdesign for this amazing contest developed by Fabio Pedrosa" />
+            <span class="title"><a href="projects/pacwars/index.html">pacwars</a> / webdesign for a multi-agent programming game.</span>
+          </li>
+          <li>
+            <img src="projects/lenna.png" alt="lenna - Game made for a Multimedia course" />
+            <span class="title"><a href="projects/lenna/index.html">lenna</a> / a flash game.</span>
+          </li>
+          <li>
+            <img src="projects/deinnovation.png" title="deinnovation - Video sharing platform about research projects mostly developed at DEI-UC" />
+            <span class="title"><a href="http://innovation.dei.uc.pt/">deinnovation</a> / a video sharing platform.</span>
+          </li>
+          <li>
+            <img src="projects/mytweet.png" title="mytweet - A command line client application that integrates with Twitter using a REST API" />
+            <span class="title"><a href="http://mytweetsd.tumblr.com/">mytweet</a> / command line client app that integrates with Twitter.</span>
+          </li>
+          <li>
+            <img src="projects/wsnp.png" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks" />
+            <span class="title"><a href="http://wsnp.dmfranc.com/">wsnp</a> /gui application for programming WSNs.</span>
+          </li>
+          <li>
+            <img src="projects/scurry.png" title="scurry - A simple compiler using Python, PLY and LLVM" />
+            <span class="title"><a href="http://github.com/dmfrancisco/scurry/">scurry</a> / toy programming language written in Python.</span>
+          </li>
+          <li>
+            <img src="projects/rpr.png" title="rpr - Information System using Ruby on Rails" />
+            <span class="title"><a href="#">rpr</a> / an information system written in Rails.</span>
+          </li>
+          <li>
+            <img src="projects/activo.png" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins" />
+            <span class="title"><a href="http://activo.dmfranc.com/">activo</a> / a theme for web applications.</span>
+          </li>
+       </ul>
+    </section>
 
   <!-- end vcard -->
   </div>
-
-  <div style="height:60px;"></div>
-</div>
 
 </body>
 </html>
