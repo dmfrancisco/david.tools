@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <!-- Hello! -->
@@ -19,6 +19,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
   <script src="js/jquery-ui-1.7.2.custom.js"></script>
   <script src="js/jquery.jcoverflip.js"></script>
+  <script src="js/modernizr.custom.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function()
@@ -26,6 +27,7 @@
        // Hide elements
        $('#projects-title, .projects, .more-projects').hide();
        $('#profiles-title, .profiles, .more-profiles').hide();
+       $('.more-projects-no-js').hide();
 
        // Show elements
        $('#show-projects').show();
@@ -68,6 +70,7 @@
   <script type="text/javascript">
     jQuery(document).ready(function() {
       jQuery('#flip').jcoverflip({
+        time: 200,
         current: 0,
         beforeCss: function(el, container, offset) {
           var offsetMod = offset;
@@ -226,6 +229,9 @@
             <img src="projects/activo.png" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins" />
             <span class="title"><a href="http://activo.dmfranc.com/">activo</a> / a theme for web applications.</span>
           </li>
+       </ul>
+       <ul class="more-projects-no-js">
+          <li>please enable javascript to see more.</li>
        </ul>
     </section>
 

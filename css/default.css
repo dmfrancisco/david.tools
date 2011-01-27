@@ -1,5 +1,4 @@
 body {
-  width: 600px;
   margin: 55px;
   background: #1d1d1d url('../img/bgd.png');
   color: #b0b0a8;
@@ -80,21 +79,21 @@ ul.profiles li, ul.more-profiles li {
   background: url('../img/master-sprite.png') 0px -271px no-repeat;
 }
 
-ul.profiles li.somenotes     { background-position-y: -84px;  }
-ul.profiles li.linkedin      { background-position-y: -67px;  }
-ul.profiles li.github        { background-position-y: -16px;  }
-ul.more-profiles li.twitter  { background-position-y: -101px; }
-ul.more-profiles li.google   { background-position-y: -33px;  }
-ul.more-profiles li.facebook { background-position-y: 1px;    }
-ul.more-profiles li.lastfm   { background-position-y: -50px;  }
+ul.profiles li.somenotes     { background-position: 0px -84px;  }
+ul.profiles li.linkedin      { background-position: 0px -67px;  }
+ul.profiles li.github        { background-position: 0px -16px;  }
+ul.more-profiles li.twitter  { background-position: 0px -101px; }
+ul.more-profiles li.google   { background-position: 0px -33px;  }
+ul.more-profiles li.facebook { background-position: 0px 1px;    }
+ul.more-profiles li.lastfm   { background-position: 0px -50px;  }
 
-ul.profiles li.somenotes:hover     { background-position-y: -220px; }
-ul.profiles li.linkedin:hover      { background-position-y: -203px; }
-ul.profiles li.github:hover        { background-position-y: -152px; }
-ul.more-profiles li.twitter:hover  { background-position-y: -237px; }
-ul.more-profiles li.google:hover   { background-position-y: -169px; }
-ul.more-profiles li.facebook:hover { background-position-y: -135px; }
-ul.more-profiles li.lastfm:hover   { background-position-y: -186px; }
+ul.profiles li.somenotes:hover     { background-position: 0px -220px; }
+ul.profiles li.linkedin:hover      { background-position: 0px -203px; }
+ul.profiles li.github:hover        { background-position: 0px -152px; }
+ul.more-profiles li.twitter:hover  { background-position: 0px -237px; }
+ul.more-profiles li.google:hover   { background-position: 0px -169px; }
+ul.more-profiles li.facebook:hover { background-position: 0px -135px; }
+ul.more-profiles li.lastfm:hover   { background-position: 0px -186px; }
 
 .hidden, .hidden a {
   height:1px;
@@ -154,4 +153,13 @@ ul#flip, ul#flip li {
   padding: 0;
   display: block;
   list-style-type: none;
+}
+
+.no-js #flip {
+  /* in case javascript is disabled */
+  display: none;
+}
+.more-projects-no-js {
+  list-style: none;
+  color: #fdce26;
 }
