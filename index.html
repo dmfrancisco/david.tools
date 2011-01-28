@@ -35,25 +35,27 @@
        $('#show-more-profiles').show();
        $('#show-more-projects').show();
 
-       // Show elements after mouseover
-       $('#show-projects').mouseover(function() {
+       // Show  projects
+       $('#show-projects').click( function(e) {
          $('#show-projects').hide();
          $('#projects-title').show();
          $('.projects').fadeIn('slow');
-         $('html, body').animate({scrollTop: $('body').height()}, 800);
+         $('html, body').animate({scrollTop: '440px'}, 800);
        });
-       $('#show-profiles').mouseover(function() {
+
+       // Show profiles
+       $('#show-profiles').click( function(e) {
          $('#show-profiles').hide();
          $('#profiles-title').show();
          $('.profiles').fadeIn('slow');
-         $('html, body').animate({scrollTop: $('body').height()}, 800);
+         $('html, body').animate({scrollTop: '260px'}, 800);
        });
 
        // Show more profiles
        $('#show-more-profiles').click( function(e) {
           $('.more-profiles').fadeIn('slow');
           $('#show-more-profiles').hide();
-          $('html, body').animate({scrollTop: $('body').height()}, 800);
+          $('html, body').animate({scrollTop: '260px'}, 800);
        });
 
        // Show more projects
@@ -61,7 +63,7 @@
           $('.more-projects').fadeIn('slow');
           $('.projects').hide();
           $('#show-more-projects').hide();
-          $('html, body').animate({scrollTop: $('body').height()}, 800);
+          $('html, body').animate({scrollTop: '440px'}, 800);
        });
     });
   </script>
