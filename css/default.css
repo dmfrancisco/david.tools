@@ -1,25 +1,65 @@
+html, body {
+  height: 100%;
+}
+
 body {
-  margin: 55px;
   background: #1d1d1d url('../img/bgd.png');
-  color: #b0b0a8;
   font-family: 'Nobile', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  -webkit-text-stroke: 1px transparent; /* force anti-aliasing in chrome */
+}
+
+#page, #footer {
+  margin-right: auto;
+  margin-left: auto;
+  width: 680px;
+}
+
+#page {
+  margin-right: auto;
+  margin-left: auto;
+  width: 680px;
+  min-height: 93%;
+}
+
+#page .content {
+  padding: 65px 55px 0 55px;
+
+  color: #b0b0a8;
   font-size: 18px;
-  text-shadow: #000 0px 1px 0px;
+  text-shadow: #000 0px 1px 0px,
+               rgba(0,0,0,.5) 0px 5px 5px;
+}
+
+#projects {
+  /* This must be the last section */
+  /* The padding is here and not in the page because of the annotations! */
+  padding-bottom: 55px;
+}
+
+#footer .content {
+  padding: 0px 55px 20px 55px;
+}
+
+#footer .content, #footer .content a {
+  color: #2f2f2f;
+  font-size: 12px;
+  text-shadow: #000 0px -1px 0px;
+  -webkit-text-stroke: 0px #2f2f2f; /* don't force anti-aliasing in chrome here */
 }
 
 a {
-  color: #6fe6ff;
+  color: #50e0e1;
   text-decoration: none;
+  outline: 0;
+}
+
+#footer .content a {
+  border-bottom: 1px dashed #2f2f2f;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: normal;
-}
-
-h1 {
-  font-size: 45px;
-  margin-bottom: 25px;
 }
 
 h2 {
@@ -37,6 +77,7 @@ h2 {
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 28px;
+  filter: alpha(opacity=100); opacity: 1.0; /* force anti-aliasing in IE */
 }
 
 #contact p {
@@ -53,17 +94,17 @@ ul.projects, ul.profiles {
   margin-top: 15px;
 }
 
-ul.projects, ul.more-projects, ul.profiles, ul.more-profiles {
+ul.projects, ul.more-projects, ul.profiles {
   list-style-type: none;
 }
 
-ul.projects li, ul.more-projects li, ul.profiles li, ul.more-profiles li {
+ul.projects li, ul.more-projects li, ul.profiles li {
   margin-top: 9px;
   margin-bottom: 9px;
   height: 17px;
 }
 
-ul.profiles li, ul.more-profiles li {
+ul.profiles li {
   padding-left: 27px;
   width: 150px;
   background: url('../img/master-sprite.png') no-repeat;
@@ -79,21 +120,23 @@ ul.profiles li, ul.more-profiles li {
   background: url('../img/master-sprite.png') 0px -271px no-repeat;
 }
 
-ul.profiles li.somenotes     { background-position: 0px -84px;  }
-ul.profiles li.linkedin      { background-position: 0px -67px;  }
-ul.profiles li.github        { background-position: 0px -16px;  }
-ul.more-profiles li.twitter  { background-position: 0px -101px; }
-ul.more-profiles li.google   { background-position: 0px -33px;  }
-ul.more-profiles li.facebook { background-position: 0px 1px;    }
-ul.more-profiles li.lastfm   { background-position: 0px -50px;  }
+ul.profiles li.somenotes { background-position: 0px -84px;  }
+ul.profiles li.linkedin  { background-position: 0px -67px;  }
+ul.profiles li.twitter   { background-position: 0px -101px; }
+ul.profiles li.github    { background-position: 0px -16px;  }
+ul.profiles li.google    { background-position: 0px -33px;  }
+ul.profiles li.zootool   { background-position: 0px -118px; }
+ul.profiles li.facebook  { background-position: 0px 1px;    }
+ul.profiles li.lastfm    { background-position: 0px -50px;  }
 
-ul.profiles li.somenotes:hover     { background-position: 0px -220px; }
-ul.profiles li.linkedin:hover      { background-position: 0px -203px; }
-ul.profiles li.github:hover        { background-position: 0px -152px; }
-ul.more-profiles li.twitter:hover  { background-position: 0px -237px; }
-ul.more-profiles li.google:hover   { background-position: 0px -169px; }
-ul.more-profiles li.facebook:hover { background-position: 0px -135px; }
-ul.more-profiles li.lastfm:hover   { background-position: 0px -186px; }
+ul.profiles li.somenotes:hover { background-position: 0px -220px; }
+ul.profiles li.linkedin:hover  { background-position: 0px -203px; }
+ul.profiles li.twitter:hover   { background-position: 0px -237px; }
+ul.profiles li.github:hover    { background-position: 0px -152px; }
+ul.profiles li.google:hover    { background-position: 0px -169px; }
+ul.profiles li.zootool:hover   { background-position: 0px -254px; }
+ul.profiles li.facebook:hover  { background-position: 0px -135px; }
+ul.profiles li.lastfm:hover    { background-position: 0px -186px; }
 
 .hidden, .hidden a {
   height:1px;
@@ -102,11 +145,63 @@ ul.more-profiles li.lastfm:hover   { background-position: 0px -186px; }
   overflow: hidden;
 }
 
-.ribbon {
-  position: fixed;
-  top: 0;
-  right: 0;
-  border: 0;
+/* Title */
+
+h1 {
+  font-size: 55px;
+  text-shadow: 0 1px 0 #5d5e59,
+               0 2px 0 #63645e,
+               0 3px 0 #696a64,
+               0 6px 1px rgba(0,0,0,.05),
+               0 0 5px rgba(0,0,0,.05),
+               0 1px 3px rgba(0,0,0,.2),
+               0 3px 5px rgba(0,0,0,.1),
+               0 5px 10px rgba(0,0,0,.15),
+               0 10px 10px rgba(0,0,0,.1),
+               0 20px 20px rgba(0,0,0,.05);
+}
+
+h1 span {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6 {
+  position:relative;
+}
+
+.c1 {
+  bottom: -1px;
+  left: 1px;
+  font-size: 60px;
+}
+.c2 {
+  bottom: -1px;
+  left: 1px;
+}
+.c3 {
+  bottom: -2px;
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+}
+.c4 {
+  bottom: -2px;
+  left: -2px;
+  font-size: 60px;
+}
+.c5 {
+  left: -4px;
+  font-size: 55px;
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+}
+.c6 {
+  bottom: -2px;
+  left: -10px;
+  font-size: 65px;
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
 }
 
 /* Cover flip */

@@ -12,59 +12,133 @@
   <meta name="description" content="David Francisco's Personal Webpage">
   <meta name="reply-to" content="hello/at/dmfranc/dot/com">
 
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Nobile'>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/default.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
   <script src="js/jquery-ui-1.7.2.custom.js"></script>
   <script src="js/jquery.jcoverflip.js"></script>
   <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/hashgrid.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function()
     {
+       var body = $('html, body');
+       var profiles = $('#profiles');
+       var projects = $('#projects');
+       var showProfiles = $('#show-profiles');
+       var showProjects = $('#show-projects');
+       var showMoreProfiles = $('#show-more-profiles');
+       var showMoreProjects = $('#show-more-projects');
+
        // Hide elements
        $('#projects-title, .projects, .more-projects').hide();
        $('#profiles-title, .profiles, .more-profiles').hide();
        $('.more-projects-no-js').hide();
+       $('#soleio').hide();
 
        // Show elements
-       $('#show-projects').show();
-       $('#show-profiles').show();
-       $('#show-more-profiles').show();
-       $('#show-more-projects').show();
+       showProfiles.show();
+       showProjects.show();
+       showMoreProfiles.show();
+       showMoreProjects.show();
 
-       // Show  projects
-       $('#show-projects').click( function(e) {
-         $('#show-projects').hide();
+       // Show projects
+       showProjects.click( function(e) {
+         showProjects.hide();
          $('#projects-title').show();
          $('.projects').fadeIn('slow');
-         $('html, body').animate({scrollTop: '440px'}, 800);
+         body.animate({scrollTop: '440px'}, 800);
+          new hashgrid();
        });
 
        // Show profiles
-       $('#show-profiles').click( function(e) {
-         $('#show-profiles').hide();
+       showProfiles.click( function(e) {
+         showProfiles.hide();
          $('#profiles-title').show();
          $('.profiles').fadeIn('slow');
-         $('html, body').animate({scrollTop: '260px'}, 800);
+         body.animate({scrollTop: '260px'}, 800);
+         new hashgrid();
        });
 
        // Show more profiles
-       $('#show-more-profiles').click( function(e) {
-          $('.more-profiles').fadeIn('slow');
-          $('#show-more-profiles').hide();
-          $('html, body').animate({scrollTop: '260px'}, 800);
+       showMoreProfiles.click( function(e) {
+         $('.more-profiles').fadeIn('slow');
+         showMoreProfiles.hide();
+         body.animate({scrollTop: '260px'}, 800);
+         new hashgrid();
        });
 
        // Show more projects
-       $('#show-more-projects').click( function(e) {
-          $('.more-projects').fadeIn('slow');
-          $('.projects').hide();
-          $('#show-more-projects').hide();
-          $('html, body').animate({scrollTop: '440px'}, 800);
+       showMoreProjects.click( function(e) {
+         $('.more-projects').fadeIn('slow');
+         $('.projects').hide();
+         showMoreProjects.hide();
+         $('#soleio').show();
+         body.animate({scrollTop: '440px'}, 800);
+         new hashgrid();
        });
+
+       // Annotations
+       $('.somenotes').mouseover(function() {
+         profiles.css('background', 'url(annotations/somenotes.png) no-repeat 95px 25px');
+       }).mouseout(function() {
+         profiles.css('background', 'none');
+       });
+       $('.linkedin').mouseover(function() {
+         profiles.css('background', 'url(annotations/linkedin.png) no-repeat 105px 25px');
+       }).mouseout(function() {
+         profiles.css('background', 'none');
+       });
+       $('.github').mouseover(function() {
+         profiles.css('background', 'url(annotations/github.png) no-repeat 95px 45px');
+       }).mouseout(function() {
+         profiles.css('background', 'none');
+       });
+       $('.twitter').mouseover(function() {
+         profiles.css('background', 'url(annotations/twitter.png) no-repeat 95px 35px');
+       }).mouseout(function() {
+         profiles.css('background', 'none');
+       });
+       $('.zootool').mouseover(function() {
+         profiles.css('background', 'url(annotations/zootool.png) no-repeat 100px 65px');
+       }).mouseout(function() {
+         profiles.css('background', 'none');
+       });
+       $('.facebook').mouseover(function() {
+         profiles.css('background', 'url(annotations/facebook.png) no-repeat 130px 145px');
+       }).mouseout(function() {
+         profiles.css('background', 'none');
+       });
+       $('.lastfm').mouseover(function() {
+         profiles.css('background', 'url(annotations/lastfm.png) no-repeat 100px 65px');
+       }).mouseout(function() {
+         profiles.css('background', 'none');
+       });
+       $('#activo2').mouseover(function() {
+         projects.css('background', 'url(annotations/external-link-activo.png) no-repeat 30px bottom');
+       }).mouseout(function() {
+         projects.css('background', 'none');
+       });
+       $('#activo').mouseover(function() {
+         projects.css('background', 'url(annotations/external-link-old-activo.png) no-repeat 15px bottom');
+       }).mouseout(function() {
+         projects.css('background', 'none');
+       });
+       $('#deinnovation').mouseover(function() {
+         projects.css('background', 'url(annotations/deinnovation.png) no-repeat 20px bottom');
+       }).mouseout(function() {
+         projects.css('background', 'none');
+       });
+
+       // Grid (Hold down the G key)
+       new hashgrid();
+
+       // $("#about h1").lettering();
     });
   </script>
 
@@ -77,14 +151,14 @@
         beforeCss: function(el, container, offset) {
           var offsetMod = offset;
           return [
-            $.jcoverflip.animationElement(el, { left: (505 - 20*offset)+'px', bottom: '130px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
+            $.jcoverflip.animationElement(el, { left: (410 - 10*offset)+'px', bottom: '130px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
             $.jcoverflip.animationElement(el.find('img'), { width: '160px' }, {})
           ];
         },
         afterCss: function(el, container, offset) {
           var offsetMod = (10 - offset);
           return [
-            $.jcoverflip.animationElement(el, { left: (330 + 20*offset)+'px', bottom: '130px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
+            $.jcoverflip.animationElement(el, { left: (330 + 10*offset)+'px', bottom: '130px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
             $.jcoverflip.animationElement(el.find('img'), { width: '160px' }, {})
           ];
         },
@@ -100,145 +174,144 @@
 </head>
 
 <body>
+<div id="page">
+  <div class="content">
 
-  <!-- Blog Ribbon -->
-  <a href="http://blog.dmfranc.com/"><img class="ribbon" src="http://dmfranc.com/blog/ribbon.png" alt=":has_many notes"></a>
+    <div class="vcard">
 
-  <div class="vcard">
+      <!-- Hidden microformats -->
+      <div class="hidden">
+        <div class="fn n">
+          <span class="given-name">David</span>
+          <span class="family-name">Francisco</span>
+        </div>
 
-    <!-- Hidden microformats -->
-    <div class="hidden">
-      <div class="fn n">
-        <span class="given-name">David</span>
-        <span class="family-name">Francisco</span>
+        <span class="headline title">Student at Universidade de Coimbra</span>
+
+        <div class="adr">
+          <span class="locality">Coimbra</span>
+          <span class="country-name">Portugal</span>
+          <span class="type">Home</span>
+        </div>
+
+        <a href="http://student.dei.uc.pt/~dmfranc" rel="me" class="url">My webpage</a>
+        <img src="http://www.gravatar.com/avatar/790ae9aaf8a42f00845a0140492ca79e?s=200" alt="Photo of David" class="photo" />
       </div>
 
-      <span class="headline title">Student at Universidade de Coimbra</span>
 
-      <div class="adr">
-        <span class="locality">Coimbra</span>
-        <span class="country-name">Portugal</span>
-        <span class="type">Home</span>
-      </div>
+      <!-- Short bio -->
+      <section id="about">
+        <h1><span class="c1">H</span><span class="c2">e</span><span class="c3">l</span><span class="c4">l</span><span class="c5">o</span><span class="c6">!</span></h1>
+        <p>I'm David Francisco. I'm currently taking a degree in Informatics Engineering at the University of Coimbra. <br/>I aspire to work as a web developer.</p>
+      </section>
 
-      <a href="http://student.dei.uc.pt/~dmfranc" rel="me" class="url">My webpage</a>
-      <img src="http://www.gravatar.com/avatar/790ae9aaf8a42f00845a0140492ca79e?s=200" alt="Photo of David" class="photo" />
+
+      <!-- Contact information -->
+      <section id="contact">
+        <p>Download my <a type="text/directory" href="http://h2vx.com/vcf/student.dei.uc.pt/~dmfranc/">vcard</a> or email me at <a class="email" href="mailto:hello@dmfranc.com">hello@dmfranc.com</a>.</p>
+        <p>You can also contact me via <a class="url" href="xmpp:dmfrancisc@gmail.com">gtalk</a> or <a class="url" href="skype:dmfrancisc?call">skype</a>.</p>
+      </section>
+
+
+      <div class="spacer"></div>
+
+
+      <!-- Web presence -->
+      <section id="profiles">
+        <div id="show-profiles" class="link">
+          <h2>Places where you can find me</h2>
+        </div>
+        <div id="profiles-title">
+          <h2>Places where you can find me</h2>
+        </div>
+
+        <ul class="profiles">
+          <li class="somenotes"><a href="http://blog.dmfranc.com"              rel="me" class="url">Tumblr</a></li>
+          <li class="linkedin"><a href="http://linkedin.com/in/dmfrancisco/en" rel="me" class="url">Linkedin</a></li>
+          <li class="twitter" ><a href="http://twitter.com/dmfrancisco"        rel="me" class="url">Twitter</a></li>
+          <li id="show-more-profiles">More</li>
+          <li class="more-profiles github"  ><a href="http://github.com/dmfrancisco"           rel="me">Github</a></li>
+          <li class="more-profiles zootool" ><a href="http://zootool.com/users/davidfrancisco" rel="me">Zootool</a></li>
+          <li class="more-profiles facebook"><a href="http://fb.me/dmfranc"                    rel="me">Facebook</a></li>
+          <li class="more-profiles lastfm"  ><a href="http://last.fm/user/elgangofeo"          rel="me">Lastfm</a></li>
+        </ul>
+
+        <!-- Inside the section to display the annotations -->
+        <div class="spacer"></div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <div id="show-projects" class="link">
+           <h2>Check the projects I've worked on</h2>
+        </div>
+        <div id="projects-title">
+           <h2>Some projects I've worked on</h2>
+        </div>
+
+        <ul class="projects">
+           <li><a href="http://innovation.dei.uc.pt/" title="deinnovation - Video sharing platform about research projects mostly developed at DEI-UC">deinnovation</a> / a video sharing platform.</li>
+           <li><a href="http://wsnp.dmfranc.com/" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks">wsnp</a> / gui application for programming WSNs.</li>
+           <li><a href="http://github.com/dmfrancisco/scurry/" title="scurry - A simple compiler using Python, PLY and LLVM">scurry</a> / toy programming language written in Python.</li>
+           <li><a href="#" title="rpr - Information System using Ruby on Rails">rpr</a> / an information system written in Rails.</li>
+           <li><a href="http://activo.dmfranc.com/" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins">activo</a> / a theme for web applications.</li>
+           <li id="show-more-projects">More</li>
+        </ul>
+
+        <ul class="more-projects" id="flip">
+           <li>
+             <img src="projects/activo-2.png" title="activo 2.0 - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins" />
+             <span class="title"><a id="activo2" href="projects/activo/index.html">activo 2.0</a> / a theme for web applications.</span>
+           </li>
+           <li>
+             <img src="projects/pacwars.png" alt="pacwars - Webdesign for this amazing contest developed by Fabio Pedrosa" />
+             <span class="title"><a href="projects/pacwars/index.html">pacwars</a> / design for a multi-agent programming game.</span>
+           </li>
+           <li>
+             <img src="projects/lenna.png" alt="lenna - Game made for a Multimedia course" />
+             <span class="title"><a href="http://lenna.dmfranc.com">lenna</a> / a flash game.</span>
+           </li>
+           <li>
+             <img src="projects/deinnovation.png" title="deinnovation - Video sharing platform about research projects mostly developed at DEI-UC" />
+             <span class="title"><a id="deinnovation" href="http://innovation.dei.uc.pt/">deinnovation</a> / a video sharing platform.</span>
+           </li>
+           <li>
+             <img src="projects/wsnp.png" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks" />
+             <span class="title"><a href="http://wsnp.dmfranc.com/">wsnp</a> / gui application for programming WSNs.</span>
+           </li>
+           <li>
+             <img src="projects/scurry.png" title="scurry - A simple compiler using Python, PLY and LLVM" />
+             <span class="title"><a href="http://github.com/dmfrancisco/scurry/">scurry</a> / toy programming language written in Python.</span>
+           </li>
+           <li>
+             <img src="projects/rpr.png" title="rpr - Information System using Ruby on Rails" />
+             <span class="title"><a href="#">rpr</a> / an information system written in Rails.</span>
+           </li>
+           <li>
+             <img src="projects/jambaz.png" title="jambaz - Set of audioblogs that aims to share unusual admirable songs" />
+             <span class="title"><a href="http://desierto.tumblr.com">jambaz!</a> / web design for an audioblog.</span>
+           </li>
+           <li>
+             <img src="projects/activo.png" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins" />
+             <span class="title"><a id="activo" href="http://activo.dmfranc.com/">activo</a> / a theme for web applications.</span>
+           </li>
+        </ul>
+        <ul class="more-projects-no-js">
+           <li>please enable javascript to see more.</li>
+        </ul>
+      </section>
+
+    <!-- end vcard -->
     </div>
-
-
-    <!-- Short bio -->
-    <section id="about">
-      <h1>Hello!</h1>
-      <p>I'm David Francisco. I'm currently taking a degree in Informatics Engineering at the University of Coimbra. <br/>I aspire to work as a web developer.</p>
-    </section>
-
-
-    <!-- Contact information -->
-    <section id="contact">
-      <p>Download my <a type="text/directory" href="http://h2vx.com/vcf/student.dei.uc.pt/~dmfranc/">vcard</a> or email me at <a class="email" href="mailto:hello@dmfranc.com">hello@dmfranc.com</a>.</p>
-      <p>You can also contact me via <a class="url" href="xmpp:dmfrancisc@gmail.com">gtalk</a> or <a class="url" href="skype:dmfrancisc?call">skype</a>.</p>
-    </section>
-
-
-    <div class="spacer"></div>
-
-
-    <!-- Web presence -->
-    <section id="profiles">
-      <div id="show-profiles" class="link">
-        <h2>Places where you can find me</h2>
-      </div>
-      <div id="profiles-title">
-        <h2>Places where you can find me</h2>
-      </div>
-
-      <ul class="profiles">
-        <li class="somenotes"><a href="http://blog.dmfranc.com"              rel="me" class="url">Blog</a></li>
-        <li class="linkedin"><a href="http://linkedin.com/in/dmfrancisco/en" rel="me" class="url">Linkedin</a></li>
-        <li class="github"  ><a href="http://github.com/dmfrancisco"         rel="me" class="url">Github</a></li>
-        <li id="show-more-profiles">Show more</li>
-      </ul>
-
-      <ul class="more-profiles">
-        <li class="twitter" ><a href="http://twitter.com/dmfrancisco"        rel="me">Twitter</a></li>
-        <li class="google"  ><a href="http://google.com/profiles/dmfrancisc" rel="me">Google profile</a></li>
-        <li class="facebook"><a href="http://fb.me/dmfranc"                  rel="me">Facebook</a></li>
-        <li class="lastfm"  ><a href="http://last.fm/user/elgangofeo"        rel="me">Lastfm</a></li>
-      </ul>
-    </section>
-
-
-    <div class="spacer"></div>
-
-
-    <!-- Projects -->
-    <section id="projects">
-      <div id="show-projects" class="link">
-         <h2>Check the projects I've worked on</h2>
-      </div>
-      <div id="projects-title">
-         <h2>Some projects I've worked on</h2>
-      </div>
-
-      <ul class="projects">
-          <li><a href="http://innovation.dei.uc.pt/" title="deinnovation - Video sharing platform about research projects mostly developed at DEI-UC">deinnovation</a> / a video sharing platform.</li>
-          <li><a href="http://mytweetsd.tumblr.com/" title="mytweet - A command line client application that integrates with Twitter using a REST API">mytweet</a> / client application that integrates with Twitter.</li>
-          <li><a href="http://wsnp.dmfranc.com/" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks">wsnp</a> / gui application for programming WSNs.</li>
-          <li><a href="http://github.com/dmfrancisco/scurry/" title="scurry - A simple compiler using Python, PLY and LLVM">scurry</a> / toy programming language written in Python.</li>
-          <li><a href="#" title="rpr - Information System using Ruby on Rails">rpr</a> / an information system written in Rails.</li>
-          <li><a href="http://activo.dmfranc.com/" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins">activo</a> / a theme for web applications.</li>
-          <li id="show-more-projects">Show more</li>
-       </ul>
-
-       <ul class="more-projects" id="flip">
-          <li>
-            <img src="projects/activo-2.png" title="activo 2.0 - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins" />
-            <span class="title"><a href="projects/activo/index.html">activo 2.0</a> / a theme for web applications.</span>
-          </li>
-          <li>
-            <img src="projects/jambaz.png" title="jambaz - Set of audioblogs that aims to share unusual admirable songs" />
-            <span class="title"><a href="projects/jambaz/index.html">jambaz!</a> / an audioblog.</span>
-          </li>
-          <li>
-            <img src="projects/pacwars.png" alt="pacwars - Webdesign for this amazing contest developed by Fabio Pedrosa" />
-            <span class="title"><a href="projects/pacwars/index.html">pacwars</a> / webdesign for a multi-agent programming game.</span>
-          </li>
-          <li>
-            <img src="projects/lenna.png" alt="lenna - Game made for a Multimedia course" />
-            <span class="title"><a href="projects/lenna/index.html">lenna</a> / a flash game.</span>
-          </li>
-          <li>
-            <img src="projects/deinnovation.png" title="deinnovation - Video sharing platform about research projects mostly developed at DEI-UC" />
-            <span class="title"><a href="http://innovation.dei.uc.pt/">deinnovation</a> / a video sharing platform.</span>
-          </li>
-          <li>
-            <img src="projects/mytweet.png" title="mytweet - A command line client application that integrates with Twitter using a REST API" />
-            <span class="title"><a href="http://mytweetsd.tumblr.com/">mytweet</a> / command line client app that integrates with Twitter.</span>
-          </li>
-          <li>
-            <img src="projects/wsnp.png" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks" />
-            <span class="title"><a href="http://wsnp.dmfranc.com/">wsnp</a> /gui application for programming WSNs.</span>
-          </li>
-          <li>
-            <img src="projects/scurry.png" title="scurry - A simple compiler using Python, PLY and LLVM" />
-            <span class="title"><a href="http://github.com/dmfrancisco/scurry/">scurry</a> / toy programming language written in Python.</span>
-          </li>
-          <li>
-            <img src="projects/rpr.png" title="rpr - Information System using Ruby on Rails" />
-            <span class="title"><a href="#">rpr</a> / an information system written in Rails.</span>
-          </li>
-          <li>
-            <img src="projects/activo.png" title="activo - A theme for the Web-app-theme, Formtastic and Attrtastic Rails plugins" />
-            <span class="title"><a href="http://activo.dmfranc.com/">activo</a> / a theme for web applications.</span>
-          </li>
-       </ul>
-       <ul class="more-projects-no-js">
-          <li>please enable javascript to see more.</li>
-       </ul>
-    </section>
-
-  <!-- end vcard -->
   </div>
+</div>
+
+<section id="footer">
+  <div class="content">
+    <span>Built with HTML5 + CSS3 + jQuery.</span>
+    <span id="soleio">That little browser window was made by <a href="http://dribbble.com/shots/89932-Mini-Browser">Soleio</a>.</span>
+  </div>
+</section>
 
 </body>
 </html>
