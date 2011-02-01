@@ -148,6 +148,7 @@ ul.profiles li.lastfm:hover    { background-position: 0px -186px; }
 /* Title */
 
 h1 {
+  margin-bottom: 45px;
   font-size: 55px;
   text-shadow: 0 1px 0 #5d5e59,
                0 2px 0 #63645e,
@@ -164,7 +165,6 @@ h1 {
 h1 span {
   display: inline-block;
   position: relative;
-  margin-bottom: 45px;
 }
 
 .char1 {
