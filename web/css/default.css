@@ -167,36 +167,32 @@ h1 span {
   margin-bottom: 45px;
 }
 
-.c1, .c2, .c3, .c4, .c5, .c6 {
-  position:relative;
-}
-
-.c1 {
+.char1 {
   bottom: -1px;
   left: 1px;
   font-size: 60px;
 }
-.c2 {
+.char2 {
   bottom: -1px;
   left: 1px;
 }
-.c3 {
+.char3 {
   bottom: -2px;
   -webkit-transform: rotate(1deg);
   -moz-transform: rotate(1deg);
 }
-.c4 {
+.char4 {
   bottom: -2px;
   left: -2px;
   font-size: 60px;
 }
-.c5 {
+.char5 {
   left: -4px;
   font-size: 55px;
   -webkit-transform: rotate(-1deg);
   -moz-transform: rotate(-1deg);
 }
-.c6 {
+.char6 {
   bottom: -2px;
   left: -10px;
   font-size: 65px;
@@ -232,11 +228,6 @@ h1 span {
 
 #flip a {
   outline: none;
-}
-
-#wrapper {
-  overflow: hidden;
-  position: relative;
 }
 
 .ui-jcoverflip--item {
