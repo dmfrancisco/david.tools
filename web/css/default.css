@@ -33,7 +33,7 @@ body {
 #projects {
   /* This must be the last section */
   /* The padding is here and not in the page because of the annotations! */
-  padding-bottom: 55px;
+  padding-bottom: 65px;
 }
 
 #footer .content {
@@ -98,7 +98,7 @@ ul.projects, ul.more-projects, ul.profiles {
   list-style-type: none;
 }
 
-ul.projects li, ul.more-projects li, ul.profiles li {
+ul.projects li, ul.profiles li {
   margin-top: 9px;
   margin-bottom: 9px;
   height: 17px;
@@ -213,11 +213,12 @@ h1 span {
 
 #flip {
   height: 270px;
+  display: none; /* in case javascript is disabled */
 }
 
 #flip .ui-jcoverflip--title {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
 }
 
 #flip img {
@@ -241,10 +242,6 @@ ul#flip, ul#flip li {
   list-style-type: none;
 }
 
-.no-js #flip {
-  /* in case javascript is disabled */
-  display: none;
-}
 .more-projects-no-js {
   list-style: none;
   color: #fdce26;

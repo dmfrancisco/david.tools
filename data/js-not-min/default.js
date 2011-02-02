@@ -45,6 +45,7 @@ $(document).ready(function()
 
    // Show more projects
    showMoreProjects.click( function(e) {
+     projects.css('background', 'url(annotations/click.png) no-repeat 380px 70px');
      $('.more-projects').fadeIn('slow');
      $('.projects').hide();
      showMoreProjects.hide();
@@ -117,20 +118,20 @@ $(document).ready(function()
        beforeCss: function(el, container, offset) {
          var offsetMod = offset;
          return [
-           $.jcoverflip.animationElement(el, { left: (410 - 10*offset)+'px', bottom: '130px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
+           $.jcoverflip.animationElement(el, { left: (410 - 10*offset)+'px', bottom: '25px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
            $.jcoverflip.animationElement(el.find('img'), { width: '160px' }, {})
          ];
        },
        afterCss: function(el, container, offset) {
          var offsetMod = (10 - offset);
          return [
-           $.jcoverflip.animationElement(el, { left: (330 + 10*offset)+'px', bottom: '130px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
+           $.jcoverflip.animationElement(el, { left: (330 + 10*offset)+'px', bottom: '25px' }, { 0: {'z-index': offsetMod, cursor: 'pointer' } }),
            $.jcoverflip.animationElement(el.find('img'), { width: '160px' }, {})
          ];
        },
        currentCss: function(el, container) {
          return [
-           $.jcoverflip.animationElement(el, { left: '-5px', bottom: '240px' }, { 0: {'z-index': '11', cursor: 'default' } }),
+           $.jcoverflip.animationElement(el, { left: '-5px', bottom: '20px' }, { 0: {'z-index': '11', cursor: 'default' } }),
            $.jcoverflip.animationElement(el.find('img'), { width: '320px' }, { })
          ];
        }
