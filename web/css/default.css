@@ -6,18 +6,19 @@ body {
   background: #1d1d1d url('../img/bgd.png');
   font-family: 'Nobile', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
   -webkit-font-smoothing: antialiased; /* force anti-aliasing in chrome */
+  overflow-x: hidden;
 }
 
 #page, #footer {
   margin-right: auto;
   margin-left: auto;
-  width: 680px;
+  max-width: 680px;
 }
 
 #page {
   margin-right: auto;
   margin-left: auto;
-  min-height: 93%;
+  min-height: 92%;
 }
 
 #page .content {
@@ -72,7 +73,7 @@ h2 {
 }
 
 #about {
-  width: 550px;
+  max-width: 550px;
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 28px;
@@ -247,6 +248,9 @@ ul#flip, ul#flip li {
 }
 
 @media only screen and (max-width: 680px) {
+  body {
+    overflow-x: visible;
+  }
   #page, #footer {
     width: auto;
   }
