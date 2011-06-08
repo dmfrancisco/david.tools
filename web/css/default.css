@@ -17,7 +17,6 @@ body {
 #page {
   margin-right: auto;
   margin-left: auto;
-  width: 680px;
   min-height: 93%;
 }
 
@@ -90,15 +89,15 @@ div.spacer {
   height: 35px;
 }
 
-ul.projects, ul.profiles {
+ul.projects, ul.projects-text-list, ul.profiles {
   margin-top: 15px;
 }
 
-ul.projects, ul.more-projects, ul.profiles {
+ul.projects, ul.projects-text-list, ul.more-projects, ul.profiles {
   list-style-type: none;
 }
 
-ul.projects li, ul.profiles li {
+ul.projects li, ul.projects-text-list li, ul.profiles li {
   margin-top: 9px;
   margin-bottom: 9px;
   height: 17px;
@@ -245,4 +244,93 @@ ul#flip, ul#flip li {
 .more-projects-no-js {
   list-style: none;
   color: #fdce26;
+}
+
+@media only screen and (max-width: 680px) {
+  #page, #footer {
+    width: auto;
+  }
+  #page .content {
+    padding: 35px 35px 0 35px;
+  }
+  #footer .content {
+    padding: 0px 35px 20px 35px;
+  }
+  #projects {
+    padding-bottom: 35px;
+  }
+  #about {
+    max-width: 400px;
+    width: auto;
+  }
+  ul.projects li, ul.projects-text-list li, ul.profiles li {
+    height: auto;
+    margin-top: 3px;
+    margin-bottom: 6px;
+  }
+  #profiles {
+    /* Hide annotations */
+    background: none !important;
+  }
+  ul.projects li, ul.projects-text-list li {
+    line-height: 19px;
+  }
+  ul.profiles li {
+    height: 17px;
+  }
+
+  #about {
+    line-height: 21px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .char1 {
+    font-size: 40px;
+  }
+  .char2 {
+  }
+  .char3 {
+  }
+  .char4 {
+    font-size: 40px;
+  }
+  .char5 {
+    font-size: 40px;
+  }
+  .char6 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  #page .content {
+    font-size: 14px;
+  }
+  #about {
+    font-size: 14px;
+  }
+  #contact p {
+    font-size: 12px;
+  }
+}
+
+#is-mobile {
+  /* Used to avoid annotations prefetching on mobile */
+  display: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #is-mobile {
+    display: block;
+  }
+  h1 {
+    margin-bottom: 30px;
+  }
+  #page .content {
+    padding: 40px 20px 0 25px;
+  }
+  #footer .content {
+    padding: 0px 20px 20px 25px;
+  }
 }
