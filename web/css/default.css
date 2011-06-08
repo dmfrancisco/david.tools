@@ -5,7 +5,7 @@ html, body {
 body {
   background: #1d1d1d url('../img/bgd.png');
   font-family: 'Nobile', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-  -webkit-text-stroke: 1px transparent; /* force anti-aliasing in chrome */
+  -webkit-font-smoothing: antialiased; /* force anti-aliasing in chrome */
 }
 
 #page, #footer {
@@ -44,7 +44,7 @@ body {
   color: #2f2f2f;
   font-size: 12px;
   text-shadow: #000 0px -1px 0px;
-  -webkit-text-stroke: 0px #2f2f2f; /* don't force anti-aliasing in chrome here */
+  -webkit-font-smoothing: subpixel-antialiased; /* don't force anti-aliasing in chrome here */
 }
 
 a {
