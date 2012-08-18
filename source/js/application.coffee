@@ -238,3 +238,8 @@ $(document).ready ->
     $body.bind 'scroll DOMMouseScroll mousewheel', (e) ->
         if e.which > 0 || e.type == "mousedown" || e.type == "mousewheel"
             $body.stop()
+
+    # Avoid empty hash tag links from scrolling to top
+    $('a[href="#"]').click ->
+        return false
+
