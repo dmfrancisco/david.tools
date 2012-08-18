@@ -66,9 +66,13 @@ configure :build do
 
   # Gzip text files
   activate :gzip
+  # See https://gist.github.com/2200790
+  # and http://guides.rubyonrails.org/v3.1.0/asset_pipeline.html#server-configuration
 
   # Pretty URLs (Directory Indexes)
   activate :directory_indexes
+  page "/404.html", :directory_index => false
+  page "/500.html", :directory_index => false
 end
 
 after_configuration do
