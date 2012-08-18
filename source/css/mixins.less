@@ -18,6 +18,7 @@
 
 .radial-with-image(@innerColor: #555, @outerColor: #333, @image, @fallbackColor)  {
   background-color: @fallbackColor;
+  background-image: none; // IE9 supports multiple backgrounds but does not support this kind of gradient (?)
   background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(@innerColor), to(@outerColor)), @image;
   background-image: -webkit-radial-gradient(circle, @innerColor, @outerColor), @image;
   background-image: -moz-radial-gradient(circle, @innerColor, @outerColor), @image;

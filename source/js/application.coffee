@@ -71,7 +71,9 @@ $(document).ready ->
     $projects.list.hide() # because if JavaScript is disabled, it must be presented to the user
     $profiles.title.addClass("link") # Make subtitles look like links
     $projects.title.addClass("link")
-    $("#about h1").lettering() # Apply custom styles to each letter of the main title
+
+    # Apply custom styles to each letter of the main title
+    $("#about h1").lettering() unless $('html').hasClass('oldie')
 
     # Prefetch hand-written annotations if its not a small screen
     prefetch() unless $('html').hasClass('mobile')
@@ -157,6 +159,11 @@ $(document).ready ->
     display_annotation $projects.section, $("#activo"),    "activo"
     display_annotation $projects.section, $("#deinnovation"), "deinnovation"
 
+
+    media_query_support = Modernizr.mq('only all')
+    is_modern_and_large_screen = ->
+        return media_query_support and $(document).width() > settings.large_screen
+
     # Initialize cover flip
     $('body').on 'responsiveImagesLoaded', ->
         $('#flip').jcoverflip
@@ -166,7 +173,7 @@ $(document).ready ->
             beforeCss: (el, container, offset) ->
                 offsetMod = offset
                 hOffset = 416
-                if $(document).width() > settings.large_screen
+                if is_modern_and_large_screen()
                     thumbWidth = '170px'
                     bottomPadding = '34px'
                     hOffset += 70
@@ -189,7 +196,7 @@ $(document).ready ->
             afterCss: (el, container, offset) ->
                 offsetMod = 13 - offset
                 hOffset = 330
-                if $(document).width() > settings.large_screen
+                if is_modern_and_large_screen()
                     thumbWidth = '170px'
                     bottomPadding = '34px'
                     hOffset += 70
@@ -210,7 +217,7 @@ $(document).ready ->
                 }, {})]
 
             currentCss: (el, container) ->
-                if $(document).width() > settings.large_screen
+                if is_modern_and_large_screen()
                     thumbWidth = '395px'
                 else
                     thumbWidth = '320px'

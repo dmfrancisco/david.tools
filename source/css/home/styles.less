@@ -14,6 +14,12 @@ html, body {
 }
 
 html {
+  background-color: #1d1d1d;
+  background-image: url('../../img/bgd.png');
+  background-repeat: repeat;
+}
+html.multiplebgs {
+  // If browser supports multiple backgrounds, add both vignette effect and texture
   .radial-with-image(transparent, rgba(0,0,0,.5), url('../../img/bgd.png'), #1d1d1d);
 }
 
