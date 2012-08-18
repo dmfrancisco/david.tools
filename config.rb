@@ -56,7 +56,10 @@ configure :build do
   # Compress PNGs after build
   # First: gem install middleman-smusher
   # require "middleman-smusher"
-  activate :smusher
+  # activate :smusher
+  #
+  # I'm doing this manually, since smusher removes the bKGD chunk, which defines
+  # the fallback color for browsers that don't support the alpha channel (IE6)
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
