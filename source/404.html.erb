@@ -1,22 +1,22 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Page not found</title>
+  <link rel="shortcut icon" href="/error-favicon.ico">
 
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <style>
     body {
       margin: 0;
       padding: 80px 100px;
-      font: 13px "Helvetica Neue", "Lucida Grande", "Arial";
-      background: #ECE9E9 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ECE9E9));
-      background: #ECE9E9 -moz-linear-gradient(top, #fff, #ECE9E9);
-      background-repeat: no-repeat;
-      color: #555;
+      font: 13px "Lato", "Helvetica Neue", "Lucida Grande", "Arial";
+      background: white;
+      color: black;
       -webkit-font-smoothing: antialiased;
+      border-top: 7px solid black;
     }
     h1, h2, h3 {
       margin: 0;
-      font-size: 22px;
-      color: #343434;
     }
     h1 {
       font-size: 60px;
@@ -27,7 +27,7 @@
       font-weight: normal;
     }
     p {
-      font-size: 23px;
+      font-size: 25px;
       padding-left: 1px;
     }
   </style>
@@ -38,5 +38,8 @@
     <h2>The page you are looking for doesn't exist.</h2>
     <p>You may have mistyped the address or the page may have moved.</p>
   </div>
+
+  <script src="js/libs/favicon.min.js"></script>
+  <script> favicon.animate(["/error-favicon.ico", "/favicon.ico"]) </script>
 </body>
 </html>
