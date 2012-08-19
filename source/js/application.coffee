@@ -243,3 +243,10 @@ $(document).ready ->
     $('a[href="#"]').click ->
         return false
 
+    # Simple SPAM protection (inspired by playground.deaxon.com/js/no-spam/)
+    # This breaks the microformats vcard
+    # $('.email').each ->
+    #     protected_email = $(this).html()
+    #     protected_email = protected_email.replace(" {at} ", "@")
+    #     protected_email = protected_email.replace(" {dot} ", ".")
+    #     $(this).html(protected_email).replaceWith("<a href=\"mailto:" + $(this).text() + "\">" + $(this).text() + "</a>")
