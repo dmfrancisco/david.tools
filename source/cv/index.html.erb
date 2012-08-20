@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <!--  _   _      _ _       _
+       | | | | ___| | | ___ | |
+       | |_| |/ _ \ | |/ _ \| |
+       |  _  |  __/ | | (_) |_|
+       |_| |_|\___|_|_|\___/(_)
+
+       Hello, it's nice to see you here! If you want to read the CSS source,
+       go to "/css/cv/base.css", "/css/cv/skeleton.css" and "/css/cv/layout.css".
+
+       This is a valid HResume. More info at: microformatshiv.com/hresume.htm
+
+       This wouldn’t be so nice to build without Skeleton, a beautiful boilerplate
+       for responsive, mobile-friendly development: getskeleton.com/
+
+       This work is licensed under a Creative Commons Attribution-ShareAlike
+       3.0 Unported License.
+  -->
+   <meta charset="utf-8">
+
+   <title>Curriculum Vitae of David Francisco</title>
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="author" content="David Marquês Francisco">
+   <meta name="description" content="David Francisco's Curriculum Vitae">
+   <meta name="reply-to" content="hello/at/dmfranc/dot/com">
+
+   <%= stylesheet_link_tag "cv/styles", :media => 'all' %>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+</head>
+<body>
+   <div class="container hresume">
+      <header class="offset-by-five ten columns">
+         <nav>
+            <a href="#" class="setlang full en">Ler em Português &rarr;</a>
+            <a href="#" class="setlang less en">PT &rarr;</a>
+            <a href="#" class="setlang full pt">Read it in English &rarr;</a>
+            <a href="#" class="setlang less pt">EN &rarr;</a>
+         </nav>
+
+         <h4>Curriculum Vit&aelig;</h4>
+         <h1>David Francisco</h1>
+         <p class="en"><em>This document is a work in progress.</em></p>
+         <p class="pt"><em>Este documento encontra-se em desenvolvimento.</em></p>
+      </header>
+
+      <section id="overview">
+         <address class="contact vcard">
+            <span class="fn" style="display:none">David Marquês Francisco</span>
+
+            <!-- Current position -->
+            <span style="display:none" class="title">Web developer</span>
+            <span style="display:none" class="org">IPN</span>
+
+            <span class="cat five columns en">Email</span>
+            <span class="cat five columns pt">Correio electrónico</span>
+            <p class="seven columns">
+               <a class="email" href="mailto:hello@dmfranc.com">hello@dmfranc.com</a>
+            </p>
+
+            <span class="cat three columns en">
+               <p class="link-photo" hidden>
+                  <a href="avatar.gif">
+                    <img src="avatar.gif" width="125" height="125" alt="Photo of David" class="photo">
+                  </a>
+               </p>
+            </span>
+
+            <span class="cat five columns en">Address</span>
+            <span class="cat five columns pt">Endereço</span>
+            <p class="adr seven columns">
+               <span class="locality">Coimbra</span>,
+               <span class="country-name">Portugal</span>
+            </p>
+
+            <span class="cat five columns en">Website</span>
+            <span class="cat five columns pt">Página pessoal</span>
+            <p class="seven columns">
+               <a class="url" href="http://dmfranc.com">http://dmfranc.com</a>
+            </p>
+         </address>
+
+         <span class="cat five columns en">Birth date</span>
+         <span class="cat five columns pt">Data de nascimento</span>
+         <p class="seven columns">
+            <span class="en">28th July 1989</span>
+            <span class="pt">28 Julho 1989</span>
+         </p>
+      </section>
+
+      <div class="offset-by-five ten columns">
+         <span id="summary-en"></span>
+         <span id="summary-pt"></span>
+         <hr />
+      </div>
+
+      <section id="summary" class="offset-by-five ten columns">
+         <h2>
+            <span class="en">Summary</span>
+            <a class="headerlink en" href="#summary-en" title="Permalink to this headline">&para;</a>
+
+            <span class="pt">Resumo</span>
+            <a class="headerlink pt" href="#summary-pt" title="Ligação permanente para esta secção">&para;</a>
+         </h2>
+
+         <p class="summary full en">
+            MSc graduate from the Department of Informatics Engineering of the University
+            of Coimbra, currently working at the Pedro Nunes Institute. Particularly interested
+            in web development (both front and back-end), web design and web usability.
+            Passionate about open source and open specifications.
+         </p>
+         <p class="less en">
+            MSc graduate in Informatics Engineering from
+            <abbr title="Department of Informatics Engineering of the University of Coimbra">DEI-UC</abbr>.
+            I'm particularly interested in web development, web design and web usability.
+         </p>
+
+         <p class="summary full pt">
+            Completou o mestrado no Departamento de Engenharia Informática da Universidade
+            de Coimbra, estando actualmente empregue no Instituto Pedro Nunes.
+            Interessado no desenvolvimento para a web (tanto ao nível do
+            <em>front-end</em> como do <em>back-end</em>), <em>web design</em> e usabilidade.
+            Fascinado pela criação de software de código aberto e por especificações abertas.
+         </p>
+         <p class="less pt">
+            Completou o mestrado em Engenharia Informática no
+            <abbr title="Department of Informatics Engineering of the University of Coimbra">DEI-UC</abbr>.
+            Interessado no desenvolvimento para a web, web design e usabilidade.
+         </p>
+      </section>
+
+      <div class="offset-by-five ten columns">
+         <span id="experience-en"></span>
+         <span id="experience-pt"></span>
+         <hr />
+      </div>
+
+      <section id="experience" class="vcalendar">
+         <h2 class="offset-by-five ten columns">
+            <span class="en">Experience</span>
+            <a class="headerlink en" href="#experience-en" title="Permalink to this headline">&para;</a>
+
+            <span class="pt">Experiência</span>
+            <a class="headerlink pt" href="#experience-pt" title="Ligação permanente para esta secção">&para;</a>
+         </h2>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2011-09</span>
+              <span class="pt">09/2011</span>
+              &mdash;
+              <span class="dtend en">2012-07</span>
+              <span class="pt">07/2012</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Intern at
+                <a href="http://ipn.pt/si/initapplication.do?language=en_GB">Pedro Nunes Institute</a></strong>
+              Worked on a Platform for Interoperable Web Applications.
+              More details will be available soon.
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Estagiário no
+                <a href="http://ipn.pt/si/initapplication.do?language=pt_PT">Instituto Pedro Nunes</a></strong>
+              Desenvolveu uma Plataforma Interoperável para Serviços Web Centrados no Utilizador.
+              Serão adicionados mais detalhes brevemente.
+           </p>
+         </div>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2011-02</span>
+              <span class="pt">02/2011</span>
+              &mdash;
+              <span class="dtend en">2011-06</span>
+              <span class="pt">06/2011</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Software Architect in the Splash! project</strong>
+              This project was developed for a Software Project Management course,
+              completed with the classification of 20 values. The project consisted on developing
+              an application for web and mobile devices in order to improve the user experience of
+              everyone involved in swimming tournaments, through the development of usable interfaces
+              and by means of integration with existing systems. The client
+              was the Swimming Association of Coimbra.
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Arquiteto de Sistemas no projeto Splash!</strong>
+              Este projecto foi desenvolvido no Departamento de Engenharia Informática da
+              Universidade de Coimbra, no contexto da cadeira Gestão de Projetos de Software,
+              à qual obteve a classificação de 20 valores. O referido projeto tinha como cliente
+              a Associação de Natação de Coimbra e consistiu no desenvolvimento de uma aplicação
+              para a Web e dispositivos móveis que melhorasse a experiência de utilização de
+              todos os envolvidos em torneios de natação, através do desenvolvimento de interfaces
+              usáveis e integrando-a com os sistemas existentes na associação.
+           </p>
+         </div>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2010-11</span>
+              <span class="pt">11/2010</span>
+              &mdash;
+              <span class="dtend en">2011-01</span>
+              <span class="pt">01/2011</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Web Developer and Web Designer for the Epilepsiæ project</strong>
+              Part of the team that developed the new portal of the European project Epilepsiæ
+              (available at <a href="http://epilepsiae.eu">epilepsiae.eu</a>).
+           </p>
+           <p class="summary ten columns pt">
+              <strong><em>Web Developer</em> e <em>Web Designer</em> para o projecto Epilepsiæ</strong>
+              Fez parte da equipa que desenvolveu o novo portal do projeto europeu Epilepsiæ
+              (disponível em <a href="http://epilepsiae.eu">epilepsiae.eu</a>).
+           </p>
+         </div>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2010-10</span>
+              <span class="pt">10/2010</span>
+              &mdash;
+              <span class="dtend en">2011-01</span>
+              <span class="pt">01/2011</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Web Developer in the DocWS project</strong>
+              Part of a two-person team in a Semantic Web course that developed a Web-based
+              Document Management System which makes use of Semantic Web technologies.
+              Tools such as Apache Lucene, Jena TDB, Apache Tika, Stanford Named Entity Recognizer,
+              and others, were used alongside the jRuby on Rails framework.
+           </p>
+           <p class="summary ten columns pt">
+              <strong><em>Web Developer</em> no projecto DocWS</strong>
+              Parte de uma equipa de duas pessoas na cadeira de Web Semântica, desenvolveu
+              um Sistema de Gestão de Documentos para a Web que faz uso de tecnologias da
+              Web Semântica. Ferramentas como Apache Lucene, Jena TDB, Apache Tika, Stanford
+              Named Entity Recognizer, entre outras, foram utilizadas juntamente com a
+              <em>framework</em> jRuby on Rails.
+           </p>
+         </div>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2010-07</span>
+              <span class="pt">07/2010</span>
+              &mdash;
+              <span class="en">Present</span>
+              <span class="pt">Presente</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Creator and maintainer of the Activo project</strong>
+              Started and mantains the open source project Activo, a consistent visual theme
+              with support for several Ruby on Rails plugins (available at
+              <a href="http://activo.dmfranc.com">activo.dmfranc.com</a>).
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Criador do projecto Activo</strong>
+              Criou e mantém o projeto <em>open-source</em> Activo, um aspecto visual uniforme
+              para integração de vários <em>plugins</em> para Ruby on Rails (disponível em
+              <a href="http://activo.dmfranc.com">activo.dmfranc.com</a>).
+           </p>
+         </div>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2010-03</span>
+              <span class="pt">03/2010</span>
+              &mdash;
+              <span class="en">2011-09</span>
+              <span class="pt">09/2011</span>
+           </span>
+
+           <p class="summary ten columns en">
+              <strong>Grant holder at <a href="http://ipn.pt/si/initapplication.do?language=en_GB">Pedro Nunes Institute</a></strong>
+              Developed a web-based Information System at the Laboratory of Informatics
+              and Systems from Pedro Nunes Institute.
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Bolseiro no <a href="http://ipn.pt/si/initapplication.do?language=pt_PT">Instituto Pedro Nunes</a></strong>
+              Desenvolveu um Sistema de Informação Web para a empresa Rui Prata Ribeiro
+              Lda. no Laboratório de Informática e Sistemas do Instituto Pedro Nunes.
+           </p>
+         </div>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2009-09-28</span>
+              <span class="pt">28/09/2009</span>
+              &mdash;
+              <span class="dtend en">2011-01</span>
+              <span class="pt">01/2011</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Web designer at Department of Design and Multimedia of
+                <a href="http://jeknowledge.com">jeKnowledge</a></strong>
+           </p>
+           <p class="summary ten columns pt">
+              <strong><em>Web designer</em> no Departamento de Design e Multimédia da
+                <a href="http://jeknowledge.com">jeKnowledge</a></strong>
+           </p>
+         </div>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2008-09-28</span>
+              <span class="pt">28/09/2008</span>
+              &mdash;
+              <span class="dtend en">2009-12-19</span>
+              <span class="pt">19/12/2009</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Founder of <a href="http://innovation.dei.uc.pt">deinnovation</a></strong>
+              Part of the deinnovation project, a video sharing platform about
+              research projects developed at the Faculty of Sciences and Technology of the
+              University of Coimbra (available at
+              <a href="http://innovation.dei.uc.pt">innovation.dei.uc.pt</a>).
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Fundador do projecto <a href="http://innovation.dei.uc.pt">deinnovation</a></strong>
+              Fez parte do projeto deinnovation, uma plataforma de partilha de vídeos sobre projetos
+              de investigação desenvolvidos na Faculdade de Ciências e Tecnologia da Universidade
+              de Coimbra (disponível em
+              <a href="http://innovation.dei.uc.pt">innovation.dei.uc.pt</a>).
+           </p>
+         </div>
+
+         <!-- div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2009-10-26</span>
+              <span class="pt">26/10/2009</span>
+
+              <span style="display:none" class="dtend en">2009-10-26</span>
+           </span>
+           <p class="summary ten columns">
+              Apresentou investigação sobre “Simulação, gestão e programação de redes de sensores
+              sem fios” na 1a Workshop BII do Centro de Informática e Sistemas da Universidade de
+              Coimbra (disponível em http://wsnp.dmfranc.com).
+           </p>
+         </div -->
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2008-10</span>
+              <span class="pt">10/2008</span>
+              &mdash;
+              <span class="dtend en">2009-10</span>
+              <span class="pt">10/2009</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Researcher at <abbr title="Centre for Informatics and Systems of the University of Coimbra">CISUC</abbr></strong>
+              Beneficiary of an Integration into Research Grant to work on Data Stream
+              Processing in Wireless Sensor Networks, integrated on the European Project GINSENG.
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Investigador no <abbr title="Centre for Informatics and Systems of the University of Coimbra">CISUC</abbr></strong>
+              Bolseiro BII (Bolsa de Integração na Investigação atribuída pela Fundação para a
+              Ciência e Tecnologia) no tema <em>Stream Processing</em> em Redes de Sensores sem Fios,
+              integrado no Projeto Europeu GINSENG.
+           </p>
+         </div>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2008-11-20</span>
+              <span class="pt">20/11/2008</span>
+              &mdash;
+              <span class="dtend en">2009-01-06</span>
+              <span class="pt">06/01/2009</span>
+           </span>
+           <p class="summary ten columns en">
+              Developed an application to store files and directories in a virtual system,
+              based on a Gmail account, through the <abbr title="Filesystem in Userspace">FUSE</abbr>
+              library on Linux. This was built for a Operative Systems course in which
+              obtained the classification of 97%.
+           </p>
+           <p class="summary ten columns pt">
+              Desenvolveu uma aplicação que permite o armazenamento de ficheiros e diretorias
+              num sistema virtual, mantido numa conta Gmail, através da biblioteca
+              <abbr title="Filesystem in Userspace">FUSE</abbr> em Linux.
+              Foi construída no âmbito da cadeira Sistemas Operativos e obteve nesse projeto a
+              classificação de 97%.
+           </p>
+         </div>
+
+         <div class="row experience vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2007-01-17</span>
+              <span class="pt">17/01/2007</span>
+
+              <span style="display:none" class="dtend en">2007-01-17</span>
+           </span>
+           <p class="summary ten columns en">
+              Speaker at the 3rd week of Science and Technology of Lousã, in an Education Contest
+              integrated in the network of Ciência Viva projects.
+           </p>
+           <p class="summary ten columns pt">
+              Orador na 3ª semana da Ciência e Tecnologia da Lousã, no Certame Educativo integrado
+              na rede de projetos da Ciência Viva.
+           </p>
+         </div>
+      </section>
+
+      <div class="offset-by-five ten columns">
+         <span id="education-en"></span>
+         <span id="education-pt"></span>
+         <hr />
+      </div>
+
+      <section id="education" class="vcalendar">
+         <h2 class="offset-by-five ten columns">
+            <span class="en">Education</span>
+            <a class="headerlink en" href="#education-en" title="Permalink to this headline">&para;</a>
+
+            <span class="pt">Educação e formação</span>
+            <a class="headerlink pt" href="#education-pt" title="Ligação permanente para esta secção">&para;</a>
+         </h2>
+
+         <div class="row education vevent">
+           <span class="cat five columns">
+              <span class="dtstart">2010</span>
+              &mdash;
+              <span class="en">Present</span>
+              <span class="pt">Presente</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Masters, Informatics Engineering</strong>
+              <em class="line">Department of Informatics Engineering</em>
+              Faculty of Sciences and Technology of the University of Coimbra.
+              Graduated with 17,45 (on a scale from 1 to 20).
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Mestrado Bolonha em Engenharia Informática</strong>
+              <em class="line">Departamento de Engenharia Informática</em>
+              Faculdade de Ciências e Tecnologia da Universidade de Coimbra.
+              Completou com média de 17,45 valores.
+           </p>
+         </div>
+
+         <div class="row education vevent">
+           <span class="cat five columns">
+              <span class="dtstart">2007</span>
+              &mdash;
+              <span class="dtend">2010</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>BSc, Informatics Engineering</strong>
+              <em class="line">Department of Informatics Engineering</em>
+              Faculty of Sciences and Technology of the University of Coimbra. <br />
+              Graduated with 17,33 (on a scale from 1 to 20).
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Licenciatura Bolonha em Engenharia Informática</strong>
+              <em class="line">Departamento de Engenharia Informática</em>
+              Faculdade de Ciências e Tecnologia da Universidade de Coimbra. <br />
+              Completou com média de 17,33 valores.
+           </p>
+         </div>
+
+         <div class="row education vevent">
+           <span class="cat five columns">
+              <span class="dtstart">2004</span>
+              &mdash;
+              <span class="dtend">2007</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>High School &ndash; Science and Technology</strong>
+              <em class="line">School EB 2,3 /S Dr. Daniel de Matos, Vila Nova de Poiares</em>
+              Completed with an average grade of 18,3 values and obtained 18,8 at the
+              Mathematics A National Examination (specific test for access to Higher Education).
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Ensino Secundário &ndash; Agrupamento de Ciências e Tecnologias</strong>
+              <em class="line">Escola EB 2,3 /S Dr. Daniel de Matos, Vila Nova de Poiares</em>
+              Completou com média de 18,3 valores e obteve a classificação de 18,8 no
+              Exame Nacional de Matemática A (prova específica para acesso ao Ensino Superior).
+           </p>
+         </div>
+
+         <div class="row education vevent">
+           <span class="cat five columns">
+              <span class="dtstart en">2006-07-23</span>
+              <span class="pt">23/07/2006</span>
+              &mdash;
+              <span class="dtend en">2006-07-28</span>
+              <span class="pt">28/07/2006</span>
+           </span>
+           <p class="summary ten columns en">
+              <strong>Physics Summer Program</strong>
+              <em class="line">University of Aveiro</em>
+           </p>
+           <p class="summary ten columns pt">
+              <strong>Programa de Física</strong>
+              <em class="line">Academia de Verão '06, Universidade de Aveiro</em>
+           </p>
+         </div>
+      </section>
+
+      <div class="offset-by-five ten columns">
+         <span id="honors-en"></span>
+         <span id="honors-pt"></span>
+         <hr />
+      </div>
+
+      <section id="honors">
+         <h2 class="offset-by-five ten columns">
+            <span class="en">Honors and Awards</span>
+            <a class="headerlink en" href="#honors-en" title="Permalink to this headline">&para;</a>
+
+            <span class="pt">Reconhecimentos e prémios</span>
+            <a class="headerlink pt" href="#honors-pt" title="Ligação permanente para esta secção">&para;</a>
+         </h2>
+
+         <div class="row">
+           <span class="cat five columns">
+              <span>2009</span> &mdash;
+              <span>2010</span>
+           </span>
+           <p class="ten columns en">
+              Awarded with the annual prize for the 3% best students of each degree
+              of the University of Coimbra.
+           </p>
+           <p class="ten columns pt">
+              Foi-lhe atribuído o prémio aos 3% melhores alunos de cada curso da
+              Universidade de Coimbra.
+           </p>
+         </div>
+
+         <div class="row">
+           <span class="cat five columns">
+              <span>2008</span> &mdash;
+              <span>2009</span>
+           </span>
+           <p class="ten columns en">
+              Awarded with the annual prize for the 3% best students of each degree
+              of the University of Coimbra.
+           </p>
+           <p class="ten columns pt">
+              Foi-lhe atribuído o prémio aos 3% melhores alunos de cada curso da
+              Universidade de Coimbra.
+           </p>
+         </div>
+
+         <div class="row">
+           <span class="cat five columns">
+              <span>2007</span> &mdash;
+              <span>2008</span>
+           </span>
+           <p class="ten columns en">
+              Awarded with the annual prize for the 3% best students of each degree
+              of the University of Coimbra.
+           </p>
+           <p class="ten columns pt">
+              Foi-lhe atribuído o prémio aos 3% melhores alunos de cada curso da
+              Universidade de Coimbra.
+           </p>
+         </div>
+      </section>
+
+      <div class="offset-by-five ten columns">
+         <span id="skills-en"></span>
+         <span id="skills-pt"></span>
+         <hr />
+      </div>
+
+      <section id="skills">
+         <h2 class="offset-by-five ten columns">
+            <span class="en">Skills</span>
+            <a class="headerlink en" href="#skills-en" title="Permalink to this headline">&para;</a>
+
+            <span class="pt">Algumas competências</span>
+            <a class="headerlink pt" href="#skills-pt" title="Ligação permanente para esta secção">&para;</a>
+         </h2>
+
+         <div class="row">
+            <ul class="offset-by-five ten columns skills">
+              <li class="tag">Software Development</li>
+              <li class="tag">Web Development</li>
+              <li class="tag">Front-end Development</li>
+              <li class="tag">Web Application Design</li>
+              <li class="tag">User Interface Design</li>
+              <li class="tag">Graphic Design</li>
+              <li class="tag">Prototyping</li>
+              <li class="tag">Wire Framing</li>
+              <li class="tag">Linux</li>
+              <li class="tag">Mac OS X</li>
+              <li class="tag">GIT</li>
+              <li class="tag">Subversion</li>
+              <li class="tag">Java</li>
+              <li class="tag">Python</li>
+              <li class="tag">Django</li>
+              <li class="tag">Ruby</li>
+              <li class="tag">Ruby On Rails</li>
+              <li class="tag">Sinatra</li>
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+              <li class="tag">SASS</li>
+              <li class="tag">Less</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">CoffeeScript</li>
+              <li class="tag">Backbone.js</li>
+              <li class="tag">Node.js</li>
+              <li class="tag">Silva</li>
+              <li class="tag">Moodle</li>
+            </ul>
+         </div>
+      </section>
+
+      <a class="gotop" href="#" style="display:none">
+         <span class="en">Top</span>
+         <span class="pt">Topo</span> &uarr;
+      </a>
+      <a class="current-section" href="#" style="display:none"></a>
+      <span class="top-shadow"></span>
+      <span class="bottom-shadow"></span>
+   </div>
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+   <script src="../js/libs/jquery.scrollto.min.js"></script>
+   <script>
+      $(document).ready(function() {
+         /* Toggle language between english and portuguese */
+         $("a.setlang").click(function() {
+            var lang = $('html').attr('lang'), hash = window.location.hash;
+            if (lang == 'en') {
+                $('html').attr('lang', 'pt');
+                window.location.hash = "#pt";
+            } else {
+                $('html').attr('lang', 'en');
+                window.location.hash = "#en";
+            }
+            return false;
+         });
+
+         /* Set language based on hash */
+         if (window.location.hash.indexOf('pt') != -1) {
+            $('html').attr('lang', 'pt');
+         }
+
+         /* Smooth scroll */
+         $("a.headerlink, a.current-section").click(function() {
+            var $self = $(this), el = $self.attr('href').replace("#", "");
+            $.scrollTo($("#" + el), {
+               speed: 100,
+               easing: 'linear',
+               onAfter: function() {
+                  window.location.hash = $self.attr('href');
+               }
+            });
+            return false;
+         });
+
+         /* Scroll to top */
+         $("a.gotop").click(function() {
+            $.scrollTo(0, {
+               speed: 500,
+               easing: 'linear',
+               onAfter: function() {
+                  window.location.hash = "";
+               }
+            });
+            return false;
+         });
+
+         /* Display scroll to top button when necessary */
+         $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+               $("a.gotop").fadeIn();
+            } else {
+               $("a.gotop").fadeOut();
+            }
+            return false;
+         });
+
+         /* Show shadow to indicate the user can scroll */
+         $(window).scroll(function() {
+            if ($(window).scrollTop() > 50) {
+               $('.top-shadow').css({ 'opacity': 1 });
+            } else {
+               $('.top-shadow').css({ 'opacity': 0 });
+            }
+            if ($('body').height() - $('body').scrollTop() - $(window).height() > 50) {
+               $('.bottom-shadow').css({ 'opacity': 1 });
+            } else {
+               $('.bottom-shadow').css({ 'opacity': 0 });
+            }
+            return false;
+         }).trigger('scroll');
+
+         /* Based on: http://css-tricks.com/snippets/jquery/detect-first-visible-element/ */
+         var text, id, lastText, $current = $('a.current-section');
+         $(window).scroll(function(){
+            var scrollTop = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var first = false;
+            lastText = text;
+            $("h2 span."+ $('html').attr('lang')).each(function() {
+               var offset = $(this).offset();
+               if (($(this).height() + offset.top) < (scrollTop + windowHeight) && first == false) {
+                  if (($(this).height() + offset.top) < scrollTop) {
+                     text = $(this).text();
+                     id = $(this).siblings(".headerlink").attr('href');
+                  } else {
+                     text = "";
+                  }
+               } else {
+                  first = false;
+               }
+            });
+            if (lastText != text && text != "Summary") {
+               if (text == "") {
+                  $current.fadeOut(function() { $(this).text(""); });
+               } else {
+                  $current.attr('href', id.replace("-en", "-"+ $('html').attr('lang'))).text(text);
+                  $current.fadeIn();
+               }
+            }
+         });
+      });
+   </script>
+
+   <!-- Debugging (http://www.google.com/webmasters/tools/richsnippets) -->
+   <!-- script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   <script src="http://microformatshiv.com/shiv/source/microformats-shiv.js"></script>
+   <script src="http://microformatshiv.com/shiv/source/microformats-coredefinition.js"></script>
+   <script src="http://microformatshiv.com/shiv/source/microformats-hresumedefinition.js"></script>
+   <script src="http://microformatshiv.com/shiv/json2.min.js"></script>
+   <script src="http://microformatshiv.com/shiv/beautify.min.js"></script>
+   <input id="parsebutton" type="button" value="Display parsed hResume" onclick="displayUfJSON('hResume');">
+   <script>
+     function displayUfJSON(format) {
+         var node = $('body').get(0); // Get Html DOM node
+         var ufObject = navigator.microformats.get(format, node); // Parse microformat
+         var ufString = JSON.stringify(ufObject); // Turn JSON object into a string
+         var ufBeautifyString = js_beautify(ufString); // Make the string more readable
+         console.log(ufBeautifyString);
+     }
+   </script -->
+</body>
+</html>
