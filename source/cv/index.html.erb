@@ -50,8 +50,8 @@
 
          <h4>Curriculum Vit&aelig;</h4>
          <h1>David Francisco</h1>
-         <p class="en"><em>This document is a work in progress.</em></p>
-         <p class="pt"><em>Este documento encontra-se em desenvolvimento.</em></p>
+         <p class="note en"><em>This document is a work in progress.</em></p>
+         <p class="note pt"><em>Este documento encontra-se em desenvolvimento.</em></p>
       </header>
 
       <section id="overview">
@@ -189,8 +189,8 @@
               This project was developed for a Software Project Management course,
               completed with the classification of 20 values. The project consisted on developing
               an application for web and mobile devices in order to improve the user experience of
-              everyone involved in swimming tournaments, through the development of usable interfaces
-              and by means of integration with existing systems. The client
+              everyone involved in swimming tournaments. This was achieved through the development
+              of usable interfaces and by means of integration with existing systems. The client
               was the Swimming Association of Coimbra.
            </p>
            <p class="summary ten columns pt">
@@ -628,14 +628,29 @@
    <script src="../js/libs/jquery.scrollto.min.js"></script>
    <script>
       $(document).ready(function() {
+         /* Block IE6 and IE7 access until I manage to solve all pending issues */
+         if ($('html').is('.ie6, .ie7')) {
+            $('section, hr, a.gotop, a.setlang, .pt').hide();
+            $('.note').html("This document is a work in progress. We are sorry but we don't support your browser for now. If possible, try to access this website using a different browser, such as <a href='http://google.com/chrome/'>Google Chrome</a>, <a  href='http://mozilla.com/firefox/'>Mozilla Firefox 4+</a> or <a  href='http://beautyoftheweb.com/'>Internet Explorer 9+</a>.");
+            return;
+         }
+
          /* Toggle language between english and portuguese */
          $("a.setlang").click(function() {
             var lang = $('html').attr('lang'), hash = window.location.hash;
             if (lang == 'en') {
                 $('html').attr('lang', 'pt');
+                if ($('html').is('.ie6, .ie7')) {
+                  $('.pt').show();
+                  $('.en').hide();
+                }
                 window.location.hash = "#pt";
             } else {
                 $('html').attr('lang', 'en');
+                if ($('html').is('.ie6, .ie7')) {
+                  $('.pt').hide();
+                  $('.en').show();
+                }
                 window.location.hash = "#en";
             }
             return false;
@@ -644,6 +659,9 @@
          /* Set language based on hash */
          if (window.location.hash.indexOf('pt') != -1) {
             $('html').attr('lang', 'pt');
+            if ($('html').is('.ie6, .ie7')) $('.pt').show();
+         } else {
+            if ($('html').is('.ie6, .ie7')) $('.pt').hide();
          }
 
          /* Smooth scroll */
