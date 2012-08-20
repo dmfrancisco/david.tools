@@ -5,6 +5,9 @@
 body {
   margin-right: 15%;
 }
+section {
+  text-align: justify;
+}
 abbr {
   border-bottom: 1px dotted black;
 }
@@ -35,6 +38,9 @@ nav {
   padding: 2px 7px;
   margin-bottom: 4px;
   display: inline-block;
+}
+.skills {
+  text-align: left;
 }
 
 /* Language */
@@ -223,6 +229,9 @@ a.current-section {
 @media only screen and (max-width: 479px) {
   body {
     margin: 20px 0 10px 0;
+  }
+  section {
+    text-align: left;
   }
   h1 {
     font-size: 40px;
