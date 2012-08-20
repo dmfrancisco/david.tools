@@ -12,7 +12,8 @@ css_dir = 'css'
 js_dir  = 'js'
 
 files =  Dir.glob(File.join(source_dir, css_dir, "**/*.less"))
-files << File.join(source_dir, js_dir, 'application.coffee')
+files += Dir.glob(File.join(source_dir, css_dir, "**/*.css"))
+files += Dir.glob(File.join(source_dir, js_dir,  "**/*.coffee"))
 
 files.each do |file|
   puts "Copying '#{file.gsub('source/', 'build/')}'..."
