@@ -254,7 +254,11 @@
 
        if (!isIE()) {
          $("#lifestream").lifestream({
-           limit: 100,
+           limit: 200,
+           defaultServiceLimit: 70,
+           serviceLimits: {
+             lastfm: 10
+           },
            list: list,
            feedloaded: function(){
              count++;
