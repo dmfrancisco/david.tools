@@ -250,3 +250,5 @@ $(document).ready ->
     #     protected_email = protected_email.replace(" {at} ", "@")
     #     protected_email = protected_email.replace(" {dot} ", ".")
     #     $(this).html(protected_email).replaceWith("<a href=\"mailto:" + $(this).text() + "\">" + $(this).text() + "</a>")
+
+    console.log "Busted! Ahah :)" unless console is `undefined`
