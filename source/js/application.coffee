@@ -15,10 +15,10 @@
 
 # Prefetch hand-written annotations
 prefetch = ->
-    image_srcs = [ '/img/annotations/external-link-activo.png', '/img/annotations/external-link-old-activo.png',
-                   '/img/annotations/somenotes.png', '/img/annotations/click.png',     '/img/annotations/deinnovation.png',
-                   '/img/annotations/facebook.png',  '/img/annotations/github.png',    '/img/annotations/lastfm.png',
-                   '/img/annotations/linkedin.png',  '/img/annotations/somenotes.png', '/img/annotations/twitter.png',
+    image_srcs = [ '/img/annotations/somenotes.png', '/img/annotations/click.png',
+                   '/img/annotations/facebook.png',  '/img/annotations/github.png',
+                   '/img/annotations/lastfm.png',    '/img/annotations/linkedin.png',
+                   '/img/annotations/somenotes.png', '/img/annotations/twitter.png',
                    '/img/annotations/pinboard.png' ]
     isIE = navigator.appName.indexOf('Microsoft') == 0
 
@@ -172,7 +172,7 @@ $(document).ready ->
 
             beforeCss: (el, container, offset) ->
                 offsetMod = offset
-                hOffset = 416
+                hOffset = 385
                 if is_modern_and_large_screen()
                     thumbWidth = '170px'
                     bottomPadding = '34px'
@@ -194,7 +194,7 @@ $(document).ready ->
                 }, {})]
 
             afterCss: (el, container, offset) ->
-                offsetMod = 13 - offset
+                offsetMod = 9 - offset
                 hOffset = 330
                 if is_modern_and_large_screen()
                     thumbWidth = '170px'
