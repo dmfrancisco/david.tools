@@ -30,7 +30,7 @@
   <%= stylesheet_link_tag "home/styles" %>
   <link href="css/home/print.css" media="print" rel="stylesheet">
 
-  <script src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script src="js/libs/modernizr-2.8.3.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
   <%= javascript_include_tag  "application" %>
@@ -178,7 +178,10 @@
                  <span class="title"><a href="#">rpr</a> / an information system written in Rails.</span>
                </li>
                <li>
-                 <img src="img/projects/wsnp_large.png" title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks" />
+                 <div data-picture data-title="wsnp - Simulation, Management and Programming of Wireless Sensor Networks">
+                   <div data-src="img/projects/wsnp_small.png"></div>
+                   <div data-src="img/projects/wsnp_large.png" data-media="(min-width: 1025px)"></div>
+                 </div>
                  <span class="title"><a href="http://wsnp.dmfranc.com/">wsnp</a> / gui application for programming WSNs.</span>
                </li>
             </ul>

@@ -9,18 +9,14 @@
 @import "../mixins.less";
 @import "../hello-font.less";
 
+@primary-color: #29d1aa;
+
 html, body {
   height: 100%;
 }
 
 html {
-  background-color: #1d1d1d;
-  background-image: url('../../img/bgd.png');
-  background-repeat: repeat;
-}
-html.multiplebgs {
-  // If browser supports multiple backgrounds, add both vignette effect and texture
-  .radial-with-image(transparent, rgba(0,0,0,.5), url('../../img/bgd.png'), #1d1d1d);
+  background: #282828;
 }
 
 body {
@@ -31,7 +27,7 @@ body {
 }
 
 .wrapper {
-  border-top: 5px solid #29d1aa;
+  border-top: 5px solid @primary-color;
 }
 
 /* [hidden] { // Doesn't work in IE6
@@ -43,7 +39,7 @@ noscript {
 }
 
 a {
-  color: #29d1aa;
+  color: @primary-color;
   text-decoration: none;
   outline: 0;
 }
@@ -60,7 +56,7 @@ h2 {
 .link {
   // display: inline; // underline text only
   cursor: pointer;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 2px solid @primary-color;
 }
 
 .more {
@@ -106,8 +102,6 @@ div.spacer {
 
   color: #b0b0a8;
   font-size: 18px;
-  text-shadow: #000 0px 1px 0px,
-               rgba(0,0,0,.5) 0px 5px 5px;
 }
 
 #projects {
@@ -121,14 +115,13 @@ div.spacer {
     padding: 0px 55px 30px 55px;
 
     a {
-      border-bottom: 1px dashed #2f2f2f;
+      border-bottom: 1px solid;
     }
   }
 
   .content, .content a {
-    color: #2f2f2f;
+    color: #4a4a4a;
     font-size: 12px;
-    text-shadow: #000 0px -1px 0px;
     -webkit-font-smoothing: subpixel-antialiased; /* don't force anti-aliasing in chrome here */
   }
 }
@@ -202,16 +195,9 @@ html:not([class~="mobile"]) #profiles ol li:hover {
 h1 {
   margin-bottom: 45px;
   font-size: 55px;
-  text-shadow: 0 1px 0 #5d5e59,
+  text-shadow: 0 1px 0 #63645e,
                0 2px 0 #63645e,
-               0 3px 0 #696a64,
-               0 6px 1px rgba(0,0,0,.05),
-               0 0 5px rgba(0,0,0,.05),
-               0 1px 3px rgba(0,0,0,.2),
-               0 3px 5px rgba(0,0,0,.1),
-               0 5px 10px rgba(0,0,0,.15),
-               0 10px 10px rgba(0,0,0,.1),
-               0 20px 20px rgba(0,0,0,.05);
+               0 3px 0 #63645e;
   .user-select(none);
 
   span {
@@ -318,12 +304,10 @@ ul#flip, ul#flip li {
 ::selection {
   color: white;
   background: rgba(0,255,255,0.3);
-  text-shadow: none;
 }
 ::-moz-selection {
   color: white;
   background: rgba(0,255,255,0.3);
-  text-shadow: none;
 }
 
 /* Animations */
