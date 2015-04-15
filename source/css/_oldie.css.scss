@@ -1,0 +1,36 @@
+/* A warning for users of old versions of Internet Explorer */
+@import "variables";
+
+.warning-oldie {
+  display: none;
+}
+
+html.oldie {
+  overflow: hidden;
+
+  .warning-oldie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    overflow: auto;
+
+    z-index: 900;
+    padding: 30px;
+
+    background-color: $dark;
+    color: $light-grey;
+    line-height: 25px;
+    font-size: 20px;
+  }
+
+  p {
+    max-width: 580px;
+  }
+
+  a {
+    border-bottom: 2px solid $grey;
+  }
+}

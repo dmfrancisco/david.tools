@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<!--[if lte IE 8]><html class="oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
 <head>
   <!--
      _   _      _ _       _
@@ -27,6 +28,8 @@
 </head>
 
 <body>
+  <%= partial "oldie" %>
+
   <%= yield %>
 </body>
 </html>
