@@ -1,86 +1,109 @@
-###
-# Page options, layouts, aliases and proxies
-###
+set :css_dir, "css"
+set :js_dir, "js"
+set :images_dir, "img"
 
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
+# Environment configuration
+configure :development do
+  activate :livereload
+end
 
-# Proxy (fake) files
-# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
-# end
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
-set :css_dir, 'css'
-set :js_dir, 'js'
-set :images_dir, 'img'
-
-# Build-specific configuration
+# Build-specific configs
 configure :build do
-  # For example, change the Compass output style for deployment
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
-
-  # Enable cache buster
-  # activate :cache_buster
   activate :asset_hash
-
-  # Use relative URLs
   activate :relative_assets
-
-  # Compress PNGs after build
-  # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
-  #
-  # I'm doing this manually, since smusher removes the bKGD chunk, which defines
-  # the fallback color for browsers that don't support the alpha channel (IE6)
-
-  # Or use a different image path
-  # set :http_path, "/Content/images/"
-
-  # Gzip text files
-  activate :gzip
-  # See https://gist.github.com/2200790
-  # and http://guides.rubyonrails.org/v3.1.0/asset_pipeline.html#server-configuration
-
-  # Pretty URLs (Directory Indexes)
   activate :directory_indexes
-  page "/404.html", :directory_index => false
-  page "/500.html", :directory_index => false
 end
 
-after_configuration do
-  # Add CSS directory to the Less compiler
-  # Less.paths << File.join(source_dir, css_dir)
-
-  # Add all subdirectories inside the CSS folder to the Less compiler
-  Dir.glob(File.join(source_dir, css_dir, "**/")).each do |dir|
-    Less.paths << File.expand_path(dir)
-  end
-end
+# Information to be passed to the templates
+set :projects, [
+  {
+    title: "React.parts",
+    description: "A catalog of React components for both web and native.",
+    image_src: "project-react-parts.png",
+    link: "https://react.parts"
+  }, {
+    title: "React Icons",
+    description: "A simple React component for icons using inline SVG.",
+    image_src: "project-react-icons.png",
+    link: "http://dmfrancisco.github.io/react-icons"
+  }, {
+    title: "Space Horse",
+    description: "Web and NW.js desktop app for organizing knowledge. Written in ES6 with React and Flux.",
+    image_src: "project-spacehorse.png",
+    link: "https://github.com/dmfrancisco/spacehorse"
+  }, {
+    title: "Jonymockup",
+    description: "Simple tool for sharing mockups. Built with Polymer, uses shadow DOM and HTML imports.",
+    image_src: "project-jonymockup.png",
+    link: "http://jonymockup.dmfranc.com"
+  }, {
+    title: "Space Junk",
+    description: "An opinionated cloud-based TiddlyWiki setup. This is a proof-of-concept.",
+    image_src: "project-spacejunk.png",
+    link: "http://spacejunk.dmfranc.com"
+  }, {
+    title: "Gideo",
+    description: "Minimal video player like Vine that loops and autoplays.",
+    image_src: "project-gideo.png",
+    link: "https://github.com/dmfrancisco/gideo"
+  }, {
+    title: "Blocks",
+    description: "App for people interested in gathering self-knowledge. Built with AngularJS and Cordova.",
+    image_src: "project-blocks.png",
+    link: "http://blocks.dmfranc.com"
+  }, {
+    title: "k▥",
+    description: "Command-line tool for task boards that is collaborative and works offline. Uses Git as a DB.",
+    image_src: "project-kood.png",
+    link: "http://kood.dmfranc.com/info"
+  }, {
+    title: "Pomada",
+    description: "Simple tool for the pomodoro technique that can be used on the web, chrome or desktop.",
+    image_src: "project-pomada.png",
+    link: "http://pomada.dmfranc.com"
+  }, {
+    title: "Appbase",
+    description: "Web Platform for User-Centric Interoperable Applications using Apache Wookie and Google Caja.",
+    image_src: "project-appbase.png",
+    link: "http://tmblr.co/Zh-Y9ySGFFYm",
+    year: 2012
+  }, {
+    title: "Pagehub",
+    description: "Proof-of-concept that explores a kind of redirection technique using iframes.",
+    image_src: "project-pagehub.png",
+    link: "http://pagehub.dmfranc.com",
+    year: 2011
+  }, {
+    title: "slideshow.html",
+    description: "Yet another tool for creating presentations written in HTML, JS, CSS and Ruby.",
+    image_src: "project-slideshow-html.png",
+    link: "http://slideshow.dmfranc.com/",
+    year: 2011
+  }, {
+    title: "Escrito",
+    description: "A collaborative writing tool that supports Markdown and Textile. Powered by Node.js & ShareJS.",
+    image_src: "project-escrito.png",
+    link: "http://blog.dmfranc.com/tagged/escrito",
+    year: 2011
+  }, {
+    title: "Desligado",
+    description: "Experiment that adds support for disconnection and deferred updates to Backbone apps.",
+    image_src: "project-desligado.png",
+    link: "http://dmfrancisco.github.com/Desligado/",
+    year: 2011
+  }, {
+    title: "Scurry",
+    description: "Toy programming language. Written with Python, PLY and LLVM.",
+    image_src: "project-scurry.png",
+    link: "https://github.com/dmfrancisco/scurry/",
+    year: 2010
+  }, {
+    title: "Activo",
+    description: "A theme for data-driven applications written in SASS for Ruby on Rails.",
+    image_src: "project-activo.png",
+    link: "http://activo.dmfranc.com/",
+    year: 2010
+  }
+]

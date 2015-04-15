@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "middleman", "~>3.0.0"
-gem "therubyracer"
-gem "less"
-gem "middleman-smusher"
+gem "middleman", "~>3.3.10"
+gem "middleman-livereload"
+gem "bourbon"
+gem "neat"
