@@ -1,1 +1,53 @@
-Hello, World!
+<div class="Container u-container">
+  <nav>
+    <ul class="Navbar">
+      <li class="Navbar-item"><a href="http://blog.dmfranc.com">Blog</a></li>
+      <li class="Navbar-item"><a href="https://twitter.com/dmfrancisco">@dmfrancisco</a></li>
+      <li class="Navbar-item"><a href="https://github.com/dmfrancisco">GitHub</a></li>
+      <li class="Navbar-item"><a href="https://linkedin.com/in/dmfrancisco/en">LinkedIn</a></li>
+      <li class="Navbar-item"><a href="https://dribbble.com/davidfrancisco">Dribbble</a></li>
+
+      <li class="Navbar-item">
+        <a href="mailto:hello@dmfranc.com">Contact me</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="Intro">
+    <h1 class="Intro-title">
+      <span class="Intro-title-main">
+        Hello, I’m David Francisco.
+      </span>
+      A web developer from Coimbra, Portugal.
+    </h1>
+
+    <h2 class="Intro-subtitle">
+      Here are some open source side-projects I have worked on in the past.
+    </h2>
+  </section>
+
+  <section class="Projects">
+    <% settings.projects.each do |project| %>
+      <div class="Project u-col">
+        <% link_to project[:link], class: "Project-link", draggable: "false" do %>
+          <%= image_tag project[:image_src], alt: project[:title],
+            draggable: "false", class: "Project-image" %>
+
+          <h3 class="Project-title">
+            <%= project[:title] %>
+
+            <% if project[:year] %>
+              <span class="Project-year">
+                <%= project[:year] %>
+              </span>
+            <% end %>
+          </h3>
+
+          <p class="Project-description">
+            <%= project[:description] %>
+          </p>
+        <% end %>
+      </div>
+    <% end %>
+  </section>
+</div>

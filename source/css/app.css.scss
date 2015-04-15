@@ -1,3 +1,224 @@
+@import "bourbon";
+@import "mixins";
+@import "variables";
+
+/* Global */
+
+html {
+  font-size: 14px;
+
+  @media screen and (min-width: $break-small) {
+    font-size: 16px;
+  }
+}
+
 body {
+  @include user-select(none);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: $dark;
+  color: $light-grey;
+  cursor: default;
   font-family: Source Sans Pro, sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  @include user-select(text);
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container */
+
+.Container {
+  padding: $gutter;
+}
+
+/* Navbar */
+
+.Navbar {
+  @include clearfix;
+  color: $grey;
+  font-size: rem-calc(15);
+  letter-spacing: rem-calc(1.5);
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.Navbar-item {
+  display: inline;
+  float: left;
+  list-style-type: none;
+  margin-bottom: rem-calc(10);
+
+  // Group items in two columns
+  width: 50%;
+  &:nth-child(2n) {
+    text-align: right;
+  }
+
+  // In bigger screens, show items in a single line
+  @media screen and (min-width: $break-medium) {
+    margin-right: $gutter;
+    width: auto;
+
+    &:last-child {
+      float: right;
+      margin-right: 0;
+    }
+  }
+}
+
+/* Intro */
+
+.Intro {
+  margin: rem-calc(40 0 60);
+
+  @media screen and (min-width: $break-medium) {
+    margin: rem-calc(100 0);
+  }
+}
+
+.Intro-title {
+  -webkit-font-smoothing: initial;
+  font-size: rem-calc(28);
+  letter-spacing: rem-calc(0.2);
+  margin: rem-calc(0 0 16);
+  text-indent: rem-calc(-2);
+
+  @media screen and (min-width: $break-small) {
+    font-size: rem-calc(32);
+  }
+}
+
+.Intro-title-main {
+  display: block;
+
+  @media screen and (min-width: $break-large) {
+    display: inline;
+    padding-right: rem-calc(8);
+  }
+}
+
+.Intro-subtitle {
+  color: $grey;
+  font-size: rem-calc(25);
+  font-weight: 300;
+  margin: 0;
+  text-indent: rem-calc(-1);
+  word-spacing: rem-calc(1);
+
+  @media screen and (min-width: $break-small) {
+    font-size: rem-calc(23);
+  }
+}
+
+/* Projects */
+
+.Projects {
+  @include clearfix;
+  margin-bottom: $gutter/2;
+}
+
+.Project {
+  min-height: rem-calc(316);
+  padding-bottom: $gutter;
+}
+
+.Project-title {
+  margin: 0;
+}
+
+.Project-image {
+  border-radius: rem-calc(3);
+  height: $col-size;
+  margin-bottom: rem-calc(10);
+  width: 100%;
+}
+
+.Project-title,
+.Project-description {
+  font-size: rem-calc(15);
+}
+
+.Project-description {
+  color: $grey;
+  font-weight: 300;
+  margin: 0;
+}
+
+.Project-year {
+  float: right;
+  font-weight: 300;
+}
+
+/* Grid */
+
+.u-container {
+  width: 100%;
+}
+
+.u-container,
+.u-col {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.u-col {
+  width: $col-size;
+  text-align: center;
+}
+
+@media screen and (min-width: $break-small) {
+  .u-col {
+    float: left;
+    margin-left: 0;
+    margin-right: rem-calc(58);
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $break-small) and (max-width: $break-medium - 1px) {
+  .u-container {
+    max-width: $break-small;
+  }
+  .u-col:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: $break-medium) and (max-width: $break-large - 1px) {
+  .u-container {
+    max-width: $break-medium;
+  }
+  .u-col:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: $break-large) {
+  .u-container {
+    max-width: $break-large;
+  }
+  .u-col:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+/* Text selection */
+
+::selection {
+  background: $selection-bgd;
+  color: $selection-color;
+}
+
+::-moz-selection {
+  background: $selection-bgd;
+  color: $selection-color;
 }
