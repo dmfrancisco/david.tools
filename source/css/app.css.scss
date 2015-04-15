@@ -1,6 +1,6 @@
 @import "bourbon";
-@import "mixins";
 @import "variables";
+@import "neat";
 @import "oldie";
 
 /* Global */
@@ -8,7 +8,7 @@
 html {
   font-size: 14px;
 
-  @media screen and (min-width: $break-small) {
+  @media screen and (min-width: $min-break-small) {
     font-size: 16px;
   }
 }
@@ -39,8 +39,8 @@ a {
 .Navbar {
   @include clearfix;
   color: $grey;
-  font-size: rem-calc(15);
-  letter-spacing: rem-calc(1.5);
+  font-size: rem(15);
+  letter-spacing: rem(1.5);
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -50,7 +50,7 @@ a {
   display: inline;
   float: left;
   list-style-type: none;
-  margin-bottom: rem-calc(10);
+  margin-bottom: rem(10);
 
   // Group items in two columns
   width: 50%;
@@ -59,8 +59,8 @@ a {
   }
 
   // In bigger screens, show items in a single line
-  @media screen and (min-width: $break-medium) {
-    margin-right: rem-calc($gutter);
+  @media screen and (min-width: 648px) {
+    margin-right: rem($space);
     width: auto;
 
     &:last-child {
@@ -73,44 +73,44 @@ a {
 /* Intro */
 
 .Intro {
-  margin: rem-calc(40 0 60);
+  margin: rem(45) 0 rem(55);
 
-  @media screen and (min-width: $break-medium) {
-    margin: rem-calc(100 0);
+  @media screen and (min-width: $min-break-medium) {
+    margin: rem(100) 0;
   }
 }
 
 .Intro-title {
   -webkit-font-smoothing: initial;
-  font-size: rem-calc(28);
-  letter-spacing: rem-calc(0.2);
-  margin: rem-calc(0 0 16);
-  text-indent: rem-calc(-2);
+  font-size: rem(27);
+  letter-spacing: rem(0.2);
+  margin: 0 0 rem(16);
+  text-indent: rem(-2);
 
-  @media screen and (min-width: $break-small) {
-    font-size: rem-calc(32);
+  @media screen and (min-width: $min-break-small) {
+    font-size: rem(32);
   }
 }
 
 .Intro-title-main {
   display: block;
 
-  @media screen and (min-width: $break-large) {
+  @media screen and (min-width: $min-break-large) {
     display: inline;
-    padding-right: rem-calc(8);
+    padding-right: rem(8);
   }
 }
 
 .Intro-subtitle {
   color: $grey;
-  font-size: rem-calc(25);
+  font-size: rem(25);
   font-weight: 300;
   margin: 0;
-  text-indent: rem-calc(-1);
-  word-spacing: rem-calc(1);
+  text-indent: rem(-1);
+  word-spacing: rem(1);
 
-  @media screen and (min-width: $break-small) {
-    font-size: rem-calc(23);
+  @media screen and (min-width: $min-break-small) {
+    font-size: rem(23);
   }
 }
 
@@ -118,12 +118,11 @@ a {
 
 .Projects {
   @include clearfix;
-  margin-bottom: rem-calc($gutter)/2;
 }
 
 .Project {
-  min-height: rem-calc(316);
-  padding-bottom: rem-calc($gutter);
+  min-height: rem(316);
+  padding-bottom: rem($space);
 }
 
 .Project-title {
@@ -131,15 +130,14 @@ a {
 }
 
 .Project-image {
-  border-radius: rem-calc(3);
-  height: $col-size;
-  margin-bottom: rem-calc(10);
+  border-radius: rem(3);
+  margin-bottom: rem(10);
   width: 100%;
 }
 
 .Project-title,
 .Project-description {
-  font-size: rem-calc(15);
+  font-size: rem(15);
 }
 
 .Project-description {
@@ -156,54 +154,27 @@ a {
 /* Grid */
 
 .u-container {
-  width: 100%;
-  padding: rem-calc($gutter $gutter/2);
-}
-
-.u-container,
-.u-col {
-  box-sizing: border-box;
-  margin: 0 auto;
+  @include outer-container;
+  padding: rem($space);
+  min-width: $max-break-xsmall;
 }
 
 .u-col {
-  width: $col-size;
-  text-align: center;
-}
-
-@media screen and (min-width: $break-small) {
-  .u-col {
-    float: left;
-    margin-left: 0;
-    margin-right: rem-calc(58);
-    text-align: left;
+  @include media(max-width $max-break-xsmall) {
+    @include span-columns(12);
+    @include omega(1n);
   }
-}
-
-@media screen and (min-width: $break-small) and (max-width: $break-medium - 1px) {
-  .u-container {
-    max-width: $break-small - $gutter;
+  @include media(min-width $min-break-xsmall max-width $max-break-small) {
+    @include span-columns(12/2);
+    @include omega(2n);
   }
-  .u-col:nth-child(2n) {
-    margin-right: 0;
+  @include media(min-width $min-break-small max-width $max-break-medium) {
+    @include span-columns(12/3);
+    @include omega(3n);
   }
-}
-
-@media screen and (min-width: $break-medium) and (max-width: $break-large - 1px) {
-  .u-container {
-    max-width: $break-medium - $gutter;
-  }
-  .u-col:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: $break-large) {
-  .u-container {
-    max-width: $break-large - $gutter;
-  }
-  .u-col:nth-child(4n) {
-    margin-right: 0;
+  @include media(min-width $min-break-medium) {
+    @include span-columns(12/4);
+    @include omega(4n);
   }
 }
 
