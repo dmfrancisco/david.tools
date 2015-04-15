@@ -33,12 +33,6 @@ a {
   text-decoration: none;
 }
 
-/* Container */
-
-.Container {
-  padding: $gutter;
-}
-
 /* Navbar */
 
 .Navbar {
@@ -65,7 +59,7 @@ a {
 
   // In bigger screens, show items in a single line
   @media screen and (min-width: $break-medium) {
-    margin-right: $gutter;
+    margin-right: rem-calc($gutter);
     width: auto;
 
     &:last-child {
@@ -123,12 +117,12 @@ a {
 
 .Projects {
   @include clearfix;
-  margin-bottom: $gutter/2;
+  margin-bottom: rem-calc($gutter)/2;
 }
 
 .Project {
   min-height: rem-calc(316);
-  padding-bottom: $gutter;
+  padding-bottom: rem-calc($gutter);
 }
 
 .Project-title {
@@ -162,6 +156,7 @@ a {
 
 .u-container {
   width: 100%;
+  padding: rem-calc($gutter $gutter/2);
 }
 
 .u-container,
@@ -186,7 +181,7 @@ a {
 
 @media screen and (min-width: $break-small) and (max-width: $break-medium - 1px) {
   .u-container {
-    max-width: $break-small;
+    max-width: $break-small - $gutter;
   }
   .u-col:nth-child(2n) {
     margin-right: 0;
@@ -195,7 +190,7 @@ a {
 
 @media screen and (min-width: $break-medium) and (max-width: $break-large - 1px) {
   .u-container {
-    max-width: $break-medium;
+    max-width: $break-medium - $gutter;
   }
   .u-col:nth-child(3n) {
     margin-right: 0;
@@ -204,7 +199,7 @@ a {
 
 @media screen and (min-width: $break-large) {
   .u-container {
-    max-width: $break-large;
+    max-width: $break-large - $gutter;
   }
   .u-col:nth-child(4n) {
     margin-right: 0;
