@@ -59,8 +59,8 @@ a {
   }
 
   // In bigger screens, show items in a single line
-  @media screen and (min-width: 648px) {
-    margin-right: rem($space);
+  @media screen and (min-width: 480px) {
+    margin-right: rem(22px);
     width: auto;
 
     &:last-child {
@@ -87,7 +87,7 @@ a {
   margin: 0 0 rem(16);
   text-indent: rem(-2);
 
-  @media screen and (min-width: $min-break-small) {
+  @media screen and (min-width: $min-break-small + 1px) {
     font-size: rem(32);
   }
 }
