@@ -17,6 +17,33 @@ configure :build do
 end
 
 # Information to be passed to the templates
+set :email, "hello@dmfranc.com"
+
+set :navbar, [
+  {
+    text: "Blog",
+    link: "http://blog.dmfranc.com"
+  }, {
+    text: "Twitter",
+    link: "https://twitter.com/dmfrancisco"
+  }, {
+    text: "GitHub",
+    link: "https://github.com/dmfrancisco"
+  }, {
+    text: "LinkedIn",
+    link: "https://linkedin.com/in/dmfrancisco/en"
+  }, {
+    text: "Dribbble",
+    link: "https://dribbble.com/davidfrancisco"
+  }
+]
+
+set :intro, {
+  title_main: "Hello, I’m David Francisco.",
+  title_more: "A web developer from Coimbra, Portugal.",
+  subtitle: "Here are some open source side-projects I have worked on in the past."
+}
+
 set :projects, [
   {
     title: "React.parts",
@@ -39,7 +66,7 @@ set :projects, [
     image_src: "project-jonymockup.png",
     link: "http://jonymockup.dmfranc.com"
   }, {
-    title: "Space Junk",
+    title: "SpaceJunk",
     description: "An opinionated cloud-based TiddlyWiki setup. This is a proof-of-concept.",
     image_src: "project-spacejunk.png",
     link: "http://spacejunk.dmfranc.com"

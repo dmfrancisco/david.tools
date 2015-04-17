@@ -1,0 +1,32 @@
+/* Grid */
+
+.u-container {
+  @include outer-container;
+  padding: rem($space);
+  min-width: $max-break-xsmall;
+}
+
+.u-col {
+  @include media(max-width $max-break-xsmall) {
+    @include span-columns(12);
+    @include omega(1n);
+  }
+  @include media(min-width $min-break-xsmall max-width $max-break-small) {
+    @include span-columns(12/2);
+    @include omega(2n);
+  }
+  @include media(min-width $min-break-small max-width $max-break-medium) {
+    @include span-columns(12/3);
+    @include omega(3n);
+  }
+  @include media(min-width $min-break-medium) {
+    @include span-columns(12/4);
+    @include omega(4n);
+  }
+}
+
+/* Other utilities */
+
+.u-clear {
+  @include clearfix;
+}

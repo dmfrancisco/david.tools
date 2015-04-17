@@ -1,0 +1,14 @@
+<section class="Intro">
+  <% settings.intro.tap do |intro| %>
+    <h1 class="Intro-title">
+      <span class="Intro-title-main">
+        <%= intro[:title_main] %>
+      </span>
+      <%= intro[:title_more] %>
+    </h1>
+
+    <h2 class="Intro-subtitle">
+      <%= intro[:subtitle] %>
+    </h2>
+  <% end %>
+</section>

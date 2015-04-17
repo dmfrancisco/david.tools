@@ -1,0 +1,13 @@
+<nav class="Navbar">
+  <ul class="Navbar-list u-clear">
+    <% settings.navbar.each do |item| %>
+      <li class="Navbar-list-item">
+        <%= link_to item[:text], item[:link] %>
+      </li>
+    <% end %>
+
+    <li class="Navbar-list-item">
+      <%= mail_to settings.email, "Email" %>
+    </li>
+  </ul>
+</nav>
