@@ -5,28 +5,28 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-}
 
-.Navbar-list-item {
-  display: inline;
-  float: left;
-  list-style-type: none;
-  margin-bottom: rem(10);
+  &-item {
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin-bottom: rem(10);
 
-  // Group items in two columns
-  width: 50%;
-  &:nth-child(2n) {
-    text-align: right;
-  }
+    // Group items in two columns
+    width: 50%;
+    &:nth-child(2n) {
+      text-align: right;
+    }
 
-  // In bigger screens, show items in a single line
-  @media screen and (min-width: 480px) {
-    margin-right: rem(22);
-    width: auto;
+    // In bigger screens, show items in a single line
+    @media screen and (min-width: 480px) {
+      margin-right: rem(22);
+      width: auto;
 
-    &:last-child {
-      float: right;
-      margin-right: 0;
+      &:last-child {
+        float: right;
+        margin-right: 0;
+      }
     }
   }
 }

@@ -1,30 +1,30 @@
 .Project {
   min-height: rem(316);
   padding-bottom: rem($space);
-}
 
-.Project-title {
-  margin: 0;
-}
+  &-title {
+    margin: 0;
+  }
 
-.Project-image {
-  border-radius: rem(3);
-  margin-bottom: rem(10);
-  width: 100%;
-}
+  &-image {
+    border-radius: rem(3);
+    margin-bottom: rem(10);
+    width: 100%;
+  }
 
-.Project-title,
-.Project-description {
-  font-size: rem(15);
-}
+  &-title,
+  &-description {
+    font-size: rem(15);
+  }
 
-.Project-description {
-  color: $grey;
-  font-weight: 300;
-  margin: 0;
-}
+  &-description {
+    color: $grey;
+    font-weight: 300;
+    margin: 0;
+  }
 
-.Project-year {
-  float: right;
-  font-weight: 300;
+  &-stamp {
+    float: right;
+    font-weight: 300;
+  }
 }

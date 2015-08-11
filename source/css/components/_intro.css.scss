@@ -4,38 +4,38 @@
   @media screen and (min-width: $min-break-medium) {
     margin: rem(100) 0;
   }
-}
 
-.Intro-title {
-  -webkit-font-smoothing: initial;
-  font-size: rem(27);
-  letter-spacing: rem(0.2);
-  margin: 0 0 rem(16);
-  text-indent: rem(-2);
+  &-title {
+    -webkit-font-smoothing: initial;
+    font-size: rem(27);
+    letter-spacing: rem(0.2);
+    margin: 0 0 rem(16);
+    text-indent: rem(-2);
 
-  @media screen and (min-width: $min-break-small + 1px) {
-    font-size: rem(32);
+    @media screen and (min-width: $min-break-small + 1px) {
+      font-size: rem(32);
+    }
   }
-}
 
-.Intro-title-main {
-  display: block;
+  &-title-main {
+    display: block;
 
-  @media screen and (min-width: $min-break-large) {
-    display: inline;
-    padding-right: rem(8);
+    @media screen and (min-width: $min-break-large) {
+      display: inline;
+      padding-right: rem(8);
+    }
   }
-}
 
-.Intro-subtitle {
-  color: $grey;
-  font-size: rem(25);
-  font-weight: 300;
-  margin: 0;
-  text-indent: rem(-1);
-  word-spacing: rem(1);
+  &-subtitle {
+    color: $grey;
+    font-size: rem(25);
+    font-weight: 300;
+    margin: 0;
+    text-indent: rem(-1);
+    word-spacing: rem(1);
 
-  @media screen and (min-width: $min-break-small) {
-    font-size: rem(23);
+    @media screen and (min-width: $min-break-small) {
+      font-size: rem(23);
+    }
   }
 }

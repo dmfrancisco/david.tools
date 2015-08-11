@@ -1,16 +1,16 @@
 /* A warning for users of old versions of Internet Explorer */
-.warning-oldie {
+.Warning {
   display: none;
 }
 
-html.oldie {
+.Oldie {
   overflow: hidden;
 
   &, body {
     height: 100%;
   }
 
-  .warning-oldie {
+  .Warning {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,14 +27,14 @@ html.oldie {
     color: $light-grey;
     line-height: 25px;
     font-size: 20px;
-  }
 
-  p {
-    max-width: 580px;
-  }
+    p {
+      max-width: 580px;
+    }
 
-  a {
-    color: $light-grey !important;
-    border-bottom: 2px solid $grey;
+    a {
+      color: $light-grey !important;
+      border-bottom: 2px solid $grey;
+    }
   }
 }
