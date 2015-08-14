@@ -7,8 +7,11 @@
   }
 
   &-image {
+    background-size: contain;
     border-radius: rem(3);
+    height: 0;
     margin-bottom: rem(10);
+    padding-bottom: 100%;
     width: 100%;
   }
 

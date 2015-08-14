@@ -2,8 +2,8 @@
   <% settings.projects.each do |project| %>
     <div class="Project u-col">
       <% link_to project[:link], class: "Project-link", draggable: "false" do %>
-        <%= image_tag project[:image_src], alt: project[:title],
-          draggable: "false", class: "Project-image" %>
+        <div class="Project-image" style="background-image:url('img/<%= project[:image_src] %>')">
+        </div>
 
         <h3 class="Project-title">
           <%= project[:title] %>
