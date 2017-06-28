@@ -49,7 +49,7 @@ set :projects, [
     title: "React.parts",
     description: "A catalog of React components for both web and native.",
     image_src: "project-react-parts.png",
-    link: "https://react.parts"
+    link: "https://react.david.tools"
   }, {
     title: "React Icons",
     description: "A simple React component for icons using inline SVG.",
