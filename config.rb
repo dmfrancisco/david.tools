@@ -49,47 +49,56 @@ set :projects, [
     title: "React.parts",
     description: "A catalog of React components for both web and native.",
     image_src: "project-react-parts.png",
-    link: "https://react.david.tools"
+    link: "https://react.david.tools",
+    year: 2015
   }, {
     title: "React Icons",
     description: "A simple React component for icons using inline SVG.",
     image_src: "project-react-icons.png",
-    link: "http://dmfrancisco.github.io/react-icons"
+    link: "http://dmfrancisco.github.io/react-icons",
+    year: 2015
   }, {
     title: "Space Horse",
     description: "Web and NW.js desktop app for organizing knowledge. Written in ES6 with React and Flux.",
     image_src: "project-spacehorse.png",
-    link: "https://github.com/dmfrancisco/spacehorse"
+    link: "https://github.com/dmfrancisco/spacehorse",
+    year: 2015
   }, {
     title: "Jonymockup",
     description: "Simple tool for sharing mockups. Built with Polymer, uses shadow DOM and HTML imports.",
     image_src: "project-jonymockup.png",
-    link: "http://jonymockup.dmfranc.com"
+    link: "http://jonymockup.dmfranc.com",
+    year: 2015
   }, {
     title: "SpaceJunk",
     description: "An opinionated cloud-based TiddlyWiki setup. This is a proof-of-concept.",
     image_src: "project-spacejunk.png",
-    link: "http://spacejunk.dmfranc.com"
+    link: "http://spacejunk.dmfranc.com",
+    year: 2014
   }, {
     title: "Gideo",
     description: "Minimal video player like Vine that loops and autoplays.",
     image_src: "project-gideo.png",
-    link: "https://github.com/dmfrancisco/gideo"
+    link: "https://github.com/dmfrancisco/gideo",
+    year: 2014
   }, {
     title: "Blocks",
     description: "App for people interested in gathering self-knowledge. Built with AngularJS and Cordova.",
     image_src: "project-blocks.png",
-    link: "http://blocks.dmfranc.com"
+    link: "http://blocks.dmfranc.com",
+    year: 2014
   }, {
     title: "k▥",
     description: "Command-line tool for task boards that is collaborative and works offline. Uses Git as a DB.",
     image_src: "project-kood.png",
-    link: "http://kood.dmfranc.com/info"
+    link: "http://kood.dmfranc.com/info",
+    year: 2013
   }, {
     title: "Pomada",
     description: "Simple tool for the pomodoro technique that can be used on the web, chrome or desktop.",
     image_src: "project-pomada.png",
-    link: "http://pomada.dmfranc.com"
+    link: "http://pomada.dmfranc.com",
+    year: 2012
   }, {
     title: "Appbase",
     description: "Web Platform for User-Centric Interoperable Applications using Apache Wookie and Google Caja.",
