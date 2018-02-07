@@ -1,0 +1,54 @@
+.Projects {
+  list-style: none;
+  padding: 0;
+}
+
+.Project {
+  display: flex;
+  margin-right: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.Project-content {
+  flex: 1;
+}
+
+.Project-title,
+.Project-description {
+  display: inline-block;
+}
+
+.Project-title {
+  margin-bottom: .625rem;
+}
+
+.Project-description {
+  line-height: 1.35rem;
+  margin-bottom: .5625rem;
+}
+
+.Project-title,
+.Project-year {
+  font-size: 1.0625rem;
+  line-height: 1rem;
+}
+
+.Project-year {
+  float: right;
+  font-style: normal;
+}
+
+.Project-img {
+  background: currentColor;
+  border-radius: 0.125rem;
+  flex: none;
+  height: 5.75rem;
+  margin-top: 0.125rem;
+  margin-right: 2.5rem;
+  width: 5.75rem;
+}
+
+.Project-link {
+  color: inherit;
+  margin-right: .625rem;
+}

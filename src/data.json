@@ -1,0 +1,156 @@
+{
+  "title":
+    "Web developer from Coimbra, Portugal working remotely at Union. Currently focused on the next version of our web application.",
+  "description":
+    "My name is David Francisco. I have been working as a full-stack developer since 2012. My primary focus is the front-end and design of the software platform we are building. Most of my work is not publicly available, but I build open source side-projects whenever possible. The following is a list of my favorites.",
+  "nav": [
+    {
+      "text": "Blog",
+      "href": "http://blog.dmfranc.com"
+    },
+    {
+      "text": "Twitter",
+      "href": "https://twitter.com/dmfrancisco"
+    },
+    {
+      "text": "GitHub",
+      "href": "https://github.com/dmfrancisco"
+    },
+    {
+      "text": "Dribbble",
+      "href": "https://dribbble.com/davidfrancisco"
+    },
+    {
+      "text": "Instagram",
+      "href": "https://instagram.com/dmfrancisco"
+    },
+    {
+      "text": "email",
+      "href": "mailto:hello@dmfranc.com"
+    }
+  ],
+  "projects": [
+    {
+      "title": "React.parts",
+      "description": "A catalog of React components for both web and native.",
+      "src": "project-react-parts.png",
+      "href": "https://react.david.tools",
+      "year": 2015
+    },
+    {
+      "title": "React Icons",
+      "description": "A simple React component for icons using inline SVG.",
+      "src": "project-react-icons.png",
+      "href": "http://dmfrancisco.github.io/react-icons",
+      "year": 2015
+    },
+    {
+      "title": "Space Horse",
+      "description":
+        "Web and NW.js desktop app for organizing knowledge. Written in ES6 with React and Flux.",
+      "src": "project-spacehorse.png",
+      "href": "https://github.com/dmfrancisco/spacehorse",
+      "year": 2015
+    },
+    {
+      "title": "Jonymockup",
+      "description":
+        "Simple tool for sharing mockups. Built with Polymer, uses shadow DOM and HTML imports.",
+      "src": "project-jonymockup.png",
+      "href": "http://jonymockup.dmfranc.com",
+      "year": 2015
+    },
+    {
+      "title": "SpaceJunk",
+      "description": "An opinionated cloud-based TiddlyWiki setup. This is a proof-of-concept.",
+      "src": "project-spacejunk.png",
+      "href": "http://spacejunk.dmfranc.com",
+      "year": 2014
+    },
+    {
+      "title": "Gideo",
+      "description": "Minimal video player like Vine that loops and autoplays.",
+      "src": "project-gideo.png",
+      "href": "https://github.com/dmfrancisco/gideo",
+      "year": 2014
+    },
+    {
+      "title": "Blocks",
+      "description":
+        "App for people interested in gathering self-knowledge. Built with AngularJS and Cordova.",
+      "src": "project-blocks.png",
+      "href": "http://blocks.dmfranc.com",
+      "year": 2014
+    },
+    {
+      "title": "k▥",
+      "description":
+        "Command-line tool for task boards that is collaborative and works offline. Uses Git as a DB.",
+      "src": "project-kood.png",
+      "href": "http://kood.dmfranc.com/info",
+      "year": 2013
+    },
+    {
+      "title": "Pomada",
+      "description":
+        "Simple tool for the pomodoro technique that can be used on the web, chrome or desktop.",
+      "src": "project-pomada.png",
+      "href": "http://pomada.dmfranc.com",
+      "year": 2012
+    },
+    {
+      "title": "Appbase",
+      "description":
+        "Web Platform for User-Centric Interoperable Applications using Apache Wookie and Google Caja.",
+      "src": "project-appbase.png",
+      "href": "http://tmblr.co/Zh-Y9ySGFFYm",
+      "year": 2012
+    },
+    {
+      "title": "Pagehub",
+      "description":
+        "Proof-of-concept that explores a kind of redirection technique using iframes.",
+      "src": "project-pagehub.png",
+      "href": "http://pagehub.dmfranc.com",
+      "year": 2011
+    },
+    {
+      "title": "slideshow.html",
+      "description":
+        "Yet another tool for creating presentations written in HTML, JS, CSS and Ruby.",
+      "src": "project-slideshow-html.png",
+      "href": "http://slideshow.dmfranc.com/",
+      "year": 2011
+    },
+    {
+      "title": "Escrito",
+      "description":
+        "A collaborative writing tool that supports Markdown and Textile. Powered by Node.js & ShareJS.",
+      "src": "project-escrito.png",
+      "href": "http://blog.dmfranc.com/tagged/escrito",
+      "year": 2011
+    },
+    {
+      "title": "Desligado",
+      "description":
+        "Experiment that adds support for disconnection and deferred updates to Backbone apps.",
+      "src": "project-desligado.png",
+      "href": "http://dmfrancisco.github.com/Desligado/",
+      "year": 2011
+    },
+    {
+      "title": "Scurry",
+      "description": "Toy programming language. Written with Python, PLY and LLVM.",
+      "src": "project-scurry.png",
+      "href": "https://github.com/dmfrancisco/scurry/",
+      "year": 2010
+    },
+    {
+      "title": "Activo",
+      "description": "A theme for data-driven applications written in SASS for Ruby on Rails.",
+      "src": "project-activo.png",
+      "href": "http://activo.dmfranc.com/",
+      "year": 2010
+    }
+  ]
+}

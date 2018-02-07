@@ -1,5 +1,17 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  font-family: Karla, sans-serif;
+  cursor: default;
+  color: rgb(34,38,88);
+  padding-bottom: 7.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.u-container {
+  max-width: 42.5rem;
+  margin: auto;
+}
+
+::selection {
+  background: rgba(34,38,88,.1);
 }
