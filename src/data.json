@@ -31,6 +31,61 @@
   ],
   "projects": [
     {
+      "title": "List.community",
+      "description": "An easy way to browse curated lists on GitHub.",
+      "details": "Built with create-react-app, react-snap and Tailwind CSS.",
+      "logo": "",
+      "link": "https://list.community",
+      "code": "https://github.com/listcommunity/support",
+      "year": 2018
+    },
+    {
+      "title": "JS.coach Reborn",
+      "description": "Search for packages related to React, Babel, Webpack and PostCSS.",
+      "details": "Rewrite and redesign that lives as a static app on GitHub Pages.",
+      "logo": "",
+      "link": "https://js.coach",
+      "post": "http://blog.js.coach/post/168199334697/v100-new-client-ui-and-server",
+      "code": "https://github.com/jscoach",
+      "year": 2017
+    },
+    {
+      "title": "create-react-video",
+      "description": "NPM package to program simple videos with React.",
+      "details": "Based on react-scripts and powered by Electron.",
+      "logo": "",
+      "post": "https://robo54.com/blog/create-react-video",
+      "code": "https://github.com/robo54/create-react-video",
+      "year": 2017
+    },
+    {
+      "title": "tetunprasa.com",
+      "description": "Type in english or tetun and get definitions and common phrases.",
+      "details": "Simple Ruby on Rails app with Postgres. Sponsored by DigitalOcean.",
+      "logo": "",
+      "link": "https://tetunprasa.com",
+      "code": "https://github.com/dmfrancisco/tetunprasa.com",
+      "year": 2017
+    },
+    {
+      "title": "Pixel Glasses",
+      "description": "Hackathon app that describes your surroundings using audio.",
+      "details": "Built using Microsoft Cognitive Service APIs and React Native.",
+      "logo": "",
+      "link": "http://blog.dmfranc.com/post/164333915936/pixelglasses",
+      "year": 2016
+    },
+    {
+      "title": "JS.coach Classic",
+      "description": "Search for packages related to React, Babel, Webpack and PostCSS.",
+      "details": "Built with React, PostCSS, Node.js and Ruby on Rails.",
+      "logo": "",
+      "link": "http://classic.js.coach",
+      "post": "http://blog.js.coach/hello-world",
+      "code": "https://github.com/jscoach/support/tree/classic",
+      "year": 2016
+    },
+    {
       "title": "React.parts",
       "description": "A catalog of React components for both web and native.",
       "details": "Built using React and PostCSS with help from Hubot and Dokku.",
