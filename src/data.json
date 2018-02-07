@@ -33,123 +33,141 @@
     {
       "title": "React.parts",
       "description": "A catalog of React components for both web and native.",
-      "src": "project-react-parts.png",
-      "href": "https://react.david.tools",
+      "details": "Built using React and PostCSS with help from Hubot and Dokku.",
+      "logo": "project-react-parts.png",
+      "link": "https://react.david.tools",
+      "code": "https://github.com/madebyform/react-parts",
       "year": 2015
     },
     {
       "title": "React Icons",
       "description": "A simple React component for icons using inline SVG.",
-      "src": "project-react-icons.png",
-      "href": "http://dmfrancisco.github.io/react-icons",
+      "details": "Demo includes icon set by the Polymer Team.",
+      "logo": "project-react-icons.png",
+      "link": "http://dmfrancisco.github.io/react-icons",
+      "code": "https://github.com/dmfrancisco/react-icons",
       "year": 2015
     },
     {
       "title": "Space Horse",
-      "description":
-        "Web and NW.js desktop app for organizing knowledge. Written in ES6 with React and Flux.",
-      "src": "project-spacehorse.png",
-      "href": "https://github.com/dmfrancisco/spacehorse",
+      "description": "Web and desktop application for organizing knowledge.",
+      "details": "Written in JavaScript with React, Flux and NW.js.",
+      "logo": "project-spacehorse.png",
+      "code": "https://github.com/dmfrancisco/spacehorse",
       "year": 2015
     },
     {
       "title": "Jonymockup",
-      "description":
-        "Simple tool for sharing mockups. Built with Polymer, uses shadow DOM and HTML imports.",
-      "src": "project-jonymockup.png",
-      "href": "http://jonymockup.dmfranc.com",
+      "description": "Simple tool for sharing mockups.",
+      "details": "Built with Polymer, uses shadow DOM and HTML imports.",
+      "logo": "project-jonymockup.png",
+      "post": "http://jonymockup.dmfranc.com",
+      "code": "https://github.com/dmfrancisco/jonymockup",
       "year": 2015
     },
     {
       "title": "SpaceJunk",
-      "description": "An opinionated cloud-based TiddlyWiki setup. This is a proof-of-concept.",
-      "src": "project-spacejunk.png",
-      "href": "http://spacejunk.dmfranc.com",
+      "description": "An opinionated cloud-based TiddlyWiki setup.",
+      "details": "This is a proof-of-concept that uses Heroku and Dropbox.",
+      "logo": "project-spacejunk.png",
+      "post": "http://spacejunk.dmfranc.com",
+      "code": "https://github.com/dmfrancisco/spacejunk",
       "year": 2014
     },
     {
       "title": "Gideo",
-      "description": "Minimal video player like Vine that loops and autoplays.",
-      "src": "project-gideo.png",
-      "href": "https://github.com/dmfrancisco/gideo",
+      "description": "Minimal video player that loops and autoplays.",
+      "details": "Built on top of MediaElement.js.",
+      "logo": "project-gideo.png",
+      "code": "https://github.com/dmfrancisco/gideo",
       "year": 2014
     },
     {
       "title": "Blocks",
-      "description":
-        "App for people interested in gathering self-knowledge. Built with AngularJS and Cordova.",
-      "src": "project-blocks.png",
-      "href": "http://blocks.dmfranc.com",
+      "description": "App for people interested in gathering self-knowledge.",
+      "details": "Built with AngularJS and Cordova.",
+      "logo": "project-blocks.png",
+      "post": "http://blocks.dmfranc.com",
+      "code": "https://github.com/dmfrancisco/blocks",
       "year": 2014
     },
     {
       "title": "k▥",
-      "description":
-        "Command-line tool for task boards that is collaborative and works offline. Uses Git as a DB.",
-      "src": "project-kood.png",
-      "href": "http://kood.dmfranc.com/info",
+      "description": "Command-line tool for collaborative task boards that works offline.",
+      "details": "Uses Git as a database.",
+      "logo": "project-kood.png",
+      "post": "http://kood.dmfranc.com/info",
+      "code": "https://github.com/dmfrancisco/kood",
       "year": 2013
     },
     {
       "title": "Pomada",
-      "description":
-        "Simple tool for the pomodoro technique that can be used on the web, chrome or desktop.",
-      "src": "project-pomada.png",
-      "href": "http://pomada.dmfranc.com",
+      "description": "Simple tool for the pomodoro technique.",
+      "details": "Can be used on the web, desktop and Chrome App.",
+      "logo": "project-pomada.png",
+      "post": "http://pomada.dmfranc.com",
+      "code": "https://github.com/dmfrancisco/pomada",
       "year": 2012
     },
     {
       "title": "Appbase",
-      "description":
-        "Web Platform for User-Centric Interoperable Applications using Apache Wookie and Google Caja.",
-      "src": "project-appbase.png",
-      "href": "http://tmblr.co/Zh-Y9ySGFFYm",
+      "description": "Web Platform for User-Centric Interoperable Applications.",
+      "details": "Uses Apache Wookie and Google Caja.",
+      "logo": "project-appbase.png",
+      "link": "http://tmblr.co/Zh-Y9ySGFFYm",
       "year": 2012
     },
     {
       "title": "Pagehub",
-      "description":
-        "Proof-of-concept that explores a kind of redirection technique using iframes.",
-      "src": "project-pagehub.png",
-      "href": "http://pagehub.dmfranc.com",
+      "description": "Proof-of-concept app to generate short URLs.",
+      "details": "Explores a redirection technique using iframes.",
+      "logo": "project-pagehub.png",
+      "link": "http://pagehub.dmfranc.com",
       "year": 2011
     },
     {
       "title": "slideshow.html",
-      "description":
-        "Yet another tool for creating presentations written in HTML, JS, CSS and Ruby.",
-      "src": "project-slideshow-html.png",
-      "href": "http://slideshow.dmfranc.com/",
+      "description": "Tool for creating presentations with HTML, JS and CSS.",
+      "details": "Written in Ruby.",
+      "logo": "project-slideshow-html.png",
+      "link": "http://slideshow.dmfranc.com",
+      "post": "http://blog.dmfranc.com/post/9227991618/slideshow",
+      "code": "https://github.com/dmfrancisco/slideshow.html",
       "year": 2011
     },
     {
       "title": "Escrito",
-      "description":
-        "A collaborative writing tool that supports Markdown and Textile. Powered by Node.js & ShareJS.",
-      "src": "project-escrito.png",
-      "href": "http://blog.dmfranc.com/tagged/escrito",
+      "description": "A collaborative writing tool that supports Markdown and Textile.",
+      "details": "Powered by Node.js and ShareJS.",
+      "logo": "project-escrito.png",
+      "post": "http://blog.dmfranc.com/tagged/escrito",
+      "code": "https://github.com/dmfrancisco/escrito",
       "year": 2011
     },
     {
       "title": "Desligado",
-      "description":
-        "Experiment that adds support for disconnection and deferred updates to Backbone apps.",
-      "src": "project-desligado.png",
-      "href": "http://dmfrancisco.github.com/Desligado/",
+      "description": "Support for disconnection and deferred updates for web apps.",
+      "details": "Uses Cache Manifest, WebSQL, Local Storage and Web Sockets.",
+      "logo": "project-desligado.png",
+      "link": "http://dmfrancisco.github.com/Desligado",
+      "code": "https://github.com/dmfrancisco/desligado",
       "year": 2011
     },
     {
       "title": "Scurry",
-      "description": "Toy programming language. Written with Python, PLY and LLVM.",
-      "src": "project-scurry.png",
-      "href": "https://github.com/dmfrancisco/scurry/",
+      "description": "Toy programming language.",
+      "details": "Written with Python, PLY and LLVM.",
+      "logo": "project-scurry.png",
+      "code": "https://github.com/dmfrancisco/scurry",
       "year": 2010
     },
     {
       "title": "Activo",
-      "description": "A theme for data-driven applications written in SASS for Ruby on Rails.",
-      "src": "project-activo.png",
-      "href": "http://activo.dmfranc.com/",
+      "description": "A theme for data-driven, admin-like applications.",
+      "details": "Written in SASS for Ruby on Rails.",
+      "logo": "project-activo.png",
+      "link": "http://activo.dmfranc.com",
+      "code": "https://github.com/dmfrancisco/activo/tree/activo-2",
       "year": 2010
     }
   ]

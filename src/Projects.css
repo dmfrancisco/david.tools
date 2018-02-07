@@ -6,7 +6,8 @@
 .Project {
   display: flex;
   margin-right: 1rem;
-  margin-bottom: 2.5rem;
+  padding: 1.25rem 0;
+  position: relative;
 }
 
 .Project-content {
@@ -19,12 +20,12 @@
 }
 
 .Project-title {
-  margin-bottom: .625rem;
+  margin-bottom: .5625rem;
 }
 
 .Project-description {
   line-height: 1.35rem;
-  margin-bottom: .5625rem;
+  margin-bottom: .5rem;
 }
 
 .Project-title,
@@ -48,7 +49,36 @@
   width: 5.75rem;
 }
 
+.Project-linkMask {
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
 .Project-link {
   color: inherit;
-  margin-right: .625rem;
+  padding: .25rem .3125rem;
+  margin-left: -.3125rem;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.Project-link + .Project-link {
+  margin-left: 0;
+}
+
+.Project-link > span {
+  border-bottom: 1px solid rgba(34,38,88,.25);
+  transition: border-color 250ms;
+}
+
+.Project-linkMask:hover ~ .Project-content .Project-link:first-of-type > span,
+.Project-link:hover > span {
+  border-color: currentColor;
+  text-decoration: none;
 }

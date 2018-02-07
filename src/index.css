@@ -7,11 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  background: rgba(34,38,88,.1);
+}
+
 .u-container {
   max-width: 42.5rem;
   margin: auto;
 }
 
-::selection {
-  background: rgba(34,38,88,.1);
+@media screen and (min-width: 600px) {
+  .u-rbr {
+    display: block;
+  }
 }

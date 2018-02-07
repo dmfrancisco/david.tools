@@ -6,8 +6,8 @@ export default ({ items }) => (
   <section className="u-container">
     <ol className="Projects">
       {items.map(item => (
-        <li key={item.src} className="Project">
-          <a href={item.href} hidden>
+        <li key={item.logo} className="Project">
+          <a href={item.link || item.post || item.code} hidden className="Project-linkMask">
             {" "}
           </a>
 
@@ -17,17 +17,25 @@ export default ({ items }) => (
             <strong className="Project-title">{item.title}</strong>{" "}
             <em className="Project-year">{item.year}</em>
             <br />
-            <span className="Project-description">{item.description}</span>
+            <span className="Project-description">
+              <span className="u-rbr">{item.description}</span> {item.details}
+            </span>
             <br />
-            <a href="/" className="Project-link">
-              Open website
-            </a>{" "}
-            <a href="/" className="Project-link">
-              Read notes
-            </a>{" "}
-            <a href="/" className="Project-link">
-              View source
-            </a>
+            {item.link && (
+              <a href={item.link} className="Project-link">
+                <span>Open website</span>{" "}
+              </a>
+            )}
+            {item.post && (
+              <a href={item.post} className="Project-link">
+                <span>Read notes</span>{" "}
+              </a>
+            )}
+            {item.code && (
+              <a href={item.code} className="Project-link">
+                <span>View source</span>
+              </a>
+            )}
           </div>
         </li>
       ))}
