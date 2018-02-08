@@ -6,12 +6,12 @@ export default ({ items }) => (
   <section className="u-container">
     <ol className="Projects">
       {items.map(item => (
-        <li key={item.logo} className="Project">
+        <li key={item.title} className="Project">
           <a href={item.link || item.post || item.code} hidden className="Project-linkMask">
             {" "}
           </a>
 
-          <div className="Project-img" />
+          <item.logo className="Project-logo" />
 
           <div className="Project-content">
             <strong className="Project-title">{item.title}</strong>{" "}

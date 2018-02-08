@@ -39,8 +39,7 @@
   font-style: normal;
 }
 
-.Project-img {
-  background: currentColor;
+.Project-logo {
   border-radius: 0.125rem;
   flex: none;
   height: 5.75rem;
