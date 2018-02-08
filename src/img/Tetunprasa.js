@@ -1,7 +1,13 @@
 import React from "react";
 
 const Tetunprasa = props => (
-  <svg width={92} height={92} style={{ background: "#c3c4d1" }} viewBox="0 0 92 92" {...props}>
+  <svg
+    width={92}
+    height={92}
+    style={{ background: "#c3c4d1", color: "#fec93e" }}
+    data-hover-bg
+    viewBox="0 0 92 92"
+    {...props}>
     <g fill="none" fillRule="evenodd">
       <path
         fill="#222658"
@@ -10,6 +16,8 @@ const Tetunprasa = props => (
       />
       <path
         fill="#F2F3F5"
+        style={{ color: "#FAFAFA" }}
+        data-hover-fill
         d="M81.237 48.527c-1.275 5.7-6.895 9.849-16.86 12.448 2.423-3.67 3.943-6.833 4.561-9.486-7.052.844-16.02.915-27.398.202C-.95 49.028-4.716 38.54-3.666 19.902-2.963 7.436 0 0 0 0h93.95s1.05 8.808 0 27.445c-.57 10.104-3.437 17.162-12.713 21.082z"
       />
       <path

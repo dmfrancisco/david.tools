@@ -1,11 +1,39 @@
 import React from "react";
 
 const Appbase = props => (
-  <svg width={92} height={92} style={{ background: "#c3c4d1" }} {...props}>
+  <svg
+    width={92}
+    height={92}
+    style={{ background: "#c3c4d1", color: "#e5e5e5" }}
+    data-hover-bg
+    viewBox="0 0 92 92"
+    {...props}>
     <g fill="none" fillRule="evenodd">
-      <path
-        fill="#222658"
-        d="M20 22h52a2 2 0 0 1 2 2v44a2 2 0 0 1-2 2H20a2 2 0 0 1-2-2V24a2 2 0 0 1 2-2zm2 9v35h48V31H22zm1.5-3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+      <rect width={56} height={48} x={18} y={22} fill="#222658" rx={2} />
+      <path fill="#C3C4D1" style={{ color: "#E5E5E5" }} data-hover-fill d="M22 31h48v35H22z" />
+      <circle
+        cx={23.5}
+        cy={26.5}
+        r={1.5}
+        fill="#C3C4D1"
+        style={{ color: "#FF6159" }}
+        data-hover-fill
+      />
+      <circle
+        cx={28.5}
+        cy={26.5}
+        r={1.5}
+        fill="#C3C4D1"
+        style={{ color: "#FFC12E" }}
+        data-hover-fill
+      />
+      <circle
+        cx={33.5}
+        cy={26.5}
+        r={1.5}
+        fill="#C3C4D1"
+        style={{ color: "#29CB42" }}
+        data-hover-fill
       />
       <path
         stroke="#222658"

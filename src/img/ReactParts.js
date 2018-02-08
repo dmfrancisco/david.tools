@@ -1,7 +1,13 @@
 import React from "react";
 
 const ReactParts = props => (
-  <svg width={92} height={92} style={{ background: "#a8a9bd" }} viewBox="0 0 92 92" {...props}>
+  <svg
+    width={92}
+    height={92}
+    style={{ background: "#a8a9bd", color: "#5cace8" }}
+    data-hover-bg
+    viewBox="0 0 92 92"
+    {...props}>
     <g fill="none" fillRule="evenodd">
       <path
         fill="#222658"

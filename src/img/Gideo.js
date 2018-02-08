@@ -1,7 +1,13 @@
 import React from "react";
 
 const Gideo = props => (
-  <svg width={92} height={92} style={{ background: "#c3c4d1" }} viewBox="0 0 92 92" {...props}>
+  <svg
+    width={92}
+    height={92}
+    style={{ background: "#c3c4d1", color: "#b5e4e3" }}
+    data-hover-bg
+    viewBox="0 0 92 92"
+    {...props}>
     <path
       fill="#222658"
       fillRule="evenodd"
