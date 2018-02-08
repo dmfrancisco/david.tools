@@ -22,6 +22,13 @@ import Tetunprasa from "./img/Tetunprasa";
 import SlideshowHTML from "./img/SlideshowHTML";
 
 export default {
+  helmet: {
+    title: "David Francisco",
+    author: "David Marquês Francisco",
+    description:
+      "Hey, I'm David Francisco. A web developer from Coimbra that focuses on front-end and design.",
+    publicUrl: "https://david.tools",
+  },
   title:
     "Web developer from Coimbra, Portugal working remotely at Union. Currently focused on the next version of our web application.",
   description:
