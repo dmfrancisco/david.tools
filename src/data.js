@@ -95,7 +95,7 @@ export default {
       description: "Hackathon app that describes your surroundings using audio.",
       details: "Built using Microsoft Cognitive Service APIs and React Native.",
       logo: Pixelglasses,
-      link: "http://blog.dmfranc.com/post/164333915936/pixelglasses",
+      post: "http://blog.dmfranc.com/post/164333915936/pixelglasses",
       year: 2016,
     },
     {
@@ -122,7 +122,7 @@ export default {
       description: "A simple React component for icons using inline SVG.",
       details: "Demo includes icon set by the Polymer Team.",
       logo: ReactIcons,
-      link: "http://dmfrancisco.github.io/react-icons",
+      post: "http://dmfrancisco.github.io/react-icons",
       code: "https://github.com/dmfrancisco/react-icons",
       year: 2015,
     },
@@ -192,7 +192,7 @@ export default {
       description: "Web Platform for User-Centric Interoperable Applications.",
       details: "Uses Apache Wookie and Google Caja.",
       logo: Appbase,
-      link: "http://tmblr.co/Zh-Y9ySGFFYm",
+      post: "http://tmblr.co/Zh-Y9ySGFFYm",
       year: 2012,
     },
     {
@@ -200,7 +200,7 @@ export default {
       description: "Proof-of-concept app to generate short URLs.",
       details: "Explores a redirection technique using iframes.",
       logo: Pagehub,
-      link: "http://pagehub.dmfranc.com",
+      post: "http://pagehub.dmfranc.com",
       year: 2011,
     },
     {
