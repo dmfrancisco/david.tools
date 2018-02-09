@@ -25,6 +25,7 @@ export default {
   helmet: {
     title: "David Francisco",
     author: "David Marquês Francisco",
+    twitter: "@dmfrancisco",
     description:
       "Hey, I'm David Francisco. A web developer from Coimbra that focuses on front-end and design.",
     publicUrl: "https://david.tools",
