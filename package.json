@@ -8,6 +8,7 @@
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-scripts": "1.1.0",
+    "react-snap": "^1.11.3",
     "typeface-karla": "^0.0.54"
   },
   "prettier": {
@@ -18,7 +19,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "react-snap",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "reactSnap": {
+    "preconnectThirdParty": false,
+    "inlineCss": true,
+    "removeScriptTags": true,
+    "minifyHtml": {
+      "collapseWhitespace": false
+    }
   }
 }
