@@ -18,17 +18,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postbuild": "react-snap",
+    "build": "react-scripts build && react-snap",
+    "postbuild": "sed -i '' 's/ data-react-helmet=\"true\"//g' $(find ./build -iname *.html)",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "reactSnap": {
-    "preconnectThirdParty": false,
     "inlineCss": true,
-    "removeScriptTags": true,
-    "minifyHtml": {
-      "collapseWhitespace": false
-    }
+    "removeScriptTags": true
   }
 }
