@@ -6,6 +6,7 @@ const Jonymockup = props => (
     height={92}
     style={{ background: "#f2f3f5", color: "#efefef" }}
     data-hover-bg
+    viewBox="0 0 92 92"
     {...props}>
     <g fill="none" fillRule="evenodd">
       <path

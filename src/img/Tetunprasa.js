@@ -16,7 +16,7 @@ const Tetunprasa = props => (
       />
       <path
         fill="#F2F3F5"
-        style={{ color: "#FAFAFA" }}
+        style={{ color: "#FFF" }}
         data-hover-fill
         d="M81.2 48.5C80 54.2 74.3 58.4 64.4 61a31 31 0 0 0 4.5-9.5c-7 .8-16 .9-27.4.2C-1 49-4.7 38.5-3.7 19.9-3 7.4 0 0 0 0h94s1 8.8 0 27.4c-.6 10.1-3.5 17.2-12.8 21.1z"
       />

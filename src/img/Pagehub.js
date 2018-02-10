@@ -6,6 +6,7 @@ const Pagehub = props => (
     height={92}
     style={{ background: "#222658", color: "#1f1e1f" }}
     data-hover-bg
+    viewBox="0 0 92 92"
     {...props}>
     <path
       fill="#8E90AA"

@@ -5,8 +5,8 @@ const CreateReactVideo = props => (
     width={92}
     height={92}
     style={{ background: "#f2f3f5", color: "#afe0e7" }}
-    viewBox="0 0 92 92"
     data-hover-bg
+    viewBox="0 0 92 92"
     {...props}>
     <g fill="none" fillRule="evenodd">
       <path

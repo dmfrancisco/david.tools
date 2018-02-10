@@ -4,7 +4,7 @@ const JScoachClassic = props => (
   <svg
     width={92}
     height={92}
-    style={{ background: "#f2f3f5", color: "#efefef" }}
+    style={{ background: "#f2f3f5", color: "#e6e6e6" }}
     data-hover-bg
     viewBox="0 0 92 92"
     {...props}>

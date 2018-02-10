@@ -19,8 +19,13 @@ body {
 }
 
 .u-container {
-  max-width: 42.5rem;
+  max-width: 45rem;
   margin: auto;
+}
+
+.u-content {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @media screen and (min-width: 600px) {

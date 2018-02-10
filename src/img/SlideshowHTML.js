@@ -6,6 +6,7 @@ const SlideshowHTML = props => (
     height={92}
     style={{ background: "#dadbe3", color: "#d6d5cf" }}
     data-hover-bg
+    viewBox="0 0 92 92"
     {...props}>
     <path
       fill="#222658"

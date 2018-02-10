@@ -6,6 +6,7 @@ const Scurry = props => (
     height={92}
     style={{ background: "#222658", color: "#0d132b" }}
     data-hover-bg
+    viewBox="0 0 92 92"
     {...props}>
     <g fill="none" fillRule="evenodd">
       <path

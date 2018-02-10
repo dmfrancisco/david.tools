@@ -6,6 +6,7 @@ const Kood = props => (
     height={92}
     style={{ background: "#c3c4d1", color: "#d6d9de" }}
     data-hover-bg
+    viewBox="0 0 92 92"
     {...props}>
     <g fill="none" fillRule="evenodd" stroke="#222658" style={{ color: "#000" }} data-hover-stroke>
       <path

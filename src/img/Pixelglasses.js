@@ -6,6 +6,7 @@ const Pixelglasses = props => (
     height={92}
     style={{ background: "#f2f3f5", color: "#f2ede5" }}
     data-hover-bg
+    viewBox="0 0 92 92"
     {...props}>
     <path
       fill="#8E90AA"

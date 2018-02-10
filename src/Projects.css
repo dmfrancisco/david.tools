@@ -5,9 +5,10 @@
 
 .Project {
   display: flex;
-  margin-right: 1rem;
-  padding: 1.25rem 0;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   position: relative;
+  transition: background 300ms;
 }
 
 .Project-content {
@@ -37,6 +38,7 @@
 .Project-year {
   float: right;
   font-style: normal;
+  margin-right: 1rem;
 }
 
 .Project-logo {
@@ -80,6 +82,19 @@
 .Project-link:hover > span {
   border-color: currentColor;
   text-decoration: none;
+}
+
+.Project:hover {
+  background: rgba(34, 38, 88, 0.03);
+}
+
+.Project:hover .Project-logo {
+  transform: translate(-0.25rem, -0.25rem);
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-right: 2rem;
+  margin-bottom: -0.5rem;
+  transition: all 100ms;
 }
 
 .Project [data-hover-bg] {

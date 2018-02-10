@@ -7,6 +7,7 @@ const Spacejunk = props => (
     height={92}
     style={{ background: "#c3c4d1", color: "#e2ba50" }}
     data-hover-bg
+    viewBox="0 0 92 92"
     {...props}>
     <defs>
       <path id="a" d="M56.2 31.2h33.3v56.5H56.2z" />
