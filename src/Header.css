@@ -1,13 +1,23 @@
 .Header-title {
-  line-height: 1.35;
   letter-spacing: -0.015em;
-  font-size: 2rem;
-  margin: 0;
-  margin-bottom: 3.75rem;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  margin: 2.5rem 0;
 }
 
 .Header-description {
-  font-size: 1.0625rem;
-  line-height: 1.75;
-  margin-bottom: 2.8125rem;
+  font-size: 1.062rem;
+  line-height: 1.6;
+  margin-bottom: 2.8rem;
+}
+
+@media (min-width: 500px) {
+  .Header-title {
+    font-size: 2rem;
+    margin: 3.75rem 0;
+  }
+
+  .Header-description {
+    line-height: 1.75;
+  }
 }

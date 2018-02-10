@@ -5,10 +5,11 @@
 
 .Project {
   display: flex;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding: 1.25rem;
+  margin: 0 -1.25rem;
   position: relative;
   transition: background 300ms;
+  user-select: none;
 }
 
 .Project-content {
@@ -18,6 +19,7 @@
 .Project-title,
 .Project-description {
   display: inline-block;
+  user-select: text;
 }
 
 .Project-title {
@@ -38,7 +40,7 @@
 .Project-year {
   float: right;
   font-style: normal;
-  margin-right: 1rem;
+  user-select: text;
 }
 
 .Project-logo {
