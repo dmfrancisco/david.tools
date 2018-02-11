@@ -141,11 +141,11 @@
 /* Flickering animation from codepen.io/pen/aJLYVz */
 @keyframes flicker {
   0%,
-  19.999%,
+  19%,
   22%,
-  62.999%,
+  62%,
   64%,
-  64.999%,
+  64%,
   70%,
   100% {
     fill: currentColor;
@@ -153,12 +153,12 @@
   }
 
   20%,
-  21.999%,
+  21%,
   63%,
-  63.999%,
+  63%,
   65%,
-  69.999% {
-    fill: #555;
-    opacity: 0.8;
+  69% {
+    fill: #777;
+    opacity: 0.7;
   }
 }
