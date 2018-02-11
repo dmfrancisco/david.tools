@@ -1,14 +1,16 @@
 import React from "react";
 
 const Tetunprasa = props => (
-  <svg
-    width={64}
-    height={64}
-    style={{ background: "#c3c4d1", color: "#fec93e" }}
-    data-hover-bg
-    viewBox="0 0 92 92"
-    {...props}>
+  <svg width={64} height={64} viewBox="0 0 92 92" {...props}>
     <g fill="none" fillRule="evenodd">
+      <rect
+        width="92"
+        height="70"
+        y="22"
+        fill="#C3C4D1"
+        style={{ color: "#FEC93E" }}
+        data-hover-fill
+      />
       <path
         fill="#222658"
         fillRule="nonzero"
