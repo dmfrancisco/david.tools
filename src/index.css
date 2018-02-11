@@ -10,7 +10,7 @@ body {
   color: rgb(34, 38, 88);
   margin: 0;
   padding-bottom: 8vmin;
-  min-width: 15rem;
+  min-width: 280px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,12 +27,14 @@ body {
   padding-right: 1.25rem;
 }
 
+@media (min-width: 550px) {
+  .u-rbr {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
-  }
-
-  .u-rbr {
-    display: block;
   }
 }

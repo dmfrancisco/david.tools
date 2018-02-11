@@ -29,6 +29,7 @@
 .Project-description {
   line-height: 1.35rem;
   margin-bottom: 0.5rem;
+  hyphens: auto;
 }
 
 .Project-title,
@@ -46,10 +47,10 @@
 .Project-logo {
   border-radius: 0.125rem;
   flex: none;
-  height: 5.75rem;
+  height: 4rem;
   margin-top: 0.125rem;
-  margin-right: 2.5rem;
-  width: 5.75rem;
+  margin-right: 1.5rem;
+  width: 4rem;
 }
 
 .Project-linkMask {
@@ -90,13 +91,21 @@
   background: rgba(34, 38, 88, 0.03);
 }
 
-.Project:hover .Project-logo {
-  transform: translate(-0.25rem, -0.25rem);
-  width: 6.25rem;
-  height: 6.25rem;
-  margin-right: 2rem;
-  margin-bottom: -0.5rem;
-  transition: all 100ms;
+@media (min-width: 623px) {
+  .Project-logo {
+    height: 5.75rem;
+    width: 5.75rem;
+    margin-right: 2.5rem;
+  }
+
+  .Project:hover .Project-logo {
+    transform: translate(-0.25rem, -0.25rem);
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-right: 2rem;
+    margin-bottom: -0.5rem;
+    transition: all 100ms;
+  }
 }
 
 .Project [data-hover-bg] {
