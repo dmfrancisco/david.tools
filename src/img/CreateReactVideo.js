@@ -2,8 +2,8 @@ import React from "react";
 
 const CreateReactVideo = props => (
   <svg
-    width={92}
-    height={92}
+    width={64}
+    height={64}
     style={{ background: "#f2f3f5", color: "#afe0e7" }}
     data-hover-bg
     viewBox="0 0 92 92"

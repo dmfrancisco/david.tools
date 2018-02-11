@@ -2,8 +2,8 @@ import React from "react";
 
 const Activo = props => (
   <svg
-    width={92}
-    height={92}
+    width={64}
+    height={64}
     style={{ background: "#dadbe3", color: "#ede9e5" }}
     data-hover-bg
     viewBox="0 0 92 92"

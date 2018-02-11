@@ -2,8 +2,8 @@ import React from "react";
 
 const Kood = props => (
   <svg
-    width={92}
-    height={92}
+    width={64}
+    height={64}
     style={{ background: "#c3c4d1", color: "#d6d9de" }}
     data-hover-bg
     viewBox="0 0 92 92"

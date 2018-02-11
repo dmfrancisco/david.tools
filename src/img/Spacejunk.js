@@ -3,8 +3,8 @@ import React from "react";
 const Spacejunk = props => (
   <svg
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={92}
-    height={92}
+    width={64}
+    height={64}
     style={{ background: "#c3c4d1", color: "#e2ba50" }}
     data-hover-bg
     viewBox="0 0 92 92"

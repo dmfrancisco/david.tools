@@ -14,28 +14,28 @@ export default ({ items }) => (
           <item.logo className="Project-logo" />
 
           <div className="Project-content">
-            <strong className="Project-title">{item.title}</strong>{" "}
+            <h2 className="Project-title">{item.title}</h2>{" "}
             <em className="Project-year">{item.year}</em>
-            <br />
-            <span className="Project-description">
+            <div className="Project-description">
               <span className="u-rbr">{item.description}</span> {item.details}
-            </span>
-            <br />
-            {item.link && (
-              <a href={item.link} className="Project-link">
-                <span>Open website</span>{" "}
-              </a>
-            )}
-            {item.post && (
-              <a href={item.post} className="Project-link">
-                <span>Read notes</span>{" "}
-              </a>
-            )}
-            {item.code && (
-              <a href={item.code} className="Project-link">
-                <span>View source</span>
-              </a>
-            )}
+            </div>
+            <div className="Project-links">
+              {item.link && (
+                <a href={item.link} className="Project-link">
+                  <span>Open website</span>{" "}
+                </a>
+              )}
+              {item.post && (
+                <a href={item.post} className="Project-link">
+                  <span>Read notes</span>{" "}
+                </a>
+              )}
+              {item.code && (
+                <a href={item.code} className="Project-link">
+                  <span>View source</span>
+                </a>
+              )}
+            </div>
           </div>
         </li>
       ))}

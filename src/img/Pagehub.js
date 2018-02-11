@@ -2,8 +2,8 @@ import React from "react";
 
 const Pagehub = props => (
   <svg
-    width={92}
-    height={92}
+    width={64}
+    height={64}
     style={{ background: "#222658", color: "#1f1e1f" }}
     data-hover-bg
     viewBox="0 0 92 92"

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Spacehorse = props => (
-  <svg width={92} height={92} style={{ background: "#eff1f5" }} viewBox="0 0 92 92" {...props}>
+  <svg width={64} height={64} style={{ background: "#eff1f5" }} viewBox="0 0 92 92" {...props}>
     <g fill="none" fillRule="evenodd">
       <path fill="#F2F3F5" style={{ color: "#F9F8D8" }} data-hover-fill d="M0 93h92V83H0z" />
       <path fill="#E5E6EB" style={{ color: "#FDE583" }} data-hover-fill d="M0 0h92v83H0z" />

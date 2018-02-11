@@ -1,7 +1,7 @@
 import React from "react";
 
 const Blocks = props => (
-  <svg width={92} height={92} viewBox="0 0 92 92" {...props}>
+  <svg width={64} height={64} viewBox="0 0 92 92" {...props}>
     <g fill="none" fillRule="evenodd">
       <path fill="#F0F0F3" d="M46 46h46v46H46z" />
       <path fill="#FFF" d="M46 46v46l46-46z" />

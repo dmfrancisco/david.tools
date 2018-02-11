@@ -56,7 +56,7 @@ export default {
       href: "https://instagram.com/dmfrancisco",
     },
     {
-      text: "email",
+      text: "Email",
       href: "mailto:hello@dmfranc.com",
     },
   ],

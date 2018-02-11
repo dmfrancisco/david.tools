@@ -18,17 +18,18 @@
 
 .Project-title,
 .Project-description {
-  display: inline-block;
   user-select: text;
 }
 
 .Project-title {
+  display: inline-block;
+  margin-top: 0;
   margin-bottom: 0.5625rem;
 }
 
 .Project-description {
   line-height: 1.35rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   hyphens: auto;
 }
 
@@ -53,6 +54,10 @@
   width: 4rem;
 }
 
+.Project-links {
+  margin-left: -0.3125rem;
+}
+
 .Project-linkMask {
   bottom: 0;
   display: block;
@@ -66,14 +71,11 @@
 .Project-link {
   color: inherit;
   padding: 0.25rem 0.3125rem;
-  margin-left: -0.3125rem;
   position: relative;
   text-decoration: none;
   z-index: 2;
-}
-
-.Project-link + .Project-link {
-  margin-left: 0;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .Project-link > span {

@@ -2,8 +2,8 @@ import React from "react";
 
 const SlideshowHTML = props => (
   <svg
-    width={92}
-    height={92}
+    width={64}
+    height={64}
     style={{ background: "#dadbe3", color: "#d6d5cf" }}
     data-hover-bg
     viewBox="0 0 92 92"
