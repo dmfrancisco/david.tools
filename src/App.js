@@ -1,17 +1,20 @@
 import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import AppHelmet from "./AppHelmet";
-import Nav from "./Nav";
-import Header from "./Header";
-import Projects from "./Projects";
+import Home from "./Home";
+import NotFound from "./NotFound";
 import data from "./data";
 
 export default () => (
   <Fragment>
     <AppHelmet {...data.helmet} />
 
-    <Nav items={data.nav} />
-    <Header title={data.title} description={data.description} />
-    <Projects items={data.projects} />
+    <Router>
+      <Switch>
+        <Route exact path="/" render={routeProps => <Home {...data} />} />
+        <Route render={routeProps => <NotFound {...data} />} />
+      </Switch>
+    </Router>
   </Fragment>
 );

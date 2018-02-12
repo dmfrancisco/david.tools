@@ -1,6 +1,7 @@
 .Projects {
   list-style: none;
   padding: 0;
+  padding-bottom: 8vmin;
 }
 
 .Project {
@@ -106,7 +107,7 @@
     height: 6.25rem;
     margin-right: 2rem;
     margin-bottom: -0.5rem;
-    transition: all 100ms;
+    transition: all 100ms ease-in-out;
   }
 }
 

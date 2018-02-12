@@ -6,6 +6,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "react-snap": "^1.11.3",
     "typeface-karla": "^0.0.54"
@@ -24,6 +25,7 @@
   },
   "reactSnap": {
     "inlineCss": true,
-    "removeScriptTags": true
+    "removeScriptTags": true,
+    "include": ["/404.html"]
   }
 }
