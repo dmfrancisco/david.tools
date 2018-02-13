@@ -1,0 +1,165 @@
+.Projects {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 8vmin;
+}
+
+.Project {
+  display: flex;
+  padding: 1.25rem;
+  margin: 0 -1.25rem;
+  position: relative;
+  transition: background 300ms;
+  user-select: none;
+}
+
+.Project-content {
+  flex: 1;
+}
+
+.Project-title,
+.Project-description {
+  user-select: text;
+}
+
+.Project-title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0.5625rem;
+}
+
+.Project-description {
+  line-height: 1.35rem;
+  margin-bottom: 0.25rem;
+  hyphens: auto;
+}
+
+.Project-title,
+.Project-year {
+  font-size: 1.0625rem;
+  line-height: 1rem;
+}
+
+.Project-year {
+  float: right;
+  font-style: normal;
+  user-select: text;
+}
+
+.Project-logo {
+  border-radius: 0.125rem;
+  flex: none;
+  height: 4rem;
+  margin-top: 0.125rem;
+  margin-right: 1.5rem;
+  width: 4rem;
+}
+
+.Project-links {
+  margin-left: -0.3125rem;
+}
+
+.Project-linkMask {
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.Project-link {
+  color: inherit;
+  padding: 0.25rem 0.3125rem;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.Project-link > span {
+  border-bottom: 1px solid rgba(34, 38, 88, 0.25);
+  transition: border-color 250ms;
+}
+
+.Project-linkMask:hover ~ .Project-content .Project-link:first-of-type > span,
+.Project-link:hover > span {
+  border-color: currentColor;
+  text-decoration: none;
+}
+
+.Project:hover {
+  background: rgba(34, 38, 88, 0.03);
+}
+
+@media (min-width: 623px) {
+  .Project-logo {
+    height: 5.75rem;
+    width: 5.75rem;
+    margin-right: 2.5rem;
+  }
+
+  .Project:hover .Project-logo {
+    transform: translate(-0.25rem, -0.25rem);
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-right: 2rem;
+    margin-bottom: -0.5rem;
+    transition: all 100ms ease-in-out;
+  }
+}
+
+.Project [data-hover-bg] {
+  transition: background 250ms;
+}
+
+.Project [data-hover-fill] {
+  transition: fill 250ms;
+}
+
+.Project [data-hover-stroke] {
+  transition: stroke 250ms;
+}
+
+.Project:hover [data-hover-bg] {
+  background: currentColor !important;
+}
+
+.Project:hover [data-hover-fill] {
+  fill: currentColor !important;
+}
+
+.Project:hover [data-hover-stroke] {
+  stroke: currentColor !important;
+}
+
+.Project:hover [data-flicker] {
+  animation: flicker 3s linear infinite;
+}
+
+/* Flickering animation from codepen.io/pen/aJLYVz */
+@keyframes flicker {
+  0%,
+  19%,
+  22%,
+  62%,
+  64%,
+  64%,
+  70%,
+  100% {
+    fill: currentColor;
+    opacity: 1;
+  }
+
+  20%,
+  21%,
+  63%,
+  63%,
+  65%,
+  69% {
+    fill: #777;
+    opacity: 0.7;
+  }
+}

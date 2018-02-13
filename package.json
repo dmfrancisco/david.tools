@@ -1,0 +1,35 @@
+{
+  "name": "david.tools",
+  "homepage": "https://david.tools",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^1.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0",
+    "react-snap": "^1.11.3",
+    "typeface-karla": "^0.0.54"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "jsxBracketSameLine": true
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && react-snap",
+    "postbuild": "sed -i '' 's/ data-react-helmet=\"true\"//g' $(find ./build -iname *.html)",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "reactSnap": {
+    "inlineCss": true,
+    "removeScriptTags": true,
+    "include": ["/404.html"]
+  }
+}

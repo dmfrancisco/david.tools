@@ -1,0 +1,45 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  line-height: 1.15; /* Correct the line height in all browsers */
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
+  font-size: 14px;
+}
+
+body {
+  font-family: Karla, sans-serif;
+  cursor: default;
+  color: rgb(34, 38, 88);
+  margin: 0;
+  min-width: 280px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(34, 38, 88, 0.1);
+}
+
+.u-container {
+  max-width: 44.5rem;
+  margin: auto;
+  box-sizing: border-box;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 550px) {
+  .u-rbr {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
