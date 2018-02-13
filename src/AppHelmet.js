@@ -10,10 +10,13 @@ export default ({ title, description, author, twitter, publicUrl }) => (
     <meta name="description" content={description} />
 
     <meta property="og:url" content={publicUrl} />
-    <meta property="og:title" content={author} />
-    <meta property="og:image" href={`${publicUrl}/icon.jpg`} />
+    <meta property="og:title" content={title} />
+    <meta property="og:image" content={`${publicUrl}/icon.jpg`} />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content={twitter} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${publicUrl}/icon.jpg`} />
   </Helmet>
 );
