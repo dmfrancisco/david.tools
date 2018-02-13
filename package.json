@@ -1,8 +1,10 @@
 {
   "name": "david.tools",
+  "homepage": "https://david.tools",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
@@ -20,6 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build && react-snap",
     "postbuild": "sed -i '' 's/ data-react-helmet=\"true\"//g' $(find ./build -iname *.html)",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
