@@ -39,7 +39,7 @@ const Spacejunk = props => (
         d="M37 108.8c16 0 29-12.7 29-28.3C66 65 53 52.3 37 52.3S8 64.9 8 80.5s13 28.3 29 28.3z"
         mask="url(#b)"
       />
-      <path fill="#8E90AA" style={{ color: "#E0583B" }} data-hover-fill d="M0 77h92v10H0z" />
+      <path fill="#8E90AA" style={{ color: "#E0583B" }} data-hover-fill d="M0 77h92v12H0z" />
       <path fill="#222658" d="M0 87h92v5H0z" />
       <ellipse cx="15.4" cy="38.6" fill="#F2F3F5" rx="1.9" ry="1.9" />
       <ellipse cx="11.4" cy="62.5" fill="#F2F3F5" rx="1" ry="1" />

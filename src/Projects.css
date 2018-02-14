@@ -135,6 +135,20 @@
   stroke: currentColor !important;
 }
 
+@media (max-device-width: 1024px) {
+  .Project [data-hover-bg] {
+    background: currentColor !important;
+  }
+
+  .Project [data-hover-fill] {
+    fill: currentColor !important;
+  }
+
+  .Project [data-hover-stroke] {
+    stroke: currentColor !important;
+  }
+}
+
 .Project:hover [data-flicker] {
   animation: flicker 3s linear infinite;
 }
