@@ -36,7 +36,7 @@ export default {
   nav: [
     {
       text: "Blog",
-      href: "http://blog.dmfranc.com",
+      href: "https://blog.david.tools",
     },
     {
       text: "Twitter",
