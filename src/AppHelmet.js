@@ -11,6 +11,7 @@ export default ({ title, description, author, twitter, publicUrl }) => (
 
     <meta property="og:url" content={publicUrl} />
     <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
     <meta property="og:image" content={`${publicUrl}/icon.jpg`} />
 
     <meta name="twitter:card" content="summary" />
