@@ -1,6 +1,6 @@
 import React from "react";
 
-const Art = props => (
+const NotFound = props => (
   <svg width={256} height={256} viewBox="0 0 256 256" {...props}>
     <g fill="none" fillRule="evenodd">
       <path
@@ -21,4 +21,4 @@ const Art = props => (
   </svg>
 );
 
-export default Art;
+export default NotFound;
