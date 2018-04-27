@@ -7,7 +7,7 @@ export default ({ items }) => (
     <ol className="Projects">
       {items.map(item => (
         <li key={item.title} className="Project">
-          <a href={item.link || item.post || item.code} hidden className="Project-linkMask">
+          <a href={item.link || item.post || item.code} className="Project-linkMask" aria-hidden>
             {" "}
           </a>
 
