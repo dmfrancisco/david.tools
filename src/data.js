@@ -89,12 +89,12 @@ export default {
       year: 2017,
     },
     {
-      title: "tetunprasa.com",
+      title: "Disionáriu",
       description: "Type in english or tetun and get definitions and common phrases.",
       details: "Simple Ruby on Rails app with Postgres. Sponsored by DigitalOcean.",
       logo: Tetunprasa,
-      link: "https://tetunprasa.com",
-      code: "https://github.com/dmfrancisco/tetunprasa.com",
+      link: "https://tetunprasa.david.tools",
+      code: "https://github.com/dmfrancisco/tetunprasa",
       year: 2017,
     },
     {
