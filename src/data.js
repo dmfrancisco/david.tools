@@ -102,7 +102,7 @@ export default {
       description: "Hackathon app that describes your surroundings using audio.",
       details: "Built using Microsoft Cognitive Service APIs and React Native.",
       logo: Pixelglasses,
-      post: "http://blog.dmfranc.com/post/164333915936/pixelglasses",
+      post: "https://davidfrancisco.tumblr.com/post/164333915936/pixelglasses",
       year: 2016,
     },
     {
