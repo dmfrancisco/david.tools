@@ -27,13 +27,12 @@ export default {
     title: "David Francisco",
     author: "David Marquês Francisco",
     twitter: "@dmfrancisco",
-    description: "Hello, I'm a web developer from Coimbra that focuses on front-end and design.",
+    description: "Hello, I'm a web developer from Coimbra that focuses on front-end development.",
     publicUrl: "https://david.tools",
   },
-  title:
-    "Web developer from Coimbra, Portugal working remotely at Union. Currently focused on the next version of our web application.",
+  title: "Web developer from Coimbra, Portugal working remotely at Tynker.",
   description:
-    "My name is David Francisco. I have been working as a full-stack developer since 2012. My primary focus is the front-end and design of the software platform we are building. Most of my work is not publicly available, but I create open source side-projects whenever possible. The following is a list of my favorites.",
+    "My name is David Francisco. I have been working as a full-stack developer since 2012. My primary focus is the front-end of the education platform we are building. Most of my work is not publicly available, but I create open source side-projects whenever possible. The following is a list of my favorites.",
   nav: [
     {
       text: "Blog",
