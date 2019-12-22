@@ -20,6 +20,7 @@ import Spacehorse from "./img/Spacehorse";
 import Spacejunk from "./img/Spacejunk";
 import Tetunprasa from "./img/Tetunprasa";
 import SlideshowHTML from "./img/SlideshowHTML";
+import BrowserslistGA from "./img/BrowserslistGA";
 
 export default {
   helmet: {
@@ -60,6 +61,15 @@ export default {
     },
   ],
   projects: [
+    {
+      title: "Browserslist-GA",
+      description: "Target browsers tailored to your audience using Google Analytics.",
+      details: "Initial concept, named usestats.io, included a GitHub App.",
+      logo: BrowserslistGA,
+      link: "https://vimeo.com/davidfrancisco/usestats",
+      code: "https://github.com/browserslist/browserslist-ga",
+      year: 2018,
+    },
     {
       title: "List.community",
       description: "An easy way to browse curated lists on GitHub.",
