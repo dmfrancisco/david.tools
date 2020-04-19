@@ -83,9 +83,8 @@ export default {
       description: "Search for packages related to React, Babel, Webpack and PostCSS.",
       details: "Rewrite and redesign that lives as a static app on GitHub Pages.",
       logo: JScoachReborn,
-      link: "https://js.coach",
-      post: "http://blog.js.coach/post/168199334697/v100-new-client-ui-and-server",
-      code: "https://github.com/jscoach",
+      post: "https://blog.david.tools/the-future-of-jscoach",
+      code: "https://github.com/dmfrancisco/jscoach-client",
       year: 2017,
     },
     {
