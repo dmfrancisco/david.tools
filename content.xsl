@@ -93,7 +93,7 @@
       }
     </style>
 
-    <div class="dmfranc-about">
+    <div class="dmfranc-about visited">
       <h1>
         Hello! I’m David Francisco, a designer and engineer.
       </h1>
@@ -104,7 +104,7 @@
 
       <h2 id="work">Work experience</h2>
 
-      <ol class="work visited">
+      <ol class="work">
         <x:for-each select="ext:node-set($work-items)/items/item">
           <li class="work-item">
             <span class="work-time"><x:value-of select="period" /></span>

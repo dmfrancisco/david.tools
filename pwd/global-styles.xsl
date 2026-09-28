@@ -28,6 +28,17 @@
         font-family: var(--font-sans-serif, sans-serif);
         cursor: default;
       }
+      a {
+        color: var(--color-link, LinkText);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+      .visited a:visited {
+        color: var(--color-visited, VisitedText);
+      }
       .dmfranc-nav {
         box-sizing: border-box;
         margin-bottom: 10vmin;
@@ -47,10 +58,8 @@
         text-align: right;
       }
       .dmfranc-nav-link {
-        color: inherit;
         display: inline-block;
         padding: 0.25rem;
-        text-decoration: none;
       }
       .dmfranc-container {
         font-size: calc(var(--gutter)*2.16);
@@ -75,18 +84,15 @@
         font-size: 1.25em;
         font-weight: 600;
       }
-      .dmfranc-main a {
-        background-color: transparent;
-        color: inherit;
-      }
       .dmfranc-projects {
         max-width: calc(var(--gutter)*52);
         padding: 0;
         list-style-type: none;
         padding-left: 0;
       }
-      .dmfranc-projects a {
-        text-decoration: none;
+      .project-links a {
+        text-decoration: underline;
+        text-underline-position: under;
       }
       .dmfranc-projects h3 {
         text-decoration: underline;
@@ -114,14 +120,6 @@
         font-size: calc(var(--gutter)*1.5);
         max-width: calc(var(--gutter)*54);
       }
-      .dmfranc-legal a {
-        color: inherit;
-        text-decoration: none;
-      }
-      .dmfranc-legal a:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-      }
       .dmfranc-u-mt {
         display: block;
         margin-top: calc(var(--gutter)*3);
@@ -132,10 +130,9 @@
       ::-moz-selection {
         background: rgba(var(--color-select-rgb), 0.15);
       }
-      a:focus {
-        display: inline-block;
-        outline: 4px solid var(--color-focus);
-        outline-offset: 4px;
+      :focus-visible {
+        outline: 4px solid var(--color-focus, Highlight);
+        outline-offset: 2px;
       }
       @media only screen and (min-width: 500px) {
         .dmfranc-nav-list {
