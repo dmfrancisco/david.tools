@@ -80,9 +80,13 @@
         font-weight: 600;
       }
       .dmfranc-main h2 {
-        margin: calc(var(--gutter)*9) 0 calc(var(--gutter)*3);
-        font-size: 1.25em;
-        font-weight: 600;
+        margin: calc(var(--gutter)*6) 0 calc(var(--gutter)*3);
+        font-size: 0.9em;
+        font-weight: var(--font-weight-medium, 500);
+        letter-spacing: 0.03em;
+        line-height: 1.25;
+        padding-top: 0.5em;
+        text-transform: uppercase;
       }
       .dmfranc-projects {
         max-width: calc(var(--gutter)*52);

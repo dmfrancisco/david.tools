@@ -1,19 +1,16 @@
-<x:transform
-  version="1.0"
-  xmlns:x="http://www.w3.org/1999/XSL/Transform"
-  xmlns:pwd="pwd"
-  xmlns:ext="http://exslt.org/common"
-  exclude-result-prefixes="ext"
->
+<x:transform version="1.0" xmlns:x="http://www.w3.org/1999/XSL/Transform" xmlns:pwd="pwd"
+  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="ext">
   <x:template name="about-content">
     <style pwd:reparent="head">
       .dmfranc-about {
         line-height: 1.45;
         margin-top: 1.5em;
       }
-      .dmfranc-about > * + * {
+
+      .dmfranc-about>*+* {
         margin-top: 1.5em;
       }
+
       .dmfranc-about a[href^="http"]::after {
         content: "↗";
         vertical-align: text-top;
@@ -22,17 +19,30 @@
         display: inline-block;
         text-decoration: none;
       }
+
       .dmfranc-about .work,
       .dmfranc-about .education,
       .dmfranc-about .project {
+        border-radius: var(--gutter);
+        border: 1px solid rgba(var(--color-text-rgb, 0, 0, 0), 0.15);
         list-style: none;
         padding: 0;
       }
+
       .dmfranc-about .work-item,
       .dmfranc-about .education-item,
       .dmfranc-about .project-item {
-        margin-top: 1em;
+        border-top: 1px solid rgba(var(--color-text-rgb, 0, 0, 0), 0.15);
+        margin: 0;
+        padding: 0.7em 1em 1em;
       }
+
+      .dmfranc-about .work-item:first-child,
+      .dmfranc-about .education-item:first-child,
+      .dmfranc-about .project-item:first-child {
+        border-top: none;
+      }
+
       .dmfranc-about .work-time,
       .dmfranc-about .education-time,
       .dmfranc-about .project-time {
@@ -41,12 +51,14 @@
         opacity: 0.6;
         text-transform: uppercase;
       }
+
       .dmfranc-about .work-title,
       .dmfranc-about .education-title,
       .dmfranc-about .project-title {
         font-size: 1em;
         font-weight: 600;
       }
+
       .dmfranc-about .work-desc,
       .dmfranc-about .education-desc,
       .dmfranc-about .project-desc,
@@ -54,25 +66,30 @@
         font-size: 0.9em;
         margin-top: 0.15em;
       }
+
       .dmfranc-about .work-time {
         margin-right: 1em;
       }
+
       .dmfranc-about .project-item {
         display: flex;
-        margin-top: 1.5em;
       }
+
       .dmfranc-about .project-content {
         flex: 1;
         min-width: 0;
       }
+
       .dmfranc-about .project-title {
         display: inline-block;
         margin-right: 0.35em;
       }
+
       .dmfranc-about .project-link {
         display: inline-block;
         margin-right: 0.75em;
       }
+
       .dmfranc-about .project-logo {
         border: 1px solid #000;
         flex: none;
@@ -81,10 +98,12 @@
         margin-top: 0.5em;
         width: 4rem;
       }
+
       @media screen and (min-width: 46em) {
-        .dmfranc-about .project-desc > span {
+        .dmfranc-about .project-desc>span {
           display: block;
         }
+
         .dmfranc-about .project-logo {
           height: 5rem;
           margin-left: 1.35em;
@@ -99,7 +118,10 @@
       </h1>
 
       <p>
-        I’ve spent more than a decade designing and building web products, including programming tools for children, platforms for startups, and projects in cultural heritage. I like understanding what people are trying to do and what’s getting in their way before deciding what to build. My work spans shaping the user experience, designing interfaces, and implementing them.
+        I’ve spent more than a decade designing and building web products, including programming tools for children,
+        platforms for startups, and projects in cultural heritage. I like understanding what people are trying to do and
+        what’s getting in their way before deciding what to build. My work spans shaping the user experience, designing
+        interfaces, and implementing them.
       </p>
 
       <h2 id="work">Work experience</h2>
@@ -126,9 +148,6 @@
       </ol>
 
       <h2 id="projects">Side projects</h2>
-      <p>
-        I create open source side-projects whenever possible. Because they are done in my free time, they are usually incomplete and not as well-crafted as I would like. Here are some of my favorites.
-      </p>
 
       <ol class="project">
         <x:for-each select="ext:node-set($project-items)/items/item">

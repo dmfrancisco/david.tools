@@ -12,6 +12,7 @@
       :root {
         --gutter: 1vw;
         --color-bg: #fff;
+        --color-bg-rgb: 255,255,255;
         --color-text: #000;
         --color-text-rgb: 0,0,0;
         --color-link: #05b;
@@ -27,6 +28,7 @@
       @media (prefers-color-scheme: dark) {
         :root {
           --color-bg: #000;
+          --color-bg-rgb: 0,0,0;
           --color-text: #ddd;
           --color-text-rgb: 221,221,221;
           --color-link: #5cf;
