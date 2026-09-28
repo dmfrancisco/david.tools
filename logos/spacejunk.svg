@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 92 92" style="background: rgb(226, 186, 80)">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M56.5 31.9h33.3v56.5H56.5z" />
+    <ellipse fill="#EFEBE2" fill-rule="nonzero" cx="37.3" cy="81.3" rx="29" ry="28.2" />
+    <path d="M8.6 112.5c9.4-4.3 20.3-11 31-19A168.7 168.7 0 0 0 70.3 65c3.3-4 5.5-7.8 6.6-10.6.4-1 .6-2 .7-3v.3c.2 0 .2.2.3.2h-.3a8 8 0 0 0-2.7-.3c-3 .2-7 1.3-11.8 3.2-10.4 4-23.3 11.5-36 21a168.7 168.7 0 0 0-30.8 28.6c-2 2.4-3.5 4.7-4.7 6.7-2-7.6 13.3-25.8 35.9-42.4 24-17.6 47.5-26.6 52.2-20 4.8 6.5-11 26-35.1 43.7a146 146 0 0 1-36 20v.1Z" fill="#E0583B" fill-rule="nonzero" />
+    <path d="M37.3 109.5c16 0 29-12.7 29-28.3 0-15.5-13-28.2-29-28.2s-29 12.6-29 28.2 13 28.3 29 28.3Z" fill="#EFEBE2" fill-rule="nonzero" />
+    <path d="M70.3 65c3.3-4 5.5-7.8 6.6-10.6.4-1 .6-2 .7-3v.3c.2 0 .2.2.3.2h-.3a8 8 0 0 0-2.7-.3c-3 .2-7 1.3-11.8 3.2-10.4 4-23.3 11.5-36 21a168.7 168.7 0 0 0-30.8 28.6c-2 2.4-3.5 4.7-4.7 6.7-2-7.6 13.3-25.8 35.9-42.4 24-17.6 47.5-26.6 52.2-20 4.8 6.5-18.5 27-9.4 16.3Z" fill="#E0583B" fill-rule="nonzero" />
+    <path fill="#E0583B" fill-rule="nonzero" d="M0 77.7h92v12H0z" />
+    <path fill="#222658" fill-rule="nonzero" d="M0 87.7h92v5H0z" />
+    <circle fill="#F2F3F5" fill-rule="nonzero" cx="15.7" cy="39.3" r="1.9" />
+    <circle fill="#F2F3F5" fill-rule="nonzero" cx="11.7" cy="63.2" r="1" />
+    <circle fill="#F2F3F5" fill-rule="nonzero" cx="51.9" cy="44.6" r="1" />
+    <circle fill="#F2F3F5" fill-rule="nonzero" cx="58" cy="53.3" r="1" />
+    <ellipse fill="#F2F3F5" fill-rule="nonzero" cx="77.2" cy="39" rx="1.5" ry="1.6" />
+    <circle fill="#F2F3F5" fill-rule="nonzero" cx="34" cy="36.5" r="1" />
+    <circle fill="#F2F3F5" fill-rule="nonzero" cx="82.4" cy="50.5" r="1" />
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<?xml-stylesheet type="text/xsl" href="index.html.xml"?>
+<x:transform
+  version="1.0"
+  xmlns:x="http://www.w3.org/1999/XSL/Transform"
+  xmlns:ext="http://exslt.org/common"
+  xmlns:pwd="pwd"
+  exclude-result-prefixes="ext"
+>
+  <x:include href="manifest.xsl" />
+  <x:include href="data.xsl" />
+  <x:include href="content.xsl" />
+  <x:include href="pwd/core.xsl" />
+  <x:include href="pwd/css-properties.xsl" />
+  <x:include href="pwd/dialog-share.xsl" />
+  <x:include href="pwd/dialog.xsl" />
+  <x:include href="pwd/email.xsl" />
+  <x:include href="pwd/fonts.xsl" />
+  <x:include href="pwd/global-styles.xsl" />
+  <x:include href="pwd/import.xsl" />
+  <x:include href="pwd/purl.xsl" />
+  <x:include href="pwd/qrcode.xsl" />
+  <x:include href="pwd/translate.xsl" />
+
+  <x:template name="main">
+    <html lang="{$lang}">
+      <head>
+        <title><x:value-of select="$title" /></title>
+
+        <meta name="author" content="David Francisco" />
+        <meta name="description" content="{$description}" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="canonical" href="{$persistent-url}" />
+
+        <link rel="icon" href="./favicon.ico" sizes="32x32" type="image/x-icon" />
+        <link rel="icon" href="./icon.png" sizes="192x192" type="image/png" />
+        <link rel="icon" href="./icon.svg" sizes="any" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./icon.png" sizes="192x192" />
+
+        <meta property="og:description" content="{$description}" />
+        <meta property="og:url" content="{$persistent-url}" />
+        <meta property="og:title" content="{$title}" />
+
+        <meta name="twitter:description" content="{$description}" />
+        <meta name="twitter:title" content="{$title}" />
+        <meta name="twitter:card" content="summary" />
+
+        <pwd:css-properties />
+        <pwd:fonts />
+        <pwd:global-styles />
+      </head>
+      <body>
+        <nav class="dmfranc-nav" aria-label="Primary navigation">
+          <ul class="dmfranc-nav-list">
+            <x:for-each select="ext:node-set($nav-links)/links/link">
+              <li class="dmfranc-nav-item">
+                <a class="dmfranc-nav-link" href="{@href}"><x:value-of select="@label" /></a>
+              </li>
+            </x:for-each>
+          </ul>
+        </nav>
+
+        <div class="dmfranc-container">
+          <main class="dmfranc-main">
+            <x:call-template name="about-content" />
+          </main>
+        </div>
+      </body>
+    </html>
+  </x:template>
+</x:transform>

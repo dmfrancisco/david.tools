@@ -1,0 +1,34 @@
+{
+  "files.encoding": "utf8",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 100,
+  "editor.tabSize": 2,
+  "workbench.tree.renderIndentGuides": "onHover",
+  "liveServer.settings.port": 5364,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "vscode-typograf.disableRules": "common/nbsp/*",
+  "files.associations": {
+    // Treat our .xsl and .html.xml files like .html files
+    "*.xsl": "html",
+    "*.html.xml": "html"
+  },
+  "runOnSave.commands": [
+    // When a .html.xml or .xml.xml file is saved, build it
+    {
+      "command": "workbench.action.tasks.build",
+      "globMatch": "**/*.*.xml",
+      "runIn": "vscode"
+    }
+  ],
+  "commandOnAllFiles.commands": {
+    // Command to build all .html.xml and .xml.xml files in the project
+    "Build all xml files": {
+      "command": "workbench.action.tasks.build",
+      "includeFileExtensions": [".xml"]
+    }
+  }
+}

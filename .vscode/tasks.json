@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Transform with xsltproc",
+      "type": "process",
+      "command": "xsltproc",
+      "args": ["-o", "${fileBasenameNoExtension}", "${fileBasename}"],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "showReuseMessage": false,
+        "revealProblems": "onProblem"
+      },
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "runOptions": {
+        "instanceLimit": 1000
+      }
+    }
+  ]
+}

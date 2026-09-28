@@ -1,0 +1,10 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Built files
+/feed.xml
+/timestamp.svg
+*.html
+!pwd/**/*.html
+
+# Misc
+.DS_Store

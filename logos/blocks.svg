@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 92 92">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#F0F0F3" d="M46 46h46v46H46z" />
+    <path fill="#FFF" d="M46 46v46l46-46z" />
+    <path fill="#D9AEAF" d="M0 46h46v46H0z" />
+    <path fill="#FFD8D5" d="M0 46v46l46-46z" />
+    <path fill="#D0021B" d="M46 0h46v46H46z" />
+    <path fill="#FF2013" d="M46 0v46L92 0z" />
+    <path fill="#3E3251" d="M0 0h46v46H0z" />
+    <path fill="#514663" d="M0 0v46L46 0z" />
+  </g>
+</svg>
