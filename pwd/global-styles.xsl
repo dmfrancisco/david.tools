@@ -83,7 +83,7 @@
       .dmfranc-main h2 {
         margin: calc(var(--gutter)*6) 0 calc(var(--gutter)*3);
         font-size: 0.9em;
-        font-weight: var(--font-weight-medium, 500);
+        font-weight: var(--font-weight-normal, 400);
         letter-spacing: 0.03em;
         line-height: 1.25;
         padding-top: 0.5em;

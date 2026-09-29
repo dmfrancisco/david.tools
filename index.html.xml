@@ -19,6 +19,7 @@
   <x:include href="pwd/import.xsl" />
   <x:include href="pwd/purl.xsl" />
   <x:include href="pwd/qrcode.xsl" />
+  <x:include href="pwd/theme-styles.xsl" />
   <x:include href="pwd/translate.xsl" />
 
   <x:template name="main">
@@ -49,6 +50,7 @@
         <pwd:css-properties />
         <pwd:fonts />
         <pwd:global-styles />
+        <pwd:theme-styles />
       </head>
       <body>
         <nav class="dmfranc-nav" aria-label="Primary navigation">
