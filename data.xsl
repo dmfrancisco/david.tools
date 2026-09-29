@@ -45,7 +45,7 @@
       <item>
         <period>Sep 2014 – Apr 2015</period>
         <title>Full-stack engineer and designer at <a href="https://linkedin.com/company/disruption-corporation/">Disruption Corp</a></title>
-        <description>Worked on Hubble, a platform that allows venture capitalists, fund managers and innovation groups to seamlessly compile, evaluate and stay up to date on current private market investments and companies of interest. Disruption was acquired by 1776 in April 2015.</description>
+        <description>Worked on Hubble, a platform that allows venture capitalists, fund managers and innovation groups to compile, evaluate and stay up to date on current private market investments and companies of interest. Disruption was acquired by 1776 in April 2015.</description>
       </item>
       <item>
         <period>Apr 2013 – Apr 2014</period>

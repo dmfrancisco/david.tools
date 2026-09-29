@@ -47,11 +47,11 @@
             </div>
             <div class="project-links">
               <x:for-each select="links/link">
-                <a href="{@href}" class="project-link"><x:value-of select="." /></a>
+                <a href="{@href}" class="project-link" aria-label="{normalize-space(.)} for {normalize-space(../../title)}"><x:value-of select="." /></a>
               </x:for-each>
             </div>
           </div>
-          <pwd:import src="{@logo}" class="project-logo" />
+          <pwd:import src="{@logo}" class="project-logo" aria-hidden="true" focusable="false" />
         </li>
       </x:for-each>
     </ol>
