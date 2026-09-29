@@ -143,10 +143,10 @@
         text-transform: uppercase;
       }
       .main a[href^="http"]::after {
-        content: "↗";
+        /* Keep the arrow attached to the link's final word. */
+        content: "\2060↗";
         padding-left: 0.25ch;
         font-family: var(--font-sans-serif, sans-serif);
-        display: inline-block;
         text-decoration: none;
       }
 
