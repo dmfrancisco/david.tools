@@ -3,8 +3,6 @@
 # Built files
 /feed.xml
 /timestamp.svg
-*.html
-!pwd/**/*.html
 
 # Misc
 .DS_Store
