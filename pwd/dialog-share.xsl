@@ -40,7 +40,7 @@
       </style>
 
       <h2 class="pwd-dialog-share-subtitle">
-        <x:value-of select="$title-with-site-name" />
+        <x:value-of select="$title" />
       </h2>
       <p>
         <pwd:trans>Use this permanent link for a bookmark or if you cite this page:</pwd:trans>

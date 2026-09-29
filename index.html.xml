@@ -15,11 +15,10 @@
   <x:include href="pwd/dialog.xsl" />
   <x:include href="pwd/email.xsl" />
   <x:include href="pwd/fonts.xsl" />
-  <x:include href="pwd/global-styles.xsl" />
+  <x:include href="pwd/styles.xsl" />
   <x:include href="pwd/import.xsl" />
   <x:include href="pwd/purl.xsl" />
   <x:include href="pwd/qrcode.xsl" />
-  <x:include href="pwd/theme-styles.xsl" />
   <x:include href="pwd/translate.xsl" />
 
   <x:template name="main">
@@ -49,25 +48,22 @@
 
         <pwd:css-properties />
         <pwd:fonts />
-        <pwd:global-styles />
-        <pwd:theme-styles />
+        <pwd:styles />
       </head>
       <body>
-        <nav class="dmfranc-nav" aria-label="Primary navigation">
-          <ul class="dmfranc-nav-list">
-            <x:for-each select="ext:node-set($nav-links)/links/link">
-              <li class="dmfranc-nav-item">
-                <a class="dmfranc-nav-link" href="{@href}"><x:value-of select="@label" /></a>
+        <nav class="nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <x:for-each select="ext:node-set($social-links)/links/link">
+              <li class="nav-item">
+                <a class="nav-link" href="{@href}"><x:value-of select="@label" /></a>
               </li>
             </x:for-each>
           </ul>
         </nav>
 
-        <div class="dmfranc-container">
-          <main class="dmfranc-main">
-            <x:call-template name="about-content" />
-          </main>
-        </div>
+        <main class="main">
+          <x:call-template name="content" />
+        </main>
       </body>
     </html>
   </x:template>

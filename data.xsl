@@ -2,22 +2,30 @@
   version="1.0"
   xmlns:x="http://www.w3.org/1999/XSL/Transform"
 >
+  <x:variable name="social-links">
+    <links>
+      <link label="GitHub" href="https://github.com/dmfrancisco" />
+      <link label="LinkedIn" href="https://linkedin.com/in/dmfrancisco" />
+      <link label="Dribbble" href="https://dribbble.com/davidfrancisco" />
+      <link label="Email" href="mailto:hello@dmfranc.com" />
+    </links>
+  </x:variable>
+
   <x:variable name="work-items">
     <items>
+      <item>
+        <period>Jul 2024 – Jul 2026</period>
+        <title>Full-stack engineer at <a href="https://complear.com">Complear</a></title>
+        <description>
+          Complear builds AI-powered compliance software for highly regulated industries. I helped design and develop the platform, originally built for medical device companies. I built interfaces for exploring and editing quality management data, including an interactive graph editor. I also helped define the platform’s design system and implemented its components. My work spanned frontend and backend development using TypeScript, Elixir, Phoenix, LiveView, and Apache AGE.
+        </description>
+      </item>
       <item>
         <period>Apr 2022 – Present</period>
         <title>Founder, designer and engineer at <a href="https://oficinadopatrimonio.pt">Oficina do Património</a></title>
         <description>
           I founded Oficina do Património, where I work alongside two architects on cultural heritage projects. I designed and built Azulejo Digital, a system that combines glazed ceramic tiles with <a href="https://ipfs.tech/">IPFS</a>, <a href="https://purl.org/">PURLs</a>, and <a href="https://iiif.io/">IIIF</a> for longevity in both the physical signage and its digital content.
           We were selected for the <a href="https://www.cim-regiaodecoimbra.pt/cim-rc/projeto-empreende-mais/">Região de Coimbra Empreende+</a> entrepreneurship program. It was supported by a young entrepreneurs’ grant and <a href="https://www.cim-regiaodecoimbra.pt/rce-atribui-cinco-premios-a-projetos-de-empreendedorismo-jovem/">won second place</a> in the general category of its regional business ideas competition.
-        </description>
-      </item>
-
-      <item>
-        <period>Jul 2024 – Jul 2026</period>
-        <title>Full-stack engineer and designer at <a href="https://complear.com">Complear</a></title>
-        <description>
-          Complear builds AI-powered compliance software for highly regulated industries. I helped design and develop the platform, originally built for medical device companies. I built interfaces for exploring and editing quality management data, including an interactive graph editor. I also helped define the platform’s design system and implemented its components. My work spanned frontend and backend development using TypeScript, Elixir, Phoenix, LiveView, and Apache AGE.
         </description>
       </item>
       <item>
@@ -71,8 +79,8 @@
     <items>
       <item year="2018" logo="logos/browserslist-ga.svg">
         <title>Browserslist-GA</title>
-        <summary>Tool that helps developers tailor browser support to their audience, with <a href="https://npm-stat.com/charts.html?package=browserslist-ga&amp;from=2015-01-10&amp;to=2026-09-28">over 4.5 million npm downloads</a>.</summary>
-        <description></description>
+        <summary>Tool that helps developers tailor browser support to their audience.</summary>
+        <description>Has over 4.5 million npm downloads.</description>
         <links>
           <link href="https://vimeo.com/davidfrancisco/usestats">Open website</link>
           <link href="https://github.com/browserslist/browserslist-ga">View source</link>
