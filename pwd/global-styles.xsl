@@ -59,6 +59,7 @@
       }
       .dmfranc-nav-link {
         display: inline-block;
+        font-weight: var(--font-weight-medium, 500);
         padding: 0.25rem;
       }
       .dmfranc-container {

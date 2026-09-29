@@ -13,7 +13,6 @@
 
       .dmfranc-about a[href^="http"]::after {
         content: "↗";
-        vertical-align: text-top;
         padding-left: 0.25ch;
         font-family: var(--font-sans-serif, sans-serif);
         display: inline-block;

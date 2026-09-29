@@ -12,18 +12,9 @@
       @font-face {
         font-family: 'Inter';
         font-style:  normal;
-        font-weight: 400;
+        font-weight: 100 900;
         font-display: swap;
-        src: url("./fonts/Inter-Regular.woff2?v=3.19") format("woff2"),
-            url("./fonts/Inter-Regular.woff?v=3.19") format("woff");
-      }
-      @font-face {
-        font-family: 'Inter';
-        font-style:  normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url("./fonts/Inter-SemiBold.woff2?v=3.19") format("woff2"),
-            url("./fonts/Inter-SemiBold.woff?v=3.19") format("woff");
+        src: url("./fonts/InterVariable.woff2?v=4.1") format("woff2");
       }
     </style>
   </x:template>
