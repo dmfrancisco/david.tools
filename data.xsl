@@ -7,6 +7,7 @@
       <link label="GitHub" href="https://github.com/dmfrancisco" />
       <link label="LinkedIn" href="https://linkedin.com/in/dmfrancisco" />
       <link label="Dribbble" href="https://dribbble.com/davidfrancisco" />
+      <link label="Vimeo" href="https://vimeo.com/davidfrancisco" />
       <link label="Email" href="mailto:hello@dmfranc.com" />
     </links>
   </x:variable>
