@@ -18,7 +18,7 @@
         --color-visited: #05b;
         --color-select-rgb: 56, 93, 234;
         --color-focus: rgba(56, 93, 234, 0.75);
-        --font-sans-serif: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        --font-sans-serif: 'Public Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
         --font-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
         --font-weight: 400;
         --letter-spacing: -0.01em;

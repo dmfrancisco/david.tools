@@ -8,16 +8,8 @@
       <x:text>Transforming fonts element</x:text>
     </x:message>
 
-    <link rel="preload" href="./fonts/InterVariable.woff2?v=4.1" as="font" type="font/woff2" crossorigin="anonymous" />
-
-    <style>
-      @font-face {
-        font-family: 'Inter';
-        font-style:  normal;
-        font-weight: 100 900;
-        font-display: block;
-        src: url("./fonts/InterVariable.woff2?v=4.1") format("woff2");
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;450;500;600&amp;display=block" />
   </x:template>
 </x:transform>
