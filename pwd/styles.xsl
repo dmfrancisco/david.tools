@@ -142,13 +142,6 @@
         padding-top: 0.5em;
         text-transform: uppercase;
       }
-      .main a[href^="http"]::after {
-        /* Keep the arrow attached to the link's final word. */
-        content: "\2060↗";
-        padding-left: 0.25ch;
-        font-family: var(--font-sans-serif, sans-serif);
-        text-decoration: none;
-      }
 
       .work-list,
       .education-list,
