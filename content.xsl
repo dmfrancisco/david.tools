@@ -9,6 +9,18 @@
       I’ve spent more than a decade making web products, including programming tools for children, platforms for startups, and digital experiences for cultural heritage. The work I enjoy most starts while the problem is still open, then moves into designing and building the interface that people need.
     </p>
 
+    <nav class="nav" aria-label="Social and contact links">
+      <ul class="nav-list">
+        <x:for-each select="ext:node-set($social-links)/links/link">
+          <li class="nav-item">
+            <a class="nav-link" href="{@href}" aria-label="{@label}" title="{@label}">
+              <pwd:import src="{@icon}" class="nav-icon" aria-hidden="true" focusable="false" />
+            </a>
+          </li>
+        </x:for-each>
+      </ul>
+    </nav>
+
     <h2 id="work">Work experience</h2>
 
     <ol class="work-list">

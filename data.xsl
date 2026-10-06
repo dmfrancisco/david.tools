@@ -4,11 +4,11 @@
 >
   <x:variable name="social-links">
     <links>
-      <link label="GitHub" href="https://github.com/dmfrancisco" />
-      <link label="LinkedIn" href="https://linkedin.com/in/dmfrancisco" />
-      <link label="Dribbble" href="https://dribbble.com/davidfrancisco" />
-      <link label="Vimeo" href="https://vimeo.com/davidfrancisco" />
-      <link label="Email" href="mailto:hello@dmfranc.com" />
+      <link label="GitHub" href="https://github.com/dmfrancisco" icon="./img/github.svg" />
+      <link label="Dribbble" href="https://dribbble.com/davidfrancisco" icon="./img/dribbble.svg" />
+      <link label="Vimeo" href="https://vimeo.com/davidfrancisco" icon="./img/vimeo.svg" />
+      <link label="LinkedIn" href="https://linkedin.com/in/dmfrancisco" icon="./img/linkedin.svg" />
+      <link label="Email" href="mailto:hello@dmfranc.com" icon="./img/email.svg" />
     </links>
   </x:variable>
 

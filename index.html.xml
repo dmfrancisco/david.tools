@@ -51,16 +51,6 @@
         <pwd:styles />
       </head>
       <body>
-        <nav class="nav" aria-label="Primary navigation">
-          <ul class="nav-list">
-            <x:for-each select="ext:node-set($social-links)/links/link">
-              <li class="nav-item">
-                <a class="nav-link" href="{@href}"><x:value-of select="@label" /></a>
-              </li>
-            </x:for-each>
-          </ul>
-        </nav>
-
         <main class="main">
           <x:call-template name="content" />
         </main>

@@ -77,27 +77,34 @@
         outline-offset: 2px;
       }
 
-      .nav {
-        box-sizing: border-box;
-        padding: calc(var(--gutter)*3) calc(var(--gutter)*4.5);
-        width: 100%;
-      }
       .nav-list {
-        display: grid;
-        font-size: 0.93rem;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        letter-spacing: 0.05em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
         list-style: none;
+        margin-left: -0.6rem;
         padding: 0;
-        text-transform: uppercase;
-      }
-      .nav-item:nth-child(even) {
-        text-align: right;
       }
       .nav-link {
-        display: inline-block;
-        font-weight: 500;
-        padding: 0.25rem;
+        align-items: center;
+        box-sizing: border-box;
+        display: inline-flex;
+        height: 2.75rem;
+        justify-content: center;
+        padding: 0.5rem;
+        width: 2.75rem;
+      }
+      .nav-link:hover {
+        opacity: 0.75;
+      }
+      .nav-icon {
+        height: 1.5rem;
+        transition: transform 180ms ease;
+        will-change: transform;
+        width: 1.5rem;
+      }
+      .nav-link:hover .nav-icon {
+        transform: scale(1.25);
       }
 
       .main {
@@ -116,6 +123,30 @@
       }
       .main > :first-child {
         margin-top: 0;
+      }
+      @keyframes fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .main > * {
+          animation: fade-up 650ms cubic-bezier(0.2, 1, 0.3, 1) 230ms backwards;
+        }
+        .main > h1 {
+          animation-delay: 0ms;
+        }
+        .main > p {
+          animation-delay: 75ms;
+        }
+        .main > .nav {
+          animation-delay: 150ms;
+        }
       }
       .main p,
       .project-description {
@@ -212,30 +243,6 @@
         width: 4rem;
       }
 
-      @media only screen and (min-width: 500px) {
-        .nav-list {
-          display: flex;
-        }
-        .nav-item,
-        .nav-item:nth-child(even) {
-          flex: 2;
-          text-align: center;
-        }
-        .nav-item:first-child {
-          flex: 1;
-          text-align: left;
-        }
-        .nav-item:last-child {
-          flex: 1;
-          text-align: right;
-        }
-        .nav-item:first-child .nav-link {
-          padding-left: 0;
-        }
-        .nav-item:last-child .nav-link {
-          padding-right: 0;
-        }
-      }
       @media screen and (min-width: 46em) {
         .project-description > span {
           display: block;
@@ -252,7 +259,6 @@
         }
       }
       @media only screen and (max-width: 679px) {
-        .nav,
         .main {
           padding-left: calc(var(--gutter)*3);
           padding-right: calc(var(--gutter)*3);

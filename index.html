@@ -137,27 +137,34 @@
         outline-offset: 2px;
       }
 
-      .nav {
-        box-sizing: border-box;
-        padding: calc(var(--gutter)*3) calc(var(--gutter)*4.5);
-        width: 100%;
-      }
       .nav-list {
-        display: grid;
-        font-size: 0.93rem;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        letter-spacing: 0.05em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
         list-style: none;
+        margin-left: -0.6rem;
         padding: 0;
-        text-transform: uppercase;
-      }
-      .nav-item:nth-child(even) {
-        text-align: right;
       }
       .nav-link {
-        display: inline-block;
-        font-weight: 500;
-        padding: 0.25rem;
+        align-items: center;
+        box-sizing: border-box;
+        display: inline-flex;
+        height: 2.75rem;
+        justify-content: center;
+        padding: 0.5rem;
+        width: 2.75rem;
+      }
+      .nav-link:hover {
+        opacity: 0.75;
+      }
+      .nav-icon {
+        height: 1.5rem;
+        transition: transform 180ms ease;
+        will-change: transform;
+        width: 1.5rem;
+      }
+      .nav-link:hover .nav-icon {
+        transform: scale(1.25);
       }
 
       .main {
@@ -176,6 +183,30 @@
       }
       .main > :first-child {
         margin-top: 0;
+      }
+      @keyframes fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .main > * {
+          animation: fade-up 650ms cubic-bezier(0.2, 1, 0.3, 1) 230ms backwards;
+        }
+        .main > h1 {
+          animation-delay: 0ms;
+        }
+        .main > p {
+          animation-delay: 75ms;
+        }
+        .main > .nav {
+          animation-delay: 150ms;
+        }
       }
       .main p,
       .project-description {
@@ -272,30 +303,6 @@
         width: 4rem;
       }
 
-      @media only screen and (min-width: 500px) {
-        .nav-list {
-          display: flex;
-        }
-        .nav-item,
-        .nav-item:nth-child(even) {
-          flex: 2;
-          text-align: center;
-        }
-        .nav-item:first-child {
-          flex: 1;
-          text-align: left;
-        }
-        .nav-item:last-child {
-          flex: 1;
-          text-align: right;
-        }
-        .nav-item:first-child .nav-link {
-          padding-left: 0;
-        }
-        .nav-item:last-child .nav-link {
-          padding-right: 0;
-        }
-      }
       @media screen and (min-width: 46em) {
         .project-description > span {
           display: block;
@@ -312,7 +319,6 @@
         }
       }
       @media only screen and (max-width: 679px) {
-        .nav,
         .main {
           padding-left: calc(var(--gutter)*3);
           padding-right: calc(var(--gutter)*3);
@@ -328,20 +334,19 @@
       }
     </style>
 </head>
-<body>
-<nav class="nav" aria-label="Primary navigation"><ul class="nav-list">
-<li class="nav-item"><a class="nav-link" href="https://github.com/dmfrancisco">GitHub</a></li>
-<li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/dmfrancisco">LinkedIn</a></li>
-<li class="nav-item"><a class="nav-link" href="https://dribbble.com/davidfrancisco">Dribbble</a></li>
-<li class="nav-item"><a class="nav-link" href="https://vimeo.com/davidfrancisco">Vimeo</a></li>
-<li class="nav-item"><a class="nav-link" href="mailto:hello@dmfranc.com">Email</a></li>
-</ul></nav><main class="main"><h1>
+<body><main class="main"><h1>
       Hello! I’m David Francisco, a designer and engineer.
     </h1>
 <p>
       I’ve spent more than a decade making web products, including programming tools for children, platforms for startups, and digital experiences for cultural heritage. The work I enjoy most starts while the problem is still open, then moves into designing and building the interface that people need.
     </p>
-<h2 id="work">Work experience</h2>
+<nav class="nav" aria-label="Social and contact links"><ul class="nav-list">
+<li class="nav-item"><a class="nav-link" href="https://github.com/dmfrancisco" aria-label="GitHub" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="nav-icon" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg></a></li>
+<li class="nav-item"><a class="nav-link" href="https://dribbble.com/davidfrancisco" aria-label="Dribbble" title="Dribbble"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="nav-icon" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z"></path></svg></a></li>
+<li class="nav-item"><a class="nav-link" href="https://vimeo.com/davidfrancisco" aria-label="Vimeo" title="Vimeo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="nav-icon" aria-hidden="true" focusable="false"><path d="M15.992 4.204q-.106 2.334-3.262 6.393-3.263 4.243-5.522 4.243-1.4 0-2.367-2.583L3.55 7.523Q2.83 4.939 2.007 4.94q-.178.001-1.254.754L0 4.724a210 210 0 0 0 2.334-2.081q1.581-1.364 2.373-1.437 1.865-.185 2.298 2.553.466 2.952.646 3.666.54 2.447 1.186 2.445.5 0 1.508-1.587 1.006-1.587 1.077-2.415.144-1.37-1.077-1.37a3 3 0 0 0-1.185.261q1.183-3.86 4.508-3.756 2.466.075 2.324 3.2z"></path></svg></a></li>
+<li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/dmfrancisco" aria-label="LinkedIn" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="nav-icon" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></a></li>
+<li class="nav-item"><a class="nav-link" href="mailto:hello@dmfranc.com" aria-label="Email" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="nav-icon" aria-hidden="true" focusable="false"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path></svg></a></li>
+</ul></nav><h2 id="work">Work experience</h2>
 <ol class="work-list">
 <li class="work-item">
 <span class="work-time">Jul 2024 – Jul 2026</span><h3 class="work-title">Full-stack engineer at <a href="https://complear.com">Complear</a>
@@ -767,6 +772,5 @@
     <path d="M68.6 42.24c-.07 1.4-1.05 3.3-2.93 5.73-1.96 2.54-3.61 3.8-4.96 3.8-.84 0-1.55-.77-2.13-2.32l-1.16-4.25c-.43-1.54-.89-2.32-1.38-2.32-.11 0-.49.23-1.13.68l-.68-.87c.71-.62 1.41-1.24 2.1-1.87.94-.81 1.65-1.24 2.12-1.28 1.12-.11 1.8.65 2.06 2.28.28 1.76.48 2.86.58 3.29.32 1.46.68 2.19 1.07 2.19.3 0 .75-.48 1.35-1.42.6-.95.92-1.66.96-2.16.09-.81-.23-1.22-.96-1.22-.35 0-.7.07-1.06.22.7-2.3 2.06-3.41 4.05-3.35 1.48.05 2.18 1 2.1 2.87zm12.84 2.32a7.67 7.67 0 0 1-2.19 5.12 6.8 6.8 0 0 1-5.12 2.16c-1.7 0-2.98-.55-3.86-1.65-.64-.81-1-1.83-1.06-3.05a6.71 6.71 0 0 1 2-5.1 7.5 7.5 0 0 1 5.82-2.57c1.5 0 2.64.5 3.41 1.51a5.2 5.2 0 0 1 1 3.58zm-3.64-.13a4.05 4.05 0 0 0-.24-1.6c-.18-.48-.44-.72-.79-.72-1.1 0-2 .6-2.7 1.77-.6.97-.92 2-.97 3.1-.02.53.08 1 .3 1.41.23.47.56.7 1 .7.96 0 1.78-.56 2.47-1.7.58-.94.9-1.93.93-2.96z"></path>
   </g></svg>
 </li>
-</ol></main>
-</body>
+</ol></main></body>
 </html>
