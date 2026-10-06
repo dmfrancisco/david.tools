@@ -5,12 +5,12 @@
 >
   <style>
     @media (prefers-color-scheme: dark) {
-      .a { fill: #fff }
+      .a { fill: #5cf }
       .b { fill: #000 }
     }
   </style>
   <g fill="none" fill-rule="evenodd">
-    <path class="a" d="M96 6a90 90 0 1 1 0 180A90 90 0 0 1 96 6Z" fill="#000" />
+    <path class="a" d="M96 6a90 90 0 1 1 0 180A90 90 0 0 1 96 6Z" fill="#05b" />
     <path
       class="b"
       d="m140 115 6 5a65 65 0 0 1-50 28c-19 0-37-9-51-27l7-5c12 16 27 24 44 24 16 0 32-9 44-25ZM67 66a8 8 0 1 1 0 17 8 8 0 0 1 0-17Zm58 0a8 8 0 1 1 0 17 8 8 0 0 1 0-17Z"
