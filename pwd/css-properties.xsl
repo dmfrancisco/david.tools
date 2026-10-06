@@ -11,7 +11,7 @@
     <style>
       :root {
         --gutter: 1.1vw;
-        --color-bg: #fff;
+        --color-bg: #e9eaed;
         --color-text: #000;
         --color-text-rgb: 0,0,0;
         --color-link: #05b;
@@ -20,12 +20,12 @@
         --color-focus: rgba(56, 93, 234, 0.75);
         --font-sans-serif: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
         --font-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        --font-weight: 450;
+        --font-weight: 400;
         --letter-spacing: -0.01em;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --color-bg: #000;
+          --color-bg: #1b1c20;
           --color-text: #ddd;
           --color-text-rgb: 221,221,221;
           --color-link: #5cf;

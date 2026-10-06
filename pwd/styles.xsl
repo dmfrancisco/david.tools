@@ -35,24 +35,19 @@
         content: "";
         position: absolute;
         inset: 0 0 auto;
-        height: clamp(24rem, 60vw, 42rem);
+        height: clamp(28rem, 65vw, 46rem);
         z-index: -1;
         pointer-events: none;
         background:
           radial-gradient(
-            ellipse 45% 70% at 95% 0%,
-            rgb(255 177 132 / 22%),
-            transparent 75%
+            ellipse 75% 85% at 5% -20%,
+            rgb(125 156 215 / 38%),
+            transparent 80%
           ),
           radial-gradient(
-            ellipse 55% 80% at 70% -15%,
-            rgb(142 117 255 / 28%),
-            transparent 75%
-          ),
-          radial-gradient(
-            ellipse 45% 65% at 35% 0%,
-            rgb(99 218 235 / 20%),
-            transparent 75%
+            ellipse 65% 90% at 95% -15%,
+            rgb(166 145 205 / 32%),
+            transparent 80%
           );
       }
       a {
@@ -103,6 +98,9 @@
         white-space: nowrap;
         width: auto;
       }
+      .nav-link-text:hover {
+        opacity: 1;
+      }
       .nav-icon {
         height: 1.5rem;
         transition: transform 180ms ease;
@@ -129,6 +127,9 @@
       }
       .main > :first-child {
         margin-top: 0;
+      }
+      .main > p {
+        font-weight: 450;
       }
       @keyframes fade-up {
         from {
@@ -183,16 +184,51 @@
       .work-list,
       .education-list,
       .project-list {
-        border-radius: var(--gutter);
-        border: 1px solid rgba(var(--color-text-rgb, 0, 0, 0), 0.15);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        --color-link: #fff;
+        --color-visited: #fff;
+        background: #111;
+        border-radius: calc(var(--gutter) * 1.5);
+        color: #fff;
         list-style: none;
+        margin-inline: -1em;
         padding: 0;
+      }
+      .nav-link-text,
+      .work-list a,
+      .education-list a,
+      .project-list a {
+        text-decoration: underline;
+        text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+        text-decoration-thickness: 2px;
+        text-underline-position: under;
+        text-underline-offset: 1px;
+        transition: text-underline-offset 180ms ease-out,
+          text-decoration-color 180ms ease-out;
+      }
+      .nav-link-text:hover,
+      .nav-link-text:focus-visible,
+      .work-list a:hover,
+      .work-list a:focus-visible,
+      .education-list a:hover,
+      .education-list a:focus-visible,
+      .project-list a:hover,
+      .project-list a:focus-visible {
+        text-decoration-color: currentColor;
+        text-underline-offset: 2px;
       }
       .work-item,
       .education-item,
       .project-item {
-        border-top: 1px solid rgba(var(--color-text-rgb, 0, 0, 0), 0.15);
+        border-top: 2px solid rgba(255, 255, 255, 0.15);
         padding: 0.7em 1em 1em;
+        transition: opacity 180ms ease-out;
+      }
+      @media (hover: hover) {
+        :is(.work-list, .education-list, .project-list):has(> li:hover) > li:not(:hover) {
+          opacity: 0.35;
+        }
       }
       .work-item:first-child,
       .education-item:first-child,
@@ -237,8 +273,6 @@
       .project-link {
         display: inline-block;
         margin-right: 0.75em;
-        text-decoration: underline;
-        text-underline-position: under;
       }
       .project-logo {
         border: 1px solid #000;
@@ -249,6 +283,31 @@
         width: 4rem;
       }
 
+      @media (prefers-reduced-motion: reduce) {
+        .nav-icon,
+        .nav-link-text,
+        .work-item,
+        .education-item,
+        .project-item,
+        .work-list a,
+        .education-list a,
+        .project-list a {
+          transition: none;
+        }
+        .nav-link:hover .nav-icon {
+          transform: none;
+        }
+        .nav-link-text:hover,
+        .nav-link-text:focus-visible,
+        .work-list a:hover,
+        .work-list a:focus-visible,
+        .education-list a:hover,
+        .education-list a:focus-visible,
+        .project-list a:hover,
+        .project-list a:focus-visible {
+          text-underline-offset: 1px;
+        }
+      }
       @media screen and (min-width: 46em) {
         .project-description > span {
           display: block;
