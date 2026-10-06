@@ -55,7 +55,7 @@
       </item>
       <item>
         <period>Mar 2010 – Apr 2013</period>
-        <title>Full-stack engineer at <a href="https://lis.ipn.pt">IPN LIS</a></title>
+        <title>Full-stack engineer at <a href="https://ipn.pt/lis/">IPN LIS</a></title>
         <description>Designed and developed a platform for interoperable web applications as part of two government-funded projects regarding transportation and health. The platform was mainly based on the W3C Widgets specification and relied on open source projects such as Apache Wookie and Google Caja. I started at IPN LIS as an intern while studying at the University of Coimbra.</description>
       </item>
     </items>
@@ -83,7 +83,7 @@
         <summary>Tool that helps developers tailor browser support to their audience.</summary>
         <description>Has over 4.5 million npm downloads.</description>
         <links>
-          <link href="https://vimeo.com/davidfrancisco/usestats">Open website</link>
+          <link href="https://vimeo.com/davidfrancisco/usestats">View demo</link>
           <link href="https://github.com/browserslist/browserslist-ga">View source</link>
         </links>
       </item>
@@ -101,7 +101,6 @@
         <summary>Search for packages related to React, Babel, Webpack and PostCSS.</summary>
         <description>Rewrite and redesign that lives as a static app on GitHub Pages.</description>
         <links>
-          <link href="https://js.coach">Open website</link>
           <link href="https://github.com/dmfrancisco/jscoach-client">View source</link>
         </links>
       </item>
@@ -110,7 +109,7 @@
         <summary>NPM package to program simple videos with React.</summary>
         <description>Based on react-scripts and powered by Electron.</description>
         <links>
-          <link href="https://robo54.com/blog/create-react-video">Read notes</link>
+          <link href="https://blog.david.tools/create-react-video">Read notes</link>
           <link href="https://github.com/dmfrancisco/create-react-video">View source</link>
         </links>
       </item>
@@ -119,7 +118,7 @@
         <summary>Type in english or tetun and get definitions and common phrases.</summary>
         <description>Simple Ruby on Rails app with Postgres. Sponsored by DigitalOcean.</description>
         <links>
-          <link href="https://tetunprasa.david.tools">Open website</link>
+          <link href="https://dribbble.com/shots/27788225-Prototype-Dision-riu-2017">View demo</link>
           <link href="https://github.com/dmfrancisco/tetunprasa">View source</link>
         </links>
       </item>
@@ -136,8 +135,6 @@
         <summary>Search for packages related to React, Babel, Webpack and PostCSS.</summary>
         <description>Built with React, PostCSS, Node.js and Ruby on Rails.</description>
         <links>
-          <link href="http://classic.js.coach">Open website</link>
-          <link href="http://blog.js.coach/hello-world">Read notes</link>
           <link href="https://github.com/jscoach/support/tree/classic">View source</link>
         </links>
       </item>
@@ -146,7 +143,6 @@
         <summary>A catalog of React components for both web and native.</summary>
         <description>Built using React and PostCSS with help from Hubot and Dokku.</description>
         <links>
-          <link href="https://react.parts">Open website</link>
           <link href="https://github.com/madebyform/react-parts">View source</link>
         </links>
       </item>
@@ -163,7 +159,7 @@
         <summary>Simple tool for sharing mockups.</summary>
         <description>Built with Polymer, uses shadow DOM and HTML imports.</description>
         <links>
-          <link href="http://jonymockup.dmfranc.com">Read notes</link>
+          <link href="https://vimeo.com/davidfrancisco/jonymockup">View demo</link>
           <link href="https://github.com/dmfrancisco/jonymockup">View source</link>
         </links>
       </item>
@@ -172,7 +168,7 @@
         <summary>An opinionated cloud-based TiddlyWiki setup.</summary>
         <description>This is a proof-of-concept that uses Heroku and Dropbox.</description>
         <links>
-          <link href="http://spacejunk.dmfranc.com">Read notes</link>
+          <link href="https://vimeo.com/davidfrancisco/spacejunk">View demo</link>
           <link href="https://github.com/dmfrancisco/spacejunk">View source</link>
         </links>
       </item>
@@ -217,7 +213,7 @@
         <summary>Web Platform for User-Centric Interoperable Applications.</summary>
         <description>Uses Apache Wookie and Google Caja.</description>
         <links>
-          <link href="http://tmblr.co/Zh-Y9ySGFFYm">Read notes</link>
+          <link href="https://vimeo.com/davidfrancisco/appbase">View demo</link>
         </links>
       </item>
       <item year="2011" logo="logos/pagehub.svg">
@@ -225,7 +221,7 @@
         <summary>Proof-of-concept app to generate short URLs.</summary>
         <description>Explores a redirection technique using iframes.</description>
         <links>
-          <link href="http://pagehub.dmfranc.com">Read notes</link>
+          <link href="https://vimeo.com/davidfrancisco/pagehub">View demo</link>
         </links>
       </item>
       <item year="2011" logo="logos/slideshow.svg">
@@ -233,8 +229,8 @@
         <summary>Tool for creating presentations with HTML, JS and CSS.</summary>
         <description>Written in Ruby.</description>
         <links>
-          <link href="http://slideshow.dmfranc.com">Open website</link>
-          <link href="http://blog.dmfranc.com/post/9227991618/slideshow">Read notes</link>
+          <link href="https://dmfrancisco.github.io/slideshow.html">Open website</link>
+          <link href="https://vimeo.com/davidfrancisco/slideshow">View demo</link>
           <link href="https://github.com/dmfrancisco/slideshow.html">View source</link>
         </links>
       </item>
@@ -252,7 +248,7 @@
         <summary>Support for disconnection and deferred updates for web apps.</summary>
         <description>Uses Cache Manifest, WebSQL, Local Storage and Web Sockets.</description>
         <links>
-          <link href="https://dmfrancisco.github.com/Desligado">Open website</link>
+          <link href="https://dmfrancisco.github.io/Desligado">Open website</link>
           <link href="https://github.com/dmfrancisco/desligado">View source</link>
         </links>
       </item>
