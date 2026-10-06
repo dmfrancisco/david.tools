@@ -78,7 +78,7 @@
 
   <x:variable name="project-items">
     <items>
-      <item year="2018" logo="logos/browserslist-ga.svg">
+      <item year="2018" logo="img/browserslist-ga.svg">
         <title>Browserslist-GA</title>
         <summary>Tool that helps developers tailor browser support to their audience.</summary>
         <description>Has over 4.5 million npm downloads.</description>
@@ -87,7 +87,7 @@
           <link href="https://github.com/browserslist/browserslist-ga">View source</link>
         </links>
       </item>
-      <item year="2018" logo="logos/list-community.svg">
+      <item year="2018" logo="img/list-community.svg">
         <title>List.community</title>
         <summary>An easy way to browse curated lists on GitHub.</summary>
         <description>Built with create-react-app, react-snap and Tailwind CSS.</description>
@@ -96,7 +96,7 @@
           <link href="https://github.com/listcommunity/support">View source</link>
         </links>
       </item>
-      <item year="2017" logo="logos/js-coach-reborn.svg">
+      <item year="2017" logo="img/js-coach-reborn.svg">
         <title>JS.coach Reborn</title>
         <summary>Search for packages related to React, Babel, Webpack and PostCSS.</summary>
         <description>Rewrite and redesign that lives as a static app on GitHub Pages.</description>
@@ -104,7 +104,7 @@
           <link href="https://github.com/dmfrancisco/jscoach-client">View source</link>
         </links>
       </item>
-      <item year="2017" logo="logos/create-react-video.svg">
+      <item year="2017" logo="img/create-react-video.svg">
         <title>create-react-video</title>
         <summary>NPM package to program simple videos with React.</summary>
         <description>Based on react-scripts and powered by Electron.</description>
@@ -113,7 +113,7 @@
           <link href="https://github.com/dmfrancisco/create-react-video">View source</link>
         </links>
       </item>
-      <item year="2017" logo="logos/tetunprasa.svg">
+      <item year="2017" logo="img/tetunprasa.svg">
         <title>Disionáriu</title>
         <summary>Type in english or tetun and get definitions and common phrases.</summary>
         <description>Simple Ruby on Rails app with Postgres. Sponsored by DigitalOcean.</description>
@@ -122,7 +122,7 @@
           <link href="https://github.com/dmfrancisco/tetunprasa">View source</link>
         </links>
       </item>
-      <item year="2016" logo="logos/pixel-glasses.svg">
+      <item year="2016" logo="img/pixel-glasses.svg">
         <title>Pixel Glasses</title>
         <summary>Hackathon app that describes your surroundings using audio.</summary>
         <description>Built using Microsoft Cognitive Service APIs and React Native.</description>
@@ -130,7 +130,7 @@
           <link href="https://davidfrancisco.tumblr.com/post/164333915936/pixelglasses">Read notes</link>
         </links>
       </item>
-      <item year="2016" logo="logos/js-coach-classic.svg">
+      <item year="2016" logo="img/js-coach-classic.svg">
         <title>JS.coach Classic</title>
         <summary>Search for packages related to React, Babel, Webpack and PostCSS.</summary>
         <description>Built with React, PostCSS, Node.js and Ruby on Rails.</description>
@@ -138,7 +138,7 @@
           <link href="https://github.com/jscoach/support/tree/classic">View source</link>
         </links>
       </item>
-      <item year="2015" logo="logos/react-parts.svg">
+      <item year="2015" logo="img/react-parts.svg">
         <title>React.parts</title>
         <summary>A catalog of React components for both web and native.</summary>
         <description>Built using React and PostCSS with help from Hubot and Dokku.</description>
@@ -146,7 +146,7 @@
           <link href="https://github.com/madebyform/react-parts">View source</link>
         </links>
       </item>
-      <item year="2015" logo="logos/space-horse.svg">
+      <item year="2015" logo="img/space-horse.svg">
         <title>Space Horse</title>
         <summary>Web and desktop application for organizing knowledge.</summary>
         <description>Written in JavaScript with React, Flux and NW.js.</description>
@@ -154,7 +154,7 @@
           <link href="https://github.com/dmfrancisco/spacehorse">View source</link>
         </links>
       </item>
-      <item year="2015" logo="logos/jonymockup.svg">
+      <item year="2015" logo="img/jonymockup.svg">
         <title>Jonymockup</title>
         <summary>Simple tool for sharing mockups.</summary>
         <description>Built with Polymer, uses shadow DOM and HTML imports.</description>
@@ -163,7 +163,7 @@
           <link href="https://github.com/dmfrancisco/jonymockup">View source</link>
         </links>
       </item>
-      <item year="2014" logo="logos/spacejunk.svg">
+      <item year="2014" logo="img/spacejunk.svg">
         <title>SpaceJunk</title>
         <summary>An opinionated cloud-based TiddlyWiki setup.</summary>
         <description>This is a proof-of-concept that uses Heroku and Dropbox.</description>
@@ -172,7 +172,7 @@
           <link href="https://github.com/dmfrancisco/spacejunk">View source</link>
         </links>
       </item>
-      <item year="2014" logo="logos/gideo.svg">
+      <item year="2014" logo="img/gideo.svg">
         <title>Gideo</title>
         <summary>Minimal video player that loops and autoplays.</summary>
         <description>Built on top of MediaElement.js.</description>
@@ -181,7 +181,7 @@
           <link href="https://github.com/dmfrancisco/gideo">View source</link>
         </links>
       </item>
-      <item year="2014" logo="logos/blocks.svg">
+      <item year="2014" logo="img/blocks.svg">
         <title>Blocks</title>
         <summary>App for people interested in gathering self-knowledge.</summary>
         <description>Built with AngularJS and Cordova.</description>
@@ -190,7 +190,7 @@
           <link href="https://github.com/dmfrancisco/blocks">View source</link>
         </links>
       </item>
-      <item year="2013" logo="logos/kood.svg">
+      <item year="2013" logo="img/kood.svg">
         <title>k▥</title>
         <summary>Command-line tool for collaborative task boards that works offline.</summary>
         <description>Uses Git as a database.</description>
@@ -199,7 +199,7 @@
           <link href="https://github.com/dmfrancisco/kood">View source</link>
         </links>
       </item>
-      <item year="2012" logo="logos/pomada.svg">
+      <item year="2012" logo="img/pomada.svg">
         <title>Pomada</title>
         <summary>Simple tool for the pomodoro technique.</summary>
         <description>Can be used on the web, desktop and Chrome App.</description>
@@ -208,7 +208,7 @@
           <link href="https://github.com/dmfrancisco/pomada">View source</link>
         </links>
       </item>
-      <item year="2012" logo="logos/appbase.svg">
+      <item year="2012" logo="img/appbase.svg">
         <title>Appbase</title>
         <summary>Web Platform for User-Centric Interoperable Applications.</summary>
         <description>Uses Apache Wookie and Google Caja.</description>
@@ -216,7 +216,7 @@
           <link href="https://vimeo.com/davidfrancisco/appbase">View demo</link>
         </links>
       </item>
-      <item year="2011" logo="logos/pagehub.svg">
+      <item year="2011" logo="img/pagehub.svg">
         <title>Pagehub</title>
         <summary>Proof-of-concept app to generate short URLs.</summary>
         <description>Explores a redirection technique using iframes.</description>
@@ -224,7 +224,7 @@
           <link href="https://vimeo.com/davidfrancisco/pagehub">View demo</link>
         </links>
       </item>
-      <item year="2011" logo="logos/slideshow.svg">
+      <item year="2011" logo="img/slideshow.svg">
         <title>slideshow.html</title>
         <summary>Tool for creating presentations with HTML, JS and CSS.</summary>
         <description>Written in Ruby.</description>
@@ -234,7 +234,7 @@
           <link href="https://github.com/dmfrancisco/slideshow.html">View source</link>
         </links>
       </item>
-      <item year="2011" logo="logos/escrito.svg">
+      <item year="2011" logo="img/escrito.svg">
         <title>Escrito</title>
         <summary>A collaborative writing tool that supports Markdown and Textile.</summary>
         <description>Powered by Node.js and ShareJS.</description>
@@ -243,7 +243,7 @@
           <link href="https://github.com/dmfrancisco/escrito">View source</link>
         </links>
       </item>
-      <item year="2011" logo="logos/desligado.svg">
+      <item year="2011" logo="img/desligado.svg">
         <title>Desligado</title>
         <summary>Support for disconnection and deferred updates for web apps.</summary>
         <description>Uses Cache Manifest, WebSQL, Local Storage and Web Sockets.</description>
@@ -252,7 +252,7 @@
           <link href="https://github.com/dmfrancisco/desligado">View source</link>
         </links>
       </item>
-      <item year="2010" logo="logos/scurry.svg">
+      <item year="2010" logo="img/scurry.svg">
         <title>Scurry</title>
         <summary>Toy programming language.</summary>
         <description>Written with Python, PLY and LLVM.</description>
@@ -260,7 +260,7 @@
           <link href="https://github.com/dmfrancisco/scurry">View source</link>
         </links>
       </item>
-      <item year="2010" logo="logos/activo.svg">
+      <item year="2010" logo="img/activo.svg">
         <title>Activo</title>
         <summary>A theme for data-driven, admin-like applications.</summary>
         <description>Written in SASS for Ruby on Rails.</description>
