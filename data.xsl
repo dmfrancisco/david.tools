@@ -8,7 +8,7 @@
       <link label="Dribbble" href="https://dribbble.com/davidfrancisco" icon="./img/dribbble.svg" />
       <link label="Vimeo" href="https://vimeo.com/davidfrancisco" icon="./img/vimeo.svg" />
       <link label="LinkedIn" href="https://linkedin.com/in/dmfrancisco" icon="./img/linkedin.svg" />
-      <link label="Email" href="mailto:hello@dmfranc.com" icon="./img/email.svg" />
+      <link label="Get in touch ↗" href="mailto:hello@dmfranc.com" />
     </links>
   </x:variable>
 

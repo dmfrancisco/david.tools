@@ -13,8 +13,17 @@
       <ul class="nav-list">
         <x:for-each select="ext:node-set($social-links)/links/link">
           <li class="nav-item">
-            <a class="nav-link" href="{@href}" aria-label="{@label}" title="{@label}">
-              <pwd:import src="{@icon}" class="nav-icon" aria-hidden="true" focusable="false" />
+            <a href="{@href}" aria-label="{@label}" title="{@label}">
+              <x:attribute name="class">
+                <x:text>nav-link</x:text>
+                <x:if test="not(@icon)"><x:text> nav-link-text</x:text></x:if>
+              </x:attribute>
+              <x:choose>
+                <x:when test="@icon">
+                  <pwd:import src="{@icon}" class="nav-icon" aria-hidden="true" focusable="false" />
+                </x:when>
+                <x:otherwise><x:value-of select="@label" /></x:otherwise>
+              </x:choose>
             </a>
           </li>
         </x:for-each>

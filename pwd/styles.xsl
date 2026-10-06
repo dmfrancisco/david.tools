@@ -97,6 +97,12 @@
       .nav-link:hover {
         opacity: 0.75;
       }
+      .nav-link-text {
+        font-size: 1.05em;
+        font-weight: 500;
+        white-space: nowrap;
+        width: auto;
+      }
       .nav-icon {
         height: 1.5rem;
         transition: transform 180ms ease;
